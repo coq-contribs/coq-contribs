@@ -36,6 +36,22 @@ let rec plus n m =
     | O -> m
     | S p -> S (plus p m)
 
+(** val mult : nat -> nat -> nat **)
+
+let rec mult n m =
+  match n with
+    | O -> O
+    | S p -> plus m (mult p m)
+
+(** val minus : nat -> nat -> nat **)
+
+let rec minus n m =
+  match n with
+    | O -> O
+    | S k -> (match m with
+                | O -> S k
+                | S l -> minus k l)
+
 (** val div2 : nat -> nat **)
 
 let rec div2 = function
@@ -69,17 +85,20 @@ let rec ominus m n =
                  | O -> Some m
                  | S n1 -> ominus m1 n1)
 
+(** val pdiv_aux : nat -> nat -> nat -> (nat, nat) prod **)
+
+let rec pdiv_aux m n p =
+  match ominus m n with
+    | Some m1 ->
+        (match p with
+           | O -> Pair (m, n)
+           | S p1 -> let Pair (q, r) = pdiv_aux m1 n p1 in Pair ((S q), r))
+    | None -> Pair (O, m)
+
 (** val pdiv : nat -> nat -> (nat, nat) prod **)
 
 let pdiv m n =
-  let rec pdiv_aux m0 n0 p =
-    match ominus m0 n0 with
-      | Some m1 ->
-          (match p with
-             | O -> Pair (m0, n0)
-             | S p1 -> let Pair (q, r) = pdiv_aux m1 n0 p1 in Pair ((S q), r))
-      | None -> Pair (O, m0)
-  in pdiv_aux m n m
+  pdiv_aux m n m
 
 (** val divides1_dec : nat -> nat -> sumbool **)
 
@@ -121,17 +140,28 @@ type 'a list =
   | Nil
   | Cons of 'a * 'a list
 
+(** val le_lt_dec : nat -> nat -> sumbool **)
+
+let rec le_lt_dec n m =
+  match n with
+    | O -> Left
+    | S n1 -> (match m with
+                 | O -> Right
+                 | S m1 -> le_lt_dec n1 m1)
+
+(** val bertrand_fun_aux : nat -> nat -> nat **)
+
+let rec bertrand_fun_aux n m =
+  match primeb n with
+    | True -> n
+    | False -> (match m with
+                  | O -> O
+                  | S m1 -> bertrand_fun_aux (S n) m1)
+
 (** val bertrand_fun : nat -> nat sig0 **)
 
 let bertrand_fun n =
-  let rec bertrand_fun_aux n0 m =
-    match primeb n0 with
-      | True -> n0
-      | False ->
-          (match m with
-             | O -> O
-             | S m1 -> bertrand_fun_aux (S n0) m1)
-  in bertrand_fun_aux (S n) (pred (pred n))
+  bertrand_fun_aux (S n) (pred (pred n))
 
 (** val partition : nat -> (nat -> nat) sig0 **)
 
@@ -140,76 +170,14 @@ let partition n =
     match n0 with
       | O -> (fun x -> x)
       | S n1 ->
-          let p =
-            bertrand_fun
-              (let rec mult n2 m =
-                 match n2 with
-                   | O -> O
-                   | S p -> plus m (mult p m)
-               in mult (S (S O)) (S n1))
-          in
+          let p = bertrand_fun (mult (S (S O)) (S n1)) in
           (fun x ->
-          match let rec le_lt_dec n2 m =
-                  match n2 with
-                    | O -> Left
-                    | S n3 ->
-                        (match m with
-                           | O -> Right
-                           | S m1 -> le_lt_dec n3 m1)
-                in le_lt_dec x
-                     (let rec mult n2 m =
-                        match n2 with
-                          | O -> O
-                          | S p0 -> plus m (mult p0 m)
-                      in mult (S (S O)) (S n1)) with
+          match le_lt_dec x (mult (S (S O)) (S n1)) with
             | Left ->
-                (match let rec le_lt_dec n2 m =
-                         match n2 with
-                           | O -> Left
-                           | S n3 ->
-                               (match m with
-                                  | O -> Right
-                                  | S m1 -> le_lt_dec n3 m1)
-                       in le_lt_dec
-                            (let rec minus n2 m =
-                               match n2 with
-                                 | O -> O
-                                 | S k ->
-                                     (match m with
-                                        | O -> S k
-                                        | S l -> minus k l)
-                             in minus p
-                                  (let rec mult n2 m =
-                                     match n2 with
-                                       | O -> O
-                                       | S p0 -> plus m (mult p0 m)
-                                   in mult (S (S O)) (S n1))) x with
-                   | Left ->
-                       let rec minus n2 m =
-                         match n2 with
-                           | O -> O
-                           | S k ->
-                               (match m with
-                                  | O -> S k
-                                  | S l -> minus k l)
-                       in minus p x
+                (match le_lt_dec (minus p (mult (S (S O)) (S n1))) x with
+                   | Left -> minus p x
                    | Right ->
-                       h
-                         (div2
-                           (pred
-                             (let rec minus n2 m =
-                                match n2 with
-                                  | O -> O
-                                  | S k ->
-                                      (match m with
-                                         | O -> S k
-                                         | S l -> minus k l)
-                              in minus p
-                                   (let rec mult n2 m =
-                                      match n2 with
-                                        | O -> O
-                                        | S p0 -> plus m (mult p0 m)
-                                    in mult (S (S O)) (S n1))))) __ x)
+                       h (div2 (pred (minus p (mult (S (S O)) (S n1))))) __ x)
             | Right -> O))
 
 (** val make_partition_aux : (nat -> nat) -> nat -> (nat, nat) prod list **)
@@ -217,24 +185,12 @@ let partition n =
 let rec make_partition_aux f n = match n with
   | O -> Nil
   | S n1 ->
-      (match let rec le_lt_dec n0 m =
-               match n0 with
-                 | O -> Left
-                 | S n2 ->
-                     (match m with
-                        | O -> Right
-                        | S m1 -> le_lt_dec n2 m1)
-             in le_lt_dec (f n) n with
+      (match le_lt_dec (f n) n with
          | Left -> make_partition_aux f n1
          | Right -> Cons ((Pair (n, (f n))), (make_partition_aux f n1)))
 
 (** val make_partition : nat -> (nat, nat) prod list **)
 
 let make_partition n =
-  make_partition_aux (partition n)
-    (let rec mult n0 m =
-       match n0 with
-         | O -> O
-         | S p -> plus m (mult p m)
-     in mult (S (S O)) n)
+  make_partition_aux (partition n) (mult (S (S O)) n)
 
