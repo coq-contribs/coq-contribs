@@ -1,7 +1,7 @@
 Name: bertrand
 Title: Correctness of Knuth's algorithm for prime numbers
-Author: Laurent Thery
-Institution: Inria Sophia-Antipolis
+Author: Laurent Théry
+Institution: INRIA Sophia-Antipolis
 Date: 2002
 Description: A proof of correctness of the algorithm as described in
              `The Art of Computer Programming: Fundamental Algorithms' 
