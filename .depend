@@ -1,0 +1,78 @@
+ex1.cmo: ex1.ml
+ex1.cmx: ex1.ml
+ex2.cmo: ex2.ml
+ex2.cmx: ex2.ml
+partition.cmo: partition.ml partition.cmi
+partition.cmx: partition.ml partition.cmi
+run_partition.cmo: run_partition.ml
+run_partition.cmx: run_partition.ml
+partition.cmi: partition.mli
+Bertrand.vo: Bertrand.v ./PowerBinomial.vo ./Check128.vo ./PrimeDirac.vo ./Raux.vo
+Bertrand.vi: Bertrand.v ./PowerBinomial.vo ./Check128.vo ./PrimeDirac.vo ./Raux.vo
+Binomial.vo: Binomial.v ./Factorial_bis.vo ./Summation.vo ./Power.vo
+Binomial.vi: Binomial.v ./Factorial_bis.vo ./Summation.vo ./Power.vo
+bug.vo: bug.v ./Knuth_def.vo ./Bertrand.vo
+bug.vi: bug.v ./Knuth_def.vo ./Bertrand.vo
+Check128.vo: Check128.v ./Prime.vo ./Misc.vo
+Check128.vi: Check128.v ./Prime.vo ./Misc.vo
+DivDirac.vo: DivDirac.v ./Div.vo ./Summation.vo
+DivDirac.vi: DivDirac.v ./Div.vo ./Summation.vo
+Divides.vo: Divides.v ./Misc.vo ./Power.vo
+Divides.vi: Divides.v ./Misc.vo ./Power.vo
+Div.vo: Div.v ./Power.vo ./Divides.vo ./Misc.vo
+Div.vi: Div.v ./Power.vo ./Divides.vo ./Misc.vo
+Extraction.vo: Extraction.v ./Partition.vo
+Extraction.vi: Extraction.v ./Partition.vo
+Factorial_bis.vo: Factorial_bis.v
+Factorial_bis.vi: Factorial_bis.v
+Gcd.vo: Gcd.v ./Prime.vo ./Power.vo
+Gcd.vi: Gcd.v ./Prime.vo ./Power.vo
+Knuth_def.vo: Knuth_def.v ./Prime.vo ./Div.vo
+Knuth_def.vi: Knuth_def.v ./Prime.vo ./Div.vo
+Knuth_why.vo: Knuth_why.v ./Knuth_def.vo ./Bertrand.vo why/WhyArrays.vo
+Knuth_why.vi: Knuth_why.v ./Knuth_def.vo ./Bertrand.vo why/WhyArrays.vo
+Misc.vo: Misc.v ./sTactic.vo
+Misc.vi: Misc.v ./sTactic.vo
+Partition.vo: Partition.v ./Bertrand.vo
+Partition.vi: Partition.v ./Bertrand.vo
+PowerBinomial.vo: PowerBinomial.v ./PrimeDirac.vo
+PowerBinomial.vi: PowerBinomial.v ./PrimeDirac.vo
+PowerDiv.vo: PowerDiv.v ./Div.vo ./Gcd.vo ./Factorial_bis.vo ./DivDirac.vo ./Summation.vo
+PowerDiv.vi: PowerDiv.v ./Div.vo ./Gcd.vo ./Factorial_bis.vo ./DivDirac.vo ./Summation.vo
+Power.vo: Power.v ./Misc.vo
+Power.vi: Power.v ./Misc.vo
+PrimeDirac.vo: PrimeDirac.v ./PowerDiv.vo ./Binomial.vo ./Product.vo
+PrimeDirac.vi: PrimeDirac.v ./PowerDiv.vo ./Binomial.vo ./Product.vo
+Prime.vo: Prime.v ./Divides.vo ./Div.vo
+Prime.vi: Prime.v ./Divides.vo ./Div.vo
+Product.vo: Product.v ./Misc.vo ./Power.vo
+Product.vi: Product.v ./Misc.vo ./Power.vo
+Raux.vo: Raux.v ./Misc.vo ./Div.vo
+Raux.vi: Raux.v ./Misc.vo ./Div.vo
+sTactic.vo: sTactic.v
+sTactic.vi: sTactic.v
+Summation.vo: Summation.v ./Misc.vo
+Summation.vi: Summation.v ./Misc.vo
+Bertrand.html: Bertrand.v ./PowerBinomial.html ./Check128.html ./PrimeDirac.html ./Raux.html
+Binomial.html: Binomial.v ./Factorial_bis.html ./Summation.html ./Power.html
+bug.html: bug.v ./Knuth_def.html ./Bertrand.html
+Check128.html: Check128.v ./Prime.html ./Misc.html
+DivDirac.html: DivDirac.v ./Div.html ./Summation.html
+Divides.html: Divides.v ./Misc.html ./Power.html
+Div.html: Div.v ./Power.html ./Divides.html ./Misc.html
+Extraction.html: Extraction.v ./Partition.html
+Factorial_bis.html: Factorial_bis.v
+Gcd.html: Gcd.v ./Prime.html ./Power.html
+Knuth_def.html: Knuth_def.v ./Prime.html ./Div.html
+Knuth_why.html: Knuth_why.v ./Knuth_def.html ./Bertrand.html why/WhyArrays.html
+Misc.html: Misc.v ./sTactic.html
+Partition.html: Partition.v ./Bertrand.html
+PowerBinomial.html: PowerBinomial.v ./PrimeDirac.html
+PowerDiv.html: PowerDiv.v ./Div.html ./Gcd.html ./Factorial_bis.html ./DivDirac.html ./Summation.html
+Power.html: Power.v ./Misc.html
+PrimeDirac.html: PrimeDirac.v ./PowerDiv.html ./Binomial.html ./Product.html
+Prime.html: Prime.v ./Divides.html ./Div.html
+Product.html: Product.v ./Misc.html ./Power.html
+Raux.html: Raux.v ./Misc.html ./Div.html
+sTactic.html: sTactic.v
+Summation.html: Summation.v ./Misc.html

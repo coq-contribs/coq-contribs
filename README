@@ -1,0 +1,45 @@
+This directory contains the proof of correctness of Knuth's algorithm
+for prime numbers
+
+
+It is composed of :
+
+- A proof of correctness of the algorithm as described in 
+    `The Art of Computer Programming: Fundamental Algorithms' by Knuth,
+   pages 147-149 (Knuth.mlw).
+
+- A proof of Bertrand's postulate: there always exists a prime between
+  n  and 2n for n greater than 2 (Bertrand.v).
+
+- A little program that generates a partition of 1..2n in pairs (i,j)
+  such that i+j is always prime (run_partition.ml). 
+  The proof of correctness of this program is a direct consequence of 
+  Bertrand's postulate (Partition.v). This nice application of Bertrand's 
+  postulate was suggested by Gerard Huet.
+
+To build the directory, you must first download the WHY tool at
+
+    http://www.lri.fr/~filliatr/why/
+
+and edit the first line of the file Make:
+
+    WHYDIR = "/net/home/thery/soft/why-0.71/"
+
+after this you should be able to compile the whole library with:
+ 
+    make all
+
+To run the program so to generate the partition for 1...100, do
+
+    ocaml
+
+    #use "run_partition.ml";;
+
+    part 50;;
+
+
+Some more information of the development is available at:
+
+ftp://ftp-sop.inria.fr/lemme/Laurent.Thery/Bertrand/index.html
+
+ Laurent Thery thery@sophia.inria.fr

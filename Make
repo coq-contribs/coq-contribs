@@ -1,0 +1,29 @@
+# WHY = "/users/demons/filliatr/bin/linux/why"
+# WHYLIB = "/users/demons/filliatr/local/coq/V7/contrib/why"
+-I why
+why
+Bertrand.v
+Binomial.v
+Check128.v
+Div.v
+DivDirac.v
+Divides.v
+Extraction.v
+Factorial_bis.v
+Gcd.v
+Knuth_def.v
+Knuth_why.v
+Misc.v
+Partition.v
+Power.v
+PowerBinomial.v
+PowerDiv.v
+Prime.v
+PrimeDirac.v
+Product.v
+Raux.v
+Summation.v
+sTactic.v
+# -custom "$(WHY) Knuth.mlw" "Knuth.mlw" Knuth_why.v
+-custom "cat ex1.ml partition.ml ex2.ml > run_partition.ml" "Extraction.vo" run_partition.ml
+
