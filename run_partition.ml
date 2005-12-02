@@ -161,12 +161,12 @@ let rec bertrand_fun_aux n m =
                   | O -> O
                   | S m1 -> bertrand_fun_aux (S n) m1)
 
-(** val bertrand_fun : nat -> nat sig0 **)
+(** val bertrand_fun : nat -> nat **)
 
 let bertrand_fun n =
   bertrand_fun_aux (S n) (pred (pred n))
 
-(** val partition : nat -> (nat -> nat) sig0 **)
+(** val partition : nat -> (nat -> nat) **)
 
 let partition n =
   lt_wf_rec n (fun n0 h ->

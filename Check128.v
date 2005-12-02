@@ -110,5 +110,6 @@ Qed.
 Theorem postulate_correct_128 :
  forall n : nat,
  2 <= n -> n <= power 2 7 -> exists p : nat, prime p /\ n < p /\ p < 2 * n.
-apply check_postulate_correct; auto.
+apply check_postulate_correct.
+vm_compute;reflexivity.
 Qed.
