@@ -147,7 +147,7 @@ rewrite <-
             (f := fun x => sum_nm k l1 (fun y : nat => f x y))
            (g := fun x => f x (k + S l1)).
 rewrite (Rec k l1).
-rewrite sum_nm_sum_nm_f with (f := fun x y => f y x).
+(* pre V8.1 only: rewrite sum_nm_sum_nm_f with (f := fun x y => f y x). *)
 rewrite <-
  sum_nm_add
             with

@@ -139,7 +139,7 @@ rewrite <-
               (f := fun x => prod_nm k l1 (fun y : nat => f x y))
              (g := fun x => f x (k + S l1)).
 rewrite (Rec k l1).
-rewrite prod_nm_prod_nm_f with (f := fun x y => f y x).
+(* pre V8.1 only: rewrite prod_nm_prod_nm_f with (f := fun x y => f y x).*)
 rewrite <-
  prod_nm_mult
               with
