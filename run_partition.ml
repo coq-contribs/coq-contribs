@@ -68,6 +68,10 @@ let rec div2 = function
 let rec lt_wf_rec p f =
   f p (fun y _ -> lt_wf_rec y f)
 
+type 'a list =
+  | Nil
+  | Cons of 'a * 'a list
+
 (** val max_such : (nat -> sumbool) -> nat -> nat **)
 
 let rec max_such p_dec n =
@@ -138,10 +142,6 @@ let primeb n = match n with
                 | S n2 -> (match n2 with
                              | O -> True
                              | S n3 -> False)))
-
-type 'a list =
-  | Nil
-  | Cons of 'a * 'a list
 
 (** val le_lt_dec : nat -> nat -> sumbool **)
 

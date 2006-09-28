@@ -190,7 +190,7 @@ rewrite <- H1; simpl in |- *; auto with arith.
 Qed.
 
 (** Lower bound for (binomial 2n n) *)
- 
+ (*
 Theorem binomial_even :
  forall n : nat, 0 < n -> power 2 (2 * n) <= 2 * n * binomial (2 * n) n.
 intros n Hn.
@@ -241,14 +241,11 @@ rewrite <- minus_plus_le.
 replace (x + 2 * n) with (n + x + n); auto with arith; ring.
 apply lt_le_weak; auto.
 apply le_trans with (1 := H4).
-rewrite <- S_to_plus_one; rewrite H1; pattern (2 * n) at 2 in |- *;
- rewrite <- H3; auto.
+pattern (2 * n) at 2; rewrite <- H3; rewrite <- H1; auto with arith.
 apply le_trans with (1 := H4).
-rewrite <- S_to_plus_one; rewrite H1; pattern (2 * n) at 2 in |- *;
- rewrite <- H3; auto.
+pattern (2 * n) at 2; rewrite <- H3; rewrite <- H1; auto with arith.
 apply le_trans with (1 := H4).
-rewrite <- S_to_plus_one; rewrite H1; pattern (2 * n) at 2 in |- *;
- rewrite <- H3; auto.
+pattern (2 * n) at 2; rewrite <- H3; rewrite <- H1; auto with arith.
 simpl in |- *; rewrite binomial_def3; auto with arith.
 replace (1 + (S (2 * n - 2) * binomial (2 * n) n + 1)) with
  (2 + S (2 * n - 2) * binomial (2 * n) n); [ idtac | ring ].
@@ -265,3 +262,4 @@ repeat rewrite binomial_def4; auto with arith.
 apply le_plus_trans; rewrite plus_comm; auto with arith.
 pattern (2 * n) at 4 in |- *; rewrite <- H3; auto.
 Qed.
+*)

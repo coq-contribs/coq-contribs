@@ -19,7 +19,6 @@
                                          Laurent.Thery@inria.fr (2002)
   *********************************************************************)
 Require Import Wf_nat.
-Require Import ArithRing.
 Require Export PowerBinomial.
 Require Export Check128.
 Require Export RIneq.
@@ -27,6 +26,8 @@ Require Import Ranalysis.
 Require Import Rtrigo.
 Require Export PrimeDirac.
 Require Export Raux.
+Require Import ArithRing.
+Require Fourier.
 
 (** Upper Bound for (binonial 2n n) *)
 
@@ -218,7 +219,8 @@ apply le_trans with (2 * power 2 7); auto with arith.
 apply le_mult; auto with arith.
 apply power_le_mono; auto with arith.
 apply sqr_lt.
-rewrite (fun x y => S_to_plus_one (div x y)); apply div_lt; auto with arith.
+change (sqr (2 * n) < 2 * (1 + div (sqr (2 * n)) 2));
+ apply div_lt; auto with arith.
 Qed.
 
 (** The oppositive inequality holds for x > 128 *) 
@@ -247,11 +249,7 @@ pattern x at 3 in |- *; rewrite <- (sqrt_square x); auto with real.
 repeat rewrite sqrt_mult; auto with real.
 replace (/ (sqrt 2 * sqrt x) * (sqrt x * sqrt x) * / 3 * ln (1 + 3))%R with
  (ln (1 + 3) / (sqrt 2 * 3) * sqrt x)%R; [ idtac | field ].
-2: apply Compare.not_eq_sym; auto with real.
-2: apply Rlt_not_eq; auto with real.
-2: repeat apply Rmult_lt_0_compat; auto with real.
-2: repeat apply Rplus_le_lt_0_compat; auto with real.
-2: repeat apply Rplus_le_lt_0_compat; auto with real.
+2: split; apply Compare.not_eq_sym; auto with real.
 apply Rminus_lt; apply Ropp_lt_cancel; rewrite Ropp_minus_distr;
  rewrite Ropp_0.
 apply
@@ -314,36 +312,18 @@ apply Rmult_lt_reg_l with (r := 3%R); auto with real.
 repeat apply Rplus_lt_0_compat; auto with real.
 rewrite Rmult_1_r.
 apply Rlt_trans with (3 * (Rpower 2 (1 + 3) * (/ 2 / 3)))%R.
-repeat rewrite Rpower_plus; repeat rewrite Rpower_1.
-replace (3 * (16 * (/ 2 / 3)))%R with 8%R; [ idtac | field ].
-repeat rewrite Rmult_plus_distr_r; repeat rewrite Rmult_plus_distr_l;
- repeat rewrite Rmult_1_l.
-repeat rewrite Rplus_assoc; auto with real.
-repeat apply Rplus_lt_compat_l; auto with real.
-pattern 1%R at 1 in |- *; replace 1%R with (1 + 0)%R;
- [ apply Rplus_lt_compat_l; repeat apply Rplus_lt_0_compat | ring ];
- auto with real.
-apply Compare.not_eq_sym; apply Rlt_not_eq; auto with real.
-apply Rmult_lt_0_compat; auto with real.
-repeat apply Rplus_lt_0_compat; auto with real.
-repeat apply Rplus_lt_0_compat; auto with real.
-apply Rmult_lt_compat_l; auto with real.
-repeat apply Rplus_lt_0_compat; auto with real.
-apply Rmult_lt_compat_l; auto with real.
+repeat rewrite Rpower_plus; repeat rewrite Rpower_1; Fourier.fourier.
+apply Rmult_lt_compat_l.
+Fourier.fourier.
+apply Rmult_lt_compat_l.
 unfold Rpower in |- *; auto with real.
-unfold Rdiv in |- *; apply Rmult_lt_compat_r; auto with real.
-apply Rinv_0_lt_compat; repeat apply Rplus_lt_0_compat; auto with real.
+unfold Rdiv in |- *; apply Rmult_lt_compat_r.
+Fourier.fourier.
 apply ln_lt_2.
 cut
  (forall x y z : R,
   (0 < z)%R -> (2 * x * (y / 3))%R = (2 * (z * x) * (y / (z * 3)))%R);
  [ intros Htmp; apply Htmp | intros; field ]; auto with real.
-apply Compare.not_eq_sym; apply Rlt_not_eq; auto with real.
-apply Rmult_lt_0_compat; auto with real.
-repeat apply Rplus_lt_0_compat; auto with real.
-apply Rmult_lt_0_compat; auto with real.
-repeat apply Rplus_lt_0_compat; auto with real.
-apply Compare.not_eq_sym; apply Rlt_not_eq; auto with real.
 unfold Rpower in |- *; auto with real.
 unfold Rpower in |- *; auto with real.
 unfold Rdiv in |- *.
@@ -354,24 +334,21 @@ unfold Rpower in |- *; auto with real.
 repeat apply Rmult_le_pos; auto with real.
 rewrite <- ln_1; auto with real.
 apply Rlt_le; apply Rinv_0_lt_compat; apply Rmult_lt_0_compat; auto with real.
-repeat apply Rplus_lt_0_compat; auto with real.
+Fourier.fourier.
 apply sqrt_positivity; auto with real.
 unfold Rpower in |- *; auto with real.
 apply sqrt_le_1; auto with real.
 unfold Rpower in |- *; auto with real.
 rewrite <- ln_1; auto with real.
 apply Rlt_le; apply Rinv_0_lt_compat; apply Rmult_lt_0_compat; auto with real.
-repeat apply Rplus_lt_0_compat; auto with real.
+Fourier.fourier.
 field; auto with real.
-apply Compare.not_eq_sym; apply Rlt_not_eq; auto with real.
-repeat apply Rmult_lt_0_compat; auto with real.
-repeat apply Rplus_lt_0_compat; auto with real.
+split; apply Compare.not_eq_sym; apply Rlt_not_eq; auto with real.
 apply exp_inv.
 rewrite exp_ln.
 change (Rpower 2 2 = (1 + 3)%R) in |- *.
-repeat rewrite Rpower_plus; repeat rewrite Rpower_1; try ring.
-repeat apply Rplus_lt_0_compat; auto with real.
-repeat apply Rplus_lt_0_compat; auto with real.
+repeat rewrite Rpower_plus; repeat rewrite Rpower_1; (ring||Fourier.fourier).
+Fourier.fourier.
 apply Compare.not_eq_sym; apply Rlt_not_eq; auto with real.
 apply Compare.not_eq_sym; apply Rlt_not_eq; auto with real.
 apply Rlt_le_trans with (2 := H1).
@@ -408,32 +385,18 @@ repeat apply Rplus_lt_0_compat; auto with real.
 repeat rewrite <- Rmult_assoc; rewrite Rinv_r; auto with arith.
 rewrite Rmult_1_l.
 repeat rewrite Rpower_plus; repeat rewrite Rpower_1; try ring.
-repeat rewrite Rmult_plus_distr_r; repeat rewrite Rmult_plus_distr_l;
- repeat rewrite Rmult_1_l.
-repeat rewrite Rplus_assoc; auto with real.
-repeat apply Rplus_lt_compat_l; auto with real.
-pattern 1%R at 1 in |- *; replace 1%R with (1 + 0)%R;
- [ apply Rplus_lt_compat_l; repeat apply Rplus_lt_0_compat | ring ];
- auto with real.
-repeat apply Rplus_lt_0_compat; auto with real.
-apply Compare.not_eq_sym; apply Rlt_not_eq; auto with real.
-repeat apply Rplus_lt_0_compat; auto with real.
-field; auto with real.
-apply Compare.not_eq_sym; apply Rlt_not_eq; auto with real.
-unfold Rpower in |- *.
-apply Compare.not_eq_sym; apply Rlt_not_eq; auto with real.
-repeat apply Rmult_lt_0_compat; auto with real.
-repeat apply Rplus_lt_0_compat; auto with real.
-repeat apply Rplus_lt_0_compat; auto with real.
+Fourier.fourier.
+Fourier.fourier.
+apply Compare.not_eq_sym; apply Rlt_not_eq; Fourier.fourier.
+field.
 apply exp_inv.
 rewrite exp_ln.
 change (Rpower 2 2 = (1 + 3)%R) in |- *.
 repeat rewrite Rpower_plus; repeat rewrite Rpower_1; try ring.
-repeat apply Rplus_lt_0_compat; auto with real.
-repeat apply Rplus_lt_0_compat; auto with real.
-apply Compare.not_eq_sym; apply Rlt_not_eq; auto with real.
+Fourier.fourier.
+Fourier.fourier.
 unfold Rpower in |- *; auto with real.
-repeat apply Rplus_lt_0_compat; auto with real.
+Fourier.fourier.
 unfold Rpower in |- *; auto with real.
 Qed.
 
@@ -492,9 +455,6 @@ rewrite <- INR_power; auto with real.
 replace 0%R with (INR 0); auto with real arith.
 ring.
 rewrite mult_INR; simpl in |- *; field.
-rewrite Rplus_assoc; apply Compare.not_eq_sym; auto with real.
-apply Rlt_not_eq; auto with real.
-repeat apply Rplus_lt_0_compat; auto with real.
 unfold Rpower in |- *; apply Compare.not_eq_sym; auto with real.
 replace 0%R with (INR 0); auto with real arith.
 replace 0%R with (INR 0); auto with real arith.

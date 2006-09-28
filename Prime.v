@@ -64,7 +64,7 @@ Theorem max_div_prop1 : forall n : nat, divides (max_div n) n.
 intros n; case n.
 exists 0; ring.
 intros n1; case n1.
-exists 1; ring.
+exists 1; simpl; ring.
 intros n2; unfold max_div in |- *;
  case
   (max_such_prop (fun x : nat => divides x (S (S n2)))

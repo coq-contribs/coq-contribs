@@ -23,7 +23,8 @@ Require Export Binomial.
 Require Import ArithRing.
 Require Export Product.
 Require Import Wf_nat.
- 
+Require Import Omega.
+
 Theorem prime_div_factorial_le :
  forall n p : nat, prime p -> divides p (factorial n) -> p <= n.
 intros n p H; elim n; auto.
@@ -219,7 +220,7 @@ apply H3; auto with arith; exists n1; rewrite mult_comm; auto.
 red in |- *; intros (H4, H5); absurd (S n = 2).
 Contradict H; rewrite <- H; auto with arith.
 apply H5; auto with arith; exists (S n1); rewrite H2.
-rewrite (S_to_plus_one n1); rewrite (fun x y => S_to_plus_one (x + y)); ring.
+omega.
 Qed.
  
 Theorem div_plus : forall n m : nat, 0 < n -> div (n + m) n = 1 + div m n.
@@ -328,8 +329,7 @@ simpl in |- *; auto with arith.
 rewrite H1; auto with arith.
 pattern c at 2 in |- *; rewrite <- (power_SO c); rewrite power_mult.
 rewrite plus_minus_assoc; auto with arith.
-simpl in |- *; rewrite <- plus_n_Sm; rewrite <- plus_n_Sm;
- rewrite (fun x y => S_to_plus_one (S (x + y))); rewrite <- plus_Snm_nSm;
+simpl in |- *; replace (n0 + 16) with (2 + (n0 + 14)) by ring;
  rewrite div_plus; auto with arith.
 Qed.
  
