@@ -202,10 +202,8 @@ rewrite exp_Pascal.
 apply sum_nm_ext.
 intros x H; repeat rewrite SO_power || rewrite mult_1_r; auto.
 Qed.
- 
 
-
-(** Majoration of the (binomial 2n+1 n+1) *)
+(** Upper bound for (binomial 2n+1 n) *)
  
 Theorem binomial_odd :
  forall n : nat, binomial (2 * n + 1) (n + 1) <= power 2 (2 * n).
@@ -242,10 +240,9 @@ simpl in |- *; ring.
 simpl in |- *; ring.
 rewrite <- H1; simpl in |- *; auto with arith.
 Qed.
- 
 
-(** Minoration of the (binomial 2n+1 n+1) *)
- 
+(** Lower bound for (binomial 2n n) *)
+
 Theorem binomial_even :
  forall n : nat, 0 < n -> power 2 (2 * n) <= 2 * n * binomial (2 * n) n.
 intros n Hn.
@@ -317,3 +314,4 @@ repeat rewrite binomial_def4; auto with arith.
 apply le_plus_trans; rewrite plus_comm; auto with arith.
 pattern (2 * n) at 4 in |- *; rewrite <- H3; auto.
 Qed.
+ 
