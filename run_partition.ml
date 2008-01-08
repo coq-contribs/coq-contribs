@@ -63,10 +63,16 @@ let rec div2 = function
                | O -> O
                | S n' -> S (div2 n'))
 
+(** val induction_ltof2 :
+    ('a1 -> nat) -> ('a1 -> ('a1 -> __ -> 'a2) -> 'a2) -> 'a1 -> 'a2 **)
+
+let rec induction_ltof2 f x a =
+  x a (fun y _ -> induction_ltof2 f x y)
+
 (** val lt_wf_rec : nat -> (nat -> (nat -> __ -> 'a1) -> 'a1) -> 'a1 **)
 
-let rec lt_wf_rec p f =
-  f p (fun y _ -> lt_wf_rec y f)
+let lt_wf_rec p f =
+  induction_ltof2 (fun m -> m) f p
 
 type 'a list =
   | Nil

@@ -127,8 +127,6 @@ case (le_or_lt p1 m); intros H2.
 rewrite <- (minus_Sn_m m p1); simpl in |- *; auto with arith.
 apply binomial_mono_S.
 apply le_lt_trans with (2 := H); auto with arith.
-apply (fun m n p : nat => mult_le_compat_l p n m); apply minus_le;
- auto with arith.
 repeat rewrite minus_O; auto with arith.
 Qed.
 
