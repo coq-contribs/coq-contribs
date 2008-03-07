@@ -1,7 +1,7 @@
+-R . bertrand
 # WHY = "/users/demons/filliatr/bin/linux/why"
 # WHYLIB = "/users/demons/filliatr/local/coq/V7/contrib/why"
--I why
-why
+why/WhyArrays.v
 Bertrand.v
 Binomial.v
 Check128.v

@@ -4,10 +4,6 @@
 type __ = Obj.t
 let __ = let rec f _ = Obj.repr f in Obj.repr f
 
-type bool =
-  | True
-  | False
-
 type nat =
   | O
   | S of nat
@@ -21,10 +17,6 @@ type ('a, 'b) prod =
 
 type 'a sig0 = 'a
   (* singleton inductive, whose constructor was exist *)
-
-type sumbool =
-  | Left
-  | Right
 
 (** val pred : nat -> nat **)
 
@@ -78,14 +70,14 @@ type 'a list =
   | Nil
   | Cons of 'a * 'a list
 
-(** val max_such : (nat -> sumbool) -> nat -> nat **)
+(** val max_such : (nat -> bool) -> nat -> nat **)
 
 let rec max_such p_dec n =
-  match p_dec n with
-    | Left -> n
-    | Right -> (match n with
-                  | O -> O
-                  | S n1 -> max_such p_dec n1)
+  if p_dec n
+  then n
+  else (match n with
+          | O -> O
+          | S n1 -> max_such p_dec n1)
 
 (** val ominus : nat -> nat -> nat option **)
 
@@ -113,18 +105,18 @@ let rec pdiv_aux m n p =
 let pdiv m n =
   pdiv_aux m n m
 
-(** val divides1_dec : nat -> nat -> sumbool **)
+(** val divides1_dec : nat -> nat -> bool **)
 
 let divides1_dec n m =
   match n with
     | O -> (match m with
-              | O -> Left
-              | S n1 -> Right)
+              | O -> true
+              | S n1 -> false)
     | S n1 ->
         let Pair (p, q) = pdiv m (S n1) in
         (match q with
-           | O -> Left
-           | S q1 -> Right)
+           | O -> true
+           | S q1 -> false)
 
 (** val max_div : nat -> nat **)
 
@@ -138,34 +130,34 @@ let max_div n = match n with
 (** val primeb : nat -> bool **)
 
 let primeb n = match n with
-  | O -> False
+  | O -> false
   | S n0 ->
       (match n0 with
-         | O -> False
+         | O -> false
          | S n1 ->
              (match max_div n with
-                | O -> False
+                | O -> false
                 | S n2 -> (match n2 with
-                             | O -> True
-                             | S n3 -> False)))
+                             | O -> true
+                             | S n3 -> false)))
 
-(** val le_lt_dec : nat -> nat -> sumbool **)
+(** val le_lt_dec : nat -> nat -> bool **)
 
 let rec le_lt_dec n m =
   match n with
-    | O -> Left
+    | O -> true
     | S n1 -> (match m with
-                 | O -> Right
+                 | O -> false
                  | S m1 -> le_lt_dec n1 m1)
 
 (** val bertrand_fun_aux : nat -> nat -> nat **)
 
 let rec bertrand_fun_aux n m =
-  match primeb n with
-    | True -> n
-    | False -> (match m with
-                  | O -> O
-                  | S m1 -> bertrand_fun_aux (S n) m1)
+  if primeb n
+  then n
+  else (match m with
+          | O -> O
+          | S m1 -> bertrand_fun_aux (S n) m1)
 
 (** val bertrand_fun : nat -> nat **)
 
@@ -181,22 +173,20 @@ let partition n =
       | S n1 ->
           let p = bertrand_fun (mult (S (S O)) (S n1)) in
           (fun x ->
-          match le_lt_dec x (mult (S (S O)) (S n1)) with
-            | Left ->
-                (match le_lt_dec (minus p (mult (S (S O)) (S n1))) x with
-                   | Left -> minus p x
-                   | Right ->
-                       h (div2 (pred (minus p (mult (S (S O)) (S n1))))) __ x)
-            | Right -> O))
+          if le_lt_dec x (mult (S (S O)) (S n1))
+          then if le_lt_dec (minus p (mult (S (S O)) (S n1))) x
+               then minus p x
+               else h (div2 (pred (minus p (mult (S (S O)) (S n1))))) __ x
+          else O))
 
 (** val make_partition_aux : (nat -> nat) -> nat -> (nat, nat) prod list **)
 
 let rec make_partition_aux f n = match n with
   | O -> Nil
   | S n1 ->
-      (match le_lt_dec (f n) n with
-         | Left -> make_partition_aux f n1
-         | Right -> Cons ((Pair (n, (f n))), (make_partition_aux f n1)))
+      if le_lt_dec (f n) n
+      then make_partition_aux f n1
+      else Cons ((Pair (n, (f n))), (make_partition_aux f n1))
 
 (** val make_partition : nat -> (nat, nat) prod list **)
 
