@@ -6,4 +6,6 @@ Date: 2002
 Description: A proof of correctness of the algorithm as described in
              `The Art of Computer Programming: Fundamental Algorithms' 
              by Knuth, pages 147-149
-Keywords: Knuth's algorithm, prime numbers, Bertrand's postulate
+Keywords: Knuth's algorithm, prime numbers, Bertrand's postulateCategory: Mathematics/Arithmetic and Number Theory/Number theory
+Category: Computer Science/Decision Procedures and Certified Algorithms/Correctness proofs based on external tools
+Category: Miscellaneous/Extracted Programs/Arithmetic
