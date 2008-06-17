@@ -28,8 +28,8 @@ type sumbool =
 
 (** val pred : nat -> nat **)
 
-let pred = function
-  | O -> O
+let pred n = match n with
+  | O -> n
   | S u -> u
 
 (** val plus : nat -> nat -> nat **)
@@ -50,9 +50,9 @@ let rec mult n m =
 
 let rec minus n m =
   match n with
-    | O -> O
+    | O -> n
     | S k -> (match m with
-                | O -> S k
+                | O -> n
                 | S l -> minus k l)
 
 (** val div2 : nat -> nat **)
