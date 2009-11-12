@@ -19,6 +19,10 @@ type 'a option =
 type ('a, 'b) prod =
   | Pair of 'a * 'b
 
+type 'a list =
+  | Nil
+  | Cons of 'a * 'a list
+
 type 'a sig0 = 'a
   (* singleton inductive, whose constructor was exist *)
 
@@ -73,10 +77,6 @@ let rec induction_ltof2 f x a =
 
 let lt_wf_rec p f =
   induction_ltof2 (fun m -> m) f p
-
-type 'a list =
-  | Nil
-  | Cons of 'a * 'a list
 
 (** val max_such : (nat -> sumbool) -> nat -> nat **)
 
