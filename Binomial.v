@@ -212,7 +212,7 @@ case (le_lt_or_eq 0 n); auto with arith; intros H1.
 apply mult_S_le_reg_l with (n := 1).
 pattern 2 at 3 in |- *; rewrite <- (power_SO 2).
 rewrite power_mult.
-rewrite (plus_comm 1).
+replace (1 + 2 * n) with (2 * n + 1) by apply plus_comm.
 replace (2 * binomial (2 * n + 1) (n + 1)) with
  (binomial (2 * n + 1) n + binomial (2 * n + 1) (n + 1)).
 rewrite binomial2.
