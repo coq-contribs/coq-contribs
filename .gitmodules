@@ -1,0 +1,552 @@
+[submodule "abp"]
+	path = abp
+	url = scm.gforge.inria.fr:/git/coq-contribs/abp.git
+	branch = v8.2
+[submodule "additions"]
+	path = additions
+	url = scm.gforge.inria.fr:/git/coq-contribs/additions.git
+	branch = v8.2
+[submodule "ails"]
+	path = ails
+	url = scm.gforge.inria.fr:/git/coq-contribs/ails.git
+	branch = v8.2
+[submodule "algebra"]
+	path = algebra
+	url = scm.gforge.inria.fr:/git/coq-contribs/algebra.git
+	branch = v8.2
+[submodule "amm11262"]
+	path = amm11262
+	url = scm.gforge.inria.fr:/git/coq-contribs/amm11262.git
+	branch = v8.2
+[submodule "angles"]
+	path = angles
+	url = scm.gforge.inria.fr:/git/coq-contribs/angles.git
+	branch = v8.2
+[submodule "area-method"]
+	path = area-method
+	url = scm.gforge.inria.fr:/git/coq-contribs/area-method.git
+	branch = v8.2
+[submodule "atbr"]
+	path = atbr
+	url = scm.gforge.inria.fr:/git/coq-contribs/atbr.git
+	branch = v8.2
+[submodule "automata"]
+	path = automata
+	url = scm.gforge.inria.fr:/git/coq-contribs/automata.git
+	branch = v8.2
+[submodule "axiomatic-abp"]
+	path = axiomatic-abp
+	url = scm.gforge.inria.fr:/git/coq-contribs/axiomatic-abp.git
+	branch = v8.2
+[submodule "bdds"]
+	path = bdds
+	url = scm.gforge.inria.fr:/git/coq-contribs/bdds.git
+	branch = v8.2
+[submodule "bertrand"]
+	path = bertrand
+	url = scm.gforge.inria.fr:/git/coq-contribs/bertrand.git
+	branch = v8.2
+[submodule "buchberger"]
+	path = buchberger
+	url = scm.gforge.inria.fr:/git/coq-contribs/buchberger.git
+	branch = v8.2
+[submodule "canon-bdds"]
+	path = canon-bdds
+	url = scm.gforge.inria.fr:/git/coq-contribs/canon-bdds.git
+	branch = v8.2
+[submodule "cantor"]
+	path = cantor
+	url = scm.gforge.inria.fr:/git/coq-contribs/cantor.git
+	branch = v8.2
+[submodule "cats-in-zfc"]
+	path = cats-in-zfc
+	url = scm.gforge.inria.fr:/git/coq-contribs/cats-in-zfc.git
+	branch = v8.2
+[submodule "ccs"]
+	path = ccs
+	url = scm.gforge.inria.fr:/git/coq-contribs/ccs.git
+	branch = v8.2
+[submodule "checker"]
+	path = checker
+	url = scm.gforge.inria.fr:/git/coq-contribs/checker.git
+	branch = v8.2
+[submodule "chinese"]
+	path = chinese
+	url = scm.gforge.inria.fr:/git/coq-contribs/chinese.git
+	branch = v8.2
+[submodule "circuits"]
+	path = circuits
+	url = scm.gforge.inria.fr:/git/coq-contribs/circuits.git
+	branch = v8.2
+[submodule "coalgebras"]
+	path = coalgebras
+	url = scm.gforge.inria.fr:/git/coq-contribs/coalgebras.git
+	branch = v8.2
+[submodule "coinductive-examples"]
+	path = coinductive-examples
+	url = scm.gforge.inria.fr:/git/coq-contribs/coinductive-examples.git
+	branch = v8.2
+[submodule "coinductive-reals"]
+	path = coinductive-reals
+	url = scm.gforge.inria.fr:/git/coq-contribs/coinductive-reals.git
+	branch = v8.2
+[submodule "compcert"]
+	path = compcert
+	url = scm.gforge.inria.fr:/git/coq-contribs/compcert.git
+	branch = v8.2
+[submodule "concat"]
+	path = concat
+	url = scm.gforge.inria.fr:/git/coq-contribs/concat.git
+	branch = v8.2
+[submodule "constructive-geometry"]
+	path = constructive-geometry
+	url = scm.gforge.inria.fr:/git/coq-contribs/constructive-geometry.git
+	branch = v8.2
+[submodule "continuations"]
+	path = continuations
+	url = scm.gforge.inria.fr:/git/coq-contribs/continuations.git
+	branch = v8.2
+[submodule "coq-in-coq"]
+	path = coq-in-coq
+	url = scm.gforge.inria.fr:/git/coq-contribs/coq-in-coq.git
+	branch = v8.2
+[submodule "coqoban"]
+	path = coqoban
+	url = scm.gforge.inria.fr:/git/coq-contribs/coqoban.git
+	branch = v8.2
+[submodule "corn"]
+	path = corn
+	url = scm.gforge.inria.fr:/git/coq-contribs/corn.git
+	branch = v8.2
+[submodule "cours-de-coq"]
+	path = cours-de-coq
+	url = scm.gforge.inria.fr:/git/coq-contribs/cours-de-coq.git
+	branch = v8.2
+[submodule "ctltctl"]
+	path = ctltctl
+	url = scm.gforge.inria.fr:/git/coq-contribs/ctltctl.git
+	branch = v8.2
+[submodule "demos"]
+	path = demos
+	url = scm.gforge.inria.fr:/git/coq-contribs/demos.git
+	branch = v8.2
+[submodule "descente-infinie"]
+	path = descente-infinie
+	url = scm.gforge.inria.fr:/git/coq-contribs/descente-infinie.git
+	branch = v8.2
+[submodule "dictionaries"]
+	path = dictionaries
+	url = scm.gforge.inria.fr:/git/coq-contribs/dictionaries.git
+	branch = v8.2
+[submodule "distributed-reference-counting"]
+	path = distributed-reference-counting
+	url = scm.gforge.inria.fr:/git/coq-contribs/distributed-reference-counting.git
+	branch = v8.2
+[submodule "domain-theory"]
+	path = domain-theory
+	url = scm.gforge.inria.fr:/git/coq-contribs/domain-theory.git
+	branch = v8.2
+[submodule "euler-formula"]
+	path = euler-formula
+	url = scm.gforge.inria.fr:/git/coq-contribs/euler-formula.git
+	branch = v8.2
+[submodule "exact-real-arithmetic"]
+	path = exact-real-arithmetic
+	url = scm.gforge.inria.fr:/git/coq-contribs/exact-real-arithmetic.git
+	branch = v8.2
+[submodule "exceptions"]
+	path = exceptions
+	url = scm.gforge.inria.fr:/git/coq-contribs/exceptions.git
+	branch = v8.2
+[submodule "fairisle"]
+	path = fairisle
+	url = scm.gforge.inria.fr:/git/coq-contribs/fairisle.git
+	branch = v8.2
+[submodule "fermat4"]
+	path = fermat4
+	url = scm.gforge.inria.fr:/git/coq-contribs/fermat4.git
+	branch = v8.2
+[submodule "firing-squad"]
+	path = firing-squad
+	url = scm.gforge.inria.fr:/git/coq-contribs/firing-squad.git
+	branch = v8.2
+[submodule "float"]
+	path = float
+	url = scm.gforge.inria.fr:/git/coq-contribs/float.git
+	branch = v8.2
+[submodule "founify"]
+	path = founify
+	url = scm.gforge.inria.fr:/git/coq-contribs/founify.git
+	branch = v8.2
+[submodule "fsets"]
+	path = fsets
+	url = scm.gforge.inria.fr:/git/coq-contribs/fsets.git
+	branch = v8.2
+[submodule "fssec-model"]
+	path = fssec-model
+	url = scm.gforge.inria.fr:/git/coq-contribs/fssec-model.git
+	branch = v8.2
+[submodule "functions-in-zfc"]
+	path = functions-in-zfc
+	url = scm.gforge.inria.fr:/git/coq-contribs/functions-in-zfc.git
+	branch = v8.2
+[submodule "fundamental-arithmetics"]
+	path = fundamental-arithmetics
+	url = scm.gforge.inria.fr:/git/coq-contribs/fundamental-arithmetics.git
+	branch = v8.2
+[submodule "gc"]
+	path = gc
+	url = scm.gforge.inria.fr:/git/coq-contribs/gc.git
+	branch = v8.2
+[submodule "goedel"]
+	path = goedel
+	url = scm.gforge.inria.fr:/git/coq-contribs/goedel.git
+	branch = v8.2
+[submodule "graph-basics"]
+	path = graph-basics
+	url = scm.gforge.inria.fr:/git/coq-contribs/graph-basics.git
+	branch = v8.2
+[submodule "graphs"]
+	path = graphs
+	url = scm.gforge.inria.fr:/git/coq-contribs/graphs.git
+	branch = v8.2
+[submodule "groups"]
+	path = groups
+	url = scm.gforge.inria.fr:/git/coq-contribs/groups.git
+	branch = v8.2
+[submodule "group-theory"]
+	path = group-theory
+	url = scm.gforge.inria.fr:/git/coq-contribs/group-theory.git
+	branch = v8.2
+[submodule "hardware"]
+	path = hardware
+	url = scm.gforge.inria.fr:/git/coq-contribs/hardware.git
+	branch = v8.2
+[submodule "hedges"]
+	path = hedges
+	url = scm.gforge.inria.fr:/git/coq-contribs/hedges.git
+	branch = v8.2
+[submodule "high-school-geometry"]
+	path = high-school-geometry
+	url = scm.gforge.inria.fr:/git/coq-contribs/high-school-geometry.git
+	branch = v8.2
+[submodule "higman-cf"]
+	path = higman-cf
+	url = scm.gforge.inria.fr:/git/coq-contribs/higman-cf.git
+	branch = v8.2
+[submodule "higman-nw"]
+	path = higman-nw
+	url = scm.gforge.inria.fr:/git/coq-contribs/higman-nw.git
+	branch = v8.2
+[submodule "higman-s"]
+	path = higman-s
+	url = scm.gforge.inria.fr:/git/coq-contribs/higman-s.git
+	branch = v8.2
+[submodule "historical-examples"]
+	path = historical-examples
+	url = scm.gforge.inria.fr:/git/coq-contribs/historical-examples.git
+	branch = v8.2
+[submodule "hoare-tut"]
+	path = hoare-tut
+	url = scm.gforge.inria.fr:/git/coq-contribs/hoare-tut.git
+	branch = v8.2
+[submodule "huffman"]
+	path = huffman
+	url = scm.gforge.inria.fr:/git/coq-contribs/huffman.git
+	branch = v8.2
+[submodule "icharate"]
+	path = icharate
+	url = scm.gforge.inria.fr:/git/coq-contribs/icharate.git
+	branch = v8.2
+[submodule "idxassoc"]
+	path = idxassoc
+	url = scm.gforge.inria.fr:/git/coq-contribs/idxassoc.git
+	branch = v8.2
+[submodule "ieee754"]
+	path = ieee754
+	url = scm.gforge.inria.fr:/git/coq-contribs/ieee754.git
+	branch = v8.2
+[submodule "int-map"]
+	path = int-map
+	url = scm.gforge.inria.fr:/git/coq-contribs/int-map.git
+	branch = v8.2
+[submodule "ipc"]
+	path = ipc
+	url = scm.gforge.inria.fr:/git/coq-contribs/ipc.git
+	branch = v8.2
+[submodule "izf"]
+	path = izf
+	url = scm.gforge.inria.fr:/git/coq-contribs/izf.git
+	branch = v8.2
+[submodule "jordan-curve-theorem"]
+	path = jordan-curve-theorem
+	url = scm.gforge.inria.fr:/git/coq-contribs/jordan-curve-theorem.git
+	branch = v8.2
+[submodule "karatsuba"]
+	path = karatsuba
+	url = scm.gforge.inria.fr:/git/coq-contribs/karatsuba.git
+	branch = v8.2
+[submodule "kildall"]
+	path = kildall
+	url = scm.gforge.inria.fr:/git/coq-contribs/kildall.git
+	branch = v8.2
+[submodule "lambda"]
+	path = lambda
+	url = scm.gforge.inria.fr:/git/coq-contribs/lambda.git
+	branch = v8.2
+[submodule "lambek"]
+	path = lambek
+	url = scm.gforge.inria.fr:/git/coq-contribs/lambek.git
+	branch = v8.2
+[submodule "lazy-pcf"]
+	path = lazy-pcf
+	url = scm.gforge.inria.fr:/git/coq-contribs/lazy-pcf.git
+	branch = v8.2
+[submodule "lc"]
+	path = lc
+	url = scm.gforge.inria.fr:/git/coq-contribs/lc.git
+	branch = v8.2
+[submodule "lin-alg"]
+	path = lin-alg
+	url = scm.gforge.inria.fr:/git/coq-contribs/lin-alg.git
+	branch = v8.2
+[submodule "ltl"]
+	path = ltl
+	url = scm.gforge.inria.fr:/git/coq-contribs/ltl.git
+	branch = v8.2
+[submodule "maple-mode"]
+	path = maple-mode
+	url = scm.gforge.inria.fr:/git/coq-contribs/maple-mode.git
+	branch = v8.2
+[submodule "markov"]
+	path = markov
+	url = scm.gforge.inria.fr:/git/coq-contribs/markov.git
+	branch = v8.2
+[submodule "maths"]
+	path = maths
+	url = scm.gforge.inria.fr:/git/coq-contribs/maths.git
+	branch = v8.2
+[submodule "matrices"]
+	path = matrices
+	url = scm.gforge.inria.fr:/git/coq-contribs/matrices.git
+	branch = v8.2
+[submodule "micromega"]
+	path = micromega
+	url = scm.gforge.inria.fr:/git/coq-contribs/micromega.git
+	branch = v8.2
+[submodule "minic"]
+	path = minic
+	url = scm.gforge.inria.fr:/git/coq-contribs/minic.git
+	branch = v8.2
+[submodule "mini-compiler"]
+	path = mini-compiler
+	url = scm.gforge.inria.fr:/git/coq-contribs/mini-compiler.git
+	branch = v8.2
+[submodule "miniml"]
+	path = miniml
+	url = scm.gforge.inria.fr:/git/coq-contribs/miniml.git
+	branch = v8.2
+[submodule "mod-red"]
+	path = mod-red
+	url = scm.gforge.inria.fr:/git/coq-contribs/mod-red.git
+	branch = v8.2
+[submodule "multiplier"]
+	path = multiplier
+	url = scm.gforge.inria.fr:/git/coq-contribs/multiplier.git
+	branch = v8.2
+[submodule "mutual-exclusion"]
+	path = mutual-exclusion
+	url = scm.gforge.inria.fr:/git/coq-contribs/mutual-exclusion.git
+	branch = v8.2
+[submodule "orb-stab"]
+	path = orb-stab
+	url = scm.gforge.inria.fr:/git/coq-contribs/orb-stab.git
+	branch = v8.2
+[submodule "otway-rees"]
+	path = otway-rees
+	url = scm.gforge.inria.fr:/git/coq-contribs/otway-rees.git
+	branch = v8.2
+[submodule "paradoxes"]
+	path = paradoxes
+	url = scm.gforge.inria.fr:/git/coq-contribs/paradoxes.git
+	branch = v8.2
+[submodule "param-pi"]
+	path = param-pi
+	url = scm.gforge.inria.fr:/git/coq-contribs/param-pi.git
+	branch = v8.2
+[submodule "pautomata"]
+	path = pautomata
+	url = scm.gforge.inria.fr:/git/coq-contribs/pautomata.git
+	branch = v8.2
+[submodule "persistent-union-find"]
+	path = persistent-union-find
+	url = scm.gforge.inria.fr:/git/coq-contribs/persistent-union-find.git
+	branch = v8.2
+[submodule "pi-calc"]
+	path = pi-calc
+	url = scm.gforge.inria.fr:/git/coq-contribs/pi-calc.git
+	branch = v8.2
+[submodule "pocklington"]
+	path = pocklington
+	url = scm.gforge.inria.fr:/git/coq-contribs/pocklington.git
+	branch = v8.2
+[submodule "presburger"]
+	path = presburger
+	url = scm.gforge.inria.fr:/git/coq-contribs/presburger.git
+	branch = v8.2
+[submodule "prfx"]
+	path = prfx
+	url = scm.gforge.inria.fr:/git/coq-contribs/prfx.git
+	branch = v8.2
+[submodule "projective-geometry"]
+	path = projective-geometry
+	url = scm.gforge.inria.fr:/git/coq-contribs/projective-geometry.git
+	branch = v8.2
+[submodule "pts"]
+	path = pts
+	url = scm.gforge.inria.fr:/git/coq-contribs/pts.git
+	branch = v8.2
+[submodule "qarith"]
+	path = qarith
+	url = scm.gforge.inria.fr:/git/coq-contribs/qarith.git
+	branch = v8.2
+[submodule "qarith-stern-brocot"]
+	path = qarith-stern-brocot
+	url = scm.gforge.inria.fr:/git/coq-contribs/qarith-stern-brocot.git
+	branch = v8.2
+[submodule "quicksort-complexity"]
+	path = quicksort-complexity
+	url = scm.gforge.inria.fr:/git/coq-contribs/quicksort-complexity.git
+	branch = v8.2
+[submodule "railroad-crossing"]
+	path = railroad-crossing
+	url = scm.gforge.inria.fr:/git/coq-contribs/railroad-crossing.git
+	branch = v8.2
+[submodule "ramsey"]
+	path = ramsey
+	url = scm.gforge.inria.fr:/git/coq-contribs/ramsey.git
+	branch = v8.2
+[submodule "random"]
+	path = random
+	url = scm.gforge.inria.fr:/git/coq-contribs/random.git
+	branch = v8.2
+[submodule "rational"]
+	path = rational
+	url = scm.gforge.inria.fr:/git/coq-contribs/rational.git
+	branch = v8.2
+[submodule "recursive-definition"]
+	path = recursive-definition
+	url = scm.gforge.inria.fr:/git/coq-contribs/recursive-definition.git
+	branch = v8.2
+[submodule "reflexive-first-order"]
+	path = reflexive-first-order
+	url = scm.gforge.inria.fr:/git/coq-contribs/reflexive-first-order.git
+	branch = v8.2
+[submodule "rem"]
+	path = rem
+	url = scm.gforge.inria.fr:/git/coq-contribs/rem.git
+	branch = v8.2
+[submodule "rsa"]
+	path = rsa
+	url = scm.gforge.inria.fr:/git/coq-contribs/rsa.git
+	branch = v8.2
+[submodule "ruler-compass-geometry"]
+	path = ruler-compass-geometry
+	url = scm.gforge.inria.fr:/git/coq-contribs/ruler-compass-geometry.git
+	branch = v8.2
+[submodule "schroeder"]
+	path = schroeder
+	url = scm.gforge.inria.fr:/git/coq-contribs/schroeder.git
+	branch = v8.2
+[submodule "search-trees"]
+	path = search-trees
+	url = scm.gforge.inria.fr:/git/coq-contribs/search-trees.git
+	branch = v8.2
+[submodule "semantics"]
+	path = semantics
+	url = scm.gforge.inria.fr:/git/coq-contribs/semantics.git
+	branch = v8.2
+[submodule "shuffle"]
+	path = shuffle
+	url = scm.gforge.inria.fr:/git/coq-contribs/shuffle.git
+	branch = v8.2
+[submodule "smc"]
+	path = smc
+	url = scm.gforge.inria.fr:/git/coq-contribs/smc.git
+	branch = v8.2
+[submodule "square-matrices"]
+	path = square-matrices
+	url = scm.gforge.inria.fr:/git/coq-contribs/square-matrices.git
+	branch = v8.2
+[submodule "ssreflect"]
+	path = ssreflect
+	url = scm.gforge.inria.fr:/git/coq-contribs/ssreflect.git
+	branch = v8.2
+[submodule "stalmarck"]
+	path = stalmarck
+	url = scm.gforge.inria.fr:/git/coq-contribs/stalmarck.git
+	branch = v8.2
+[submodule "streams"]
+	path = streams
+	url = scm.gforge.inria.fr:/git/coq-contribs/streams.git
+	branch = v8.2
+[submodule "string"]
+	path = string
+	url = scm.gforge.inria.fr:/git/coq-contribs/string.git
+	branch = v8.2
+[submodule "subst"]
+	path = subst
+	url = scm.gforge.inria.fr:/git/coq-contribs/subst.git
+	branch = v8.2
+[submodule "sudoku"]
+	path = sudoku
+	url = scm.gforge.inria.fr:/git/coq-contribs/sudoku.git
+	branch = v8.2
+[submodule "sum-of-two-square"]
+	path = sum-of-two-square
+	url = scm.gforge.inria.fr:/git/coq-contribs/sum-of-two-square.git
+	branch = v8.2
+[submodule "tait"]
+	path = tait
+	url = scm.gforge.inria.fr:/git/coq-contribs/tait.git
+	branch = v8.2
+[submodule "tarski-geometry"]
+	path = tarski-geometry
+	url = scm.gforge.inria.fr:/git/coq-contribs/tarski-geometry.git
+	branch = v8.2
+[submodule "three-gap"]
+	path = three-gap
+	url = scm.gforge.inria.fr:/git/coq-contribs/three-gap.git
+	branch = v8.2
+[submodule "tortoise-hare-algorithm"]
+	path = tortoise-hare-algorithm
+	url = scm.gforge.inria.fr:/git/coq-contribs/tortoise-hare-algorithm.git
+	branch = v8.2
+[submodule "tree-automata"]
+	path = tree-automata
+	url = scm.gforge.inria.fr:/git/coq-contribs/tree-automata.git
+	branch = v8.2
+[submodule "tree-diameter"]
+	path = tree-diameter
+	url = scm.gforge.inria.fr:/git/coq-contribs/tree-diameter.git
+	branch = v8.2
+[submodule "weak-up-to"]
+	path = weak-up-to
+	url = scm.gforge.inria.fr:/git/coq-contribs/weak-up-to.git
+	branch = v8.2
+[submodule "zchinese"]
+	path = zchinese
+	url = scm.gforge.inria.fr:/git/coq-contribs/zchinese.git
+	branch = v8.2
+[submodule "zfc"]
+	path = zfc
+	url = scm.gforge.inria.fr:/git/coq-contribs/zfc.git
+	branch = v8.2
+[submodule "zf"]
+	path = zf
+	url = scm.gforge.inria.fr:/git/coq-contribs/zf.git
+	branch = v8.2
+[submodule "zsearch-trees"]
+	path = zsearch-trees
+	url = scm.gforge.inria.fr:/git/coq-contribs/zsearch-trees.git
+	branch = v8.2
