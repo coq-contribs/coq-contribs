@@ -658,3 +658,6 @@
 	path = zsearch-trees
 	url = scm.gforge.inria.fr:/git/coq-contribs/zsearch-trees.git
 	branch = trunk
+[submodule "lemma-overloading"]
+	path = lemma-overloading
+	url = scm.gforge.inria.fr:/git/coq-contribs/lemma-overloading.git
