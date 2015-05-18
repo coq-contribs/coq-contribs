@@ -1,0 +1,18 @@
+# Coq-contribs
+
+This is a git repository centralizing the previous Coq contribution system by
+means of git submodules. The old system consisted of an SVN repository
+containing all contribs in the same place, while now they are stored in their
+own git repository.
+
+To install:
+
+* Clone this repository.
+* Initialize the submodules.
+```
+git submodule init
+```
+* Update all contribs in one command.
+```
+git submodule update --remote
+```
