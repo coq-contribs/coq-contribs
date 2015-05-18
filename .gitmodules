@@ -366,9 +366,9 @@
 	path = legacy-ring
 	url = scm.gforge.inria.fr:/git/coq-contribs/legacy-ring.git
 	branch = trunk
-[submodule "lemma-over-loading"]
-	path = lemma-over-loading
-	url = scm.gforge.inria.fr:/git/coq-contribs/lemma-over-loading.git
+[submodule "lemma-overloading"]
+	path = lemma-overloading
+	url = scm.gforge.inria.fr:/git/coq-contribs/lemma-overloading.git
 	branch = trunk
 [submodule "lesniewski-mereology"]
 	path = lesniewski-mereology
@@ -658,6 +658,4 @@
 	path = zsearch-trees
 	url = scm.gforge.inria.fr:/git/coq-contribs/zsearch-trees.git
 	branch = trunk
-[submodule "lemma-overloading"]
-	path = lemma-overloading
-	url = scm.gforge.inria.fr:/git/coq-contribs/lemma-overloading.git
+
