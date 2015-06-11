@@ -659,3 +659,9 @@
 	url = scm.gforge.inria.fr:/git/coq-contribs/zsearch-trees.git
 	branch = trunk
 
+[submodule "propcalc"]
+	path = propcalc
+	url = scm.gforge.inria.fr:/git/coq-contribs/propcalc.git
+[submodule "traversable-fincontainer"]
+	path = traversable-fincontainer
+	url = scm.gforge.inria.fr:/git/coq-contribs/traversable-fincontainer.git
