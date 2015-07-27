@@ -665,3 +665,7 @@
 [submodule "traversable-fincontainer"]
 	path = traversable-fincontainer
 	url = scm.gforge.inria.fr:/git/coq-contribs/traversable-fincontainer.git
+[submodule "intuitionistic-nuprl"]
+	path = intuitionistic-nuprl
+	url = scm.gforge.inria.fr:/git/coq-contribs/intuitionistic-nuprl.git
+	branch = trunk
