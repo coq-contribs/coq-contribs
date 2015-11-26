@@ -638,3 +638,7 @@
 	path = zsearch-trees
 	url = scm.gforge.inria.fr:/git/coq-contribs/zsearch-trees.git
 	branch = v8.4
+[submodule "mmultisets"]
+	path = mmultisets
+	url = scm.gforge.inria.fr:/git/coq-contribs/mmultisets.git
+	branch = v8.4
