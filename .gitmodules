@@ -1,676 +1,676 @@
 [submodule "aac-tactics"]
 	path = aac-tactics
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/aac-tactics.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/aac-tactics.git
 	branch = trunk
 [submodule "abp"]
 	path = abp
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/abp.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/abp.git
 	branch = trunk
 [submodule "additions"]
 	path = additions
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/additions.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/additions.git
 	branch = trunk
 [submodule "ails"]
 	path = ails
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/ails.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/ails.git
 	branch = trunk
 [submodule "algebra"]
 	path = algebra
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/algebra.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/algebra.git
 	branch = trunk
 [submodule "amm11262"]
 	path = amm11262
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/amm11262.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/amm11262.git
 	branch = trunk
 [submodule "angles"]
 	path = angles
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/angles.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/angles.git
 	branch = trunk
 [submodule "area-method"]
 	path = area-method
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/area-method.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/area-method.git
 	branch = trunk
 [submodule "atbr"]
 	path = atbr
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/atbr.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/atbr.git
 	branch = trunk
 [submodule "automata"]
 	path = automata
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/automata.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/automata.git
 	branch = trunk
 [submodule "axiomatic-abp"]
 	path = axiomatic-abp
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/axiomatic-abp.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/axiomatic-abp.git
 	branch = trunk
 [submodule "bdds"]
 	path = bdds
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/bdds.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/bdds.git
 	branch = trunk
 [submodule "bertrand"]
 	path = bertrand
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/bertrand.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/bertrand.git
 	branch = trunk
 [submodule "buchberger"]
 	path = buchberger
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/buchberger.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/buchberger.git
 	branch = trunk
 [submodule "canon-bdds"]
 	path = canon-bdds
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/canon-bdds.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/canon-bdds.git
 	branch = trunk
 [submodule "cantor"]
 	path = cantor
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/cantor.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/cantor.git
 	branch = trunk
 [submodule "cats-in-zfc"]
 	path = cats-in-zfc
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/cats-in-zfc.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/cats-in-zfc.git
 	branch = trunk
 [submodule "ccs"]
 	path = ccs
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/ccs.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/ccs.git
 	branch = trunk
 [submodule "cfgv"]
 	path = cfgv
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/cfgv.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/cfgv.git
 	branch = trunk
 [submodule "checker"]
 	path = checker
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/checker.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/checker.git
 	branch = trunk
 [submodule "chinese"]
 	path = chinese
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/chinese.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/chinese.git
 	branch = trunk
 [submodule "circuits"]
 	path = circuits
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/circuits.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/circuits.git
 	branch = trunk
 [submodule "classical-realizability"]
 	path = classical-realizability
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/classical-realizability.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/classical-realizability.git
 	branch = trunk
 [submodule "coalgebras"]
 	path = coalgebras
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/coalgebras.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/coalgebras.git
 	branch = trunk
 [submodule "coinductive-examples"]
 	path = coinductive-examples
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/coinductive-examples.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/coinductive-examples.git
 	branch = trunk
 [submodule "coinductive-reals"]
 	path = coinductive-reals
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/coinductive-reals.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/coinductive-reals.git
 	branch = trunk
 [submodule "compcert"]
 	path = compcert
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/compcert.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/compcert.git
 	branch = trunk
 [submodule "concat"]
 	path = concat
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/concat.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/concat.git
 	branch = trunk
 [submodule "constructive-geometry"]
 	path = constructive-geometry
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/constructive-geometry.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/constructive-geometry.git
 	branch = trunk
 [submodule "containers"]
 	path = containers
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/containers.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/containers.git
 	branch = trunk
 [submodule "continuations"]
 	path = continuations
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/continuations.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/continuations.git
 	branch = trunk
 [submodule "coq-in-coq"]
 	path = coq-in-coq
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/coq-in-coq.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/coq-in-coq.git
 	branch = trunk
 [submodule "coqoban"]
 	path = coqoban
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/coqoban.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/coqoban.git
 	branch = trunk
 [submodule "corn"]
 	path = corn
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/corn.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/corn.git
 	branch = trunk
 [submodule "counting"]
 	path = counting
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/counting.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/counting.git
 	branch = trunk
 [submodule "cours-de-coq"]
 	path = cours-de-coq
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/cours-de-coq.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/cours-de-coq.git
 	branch = trunk
 [submodule "ctltctl"]
 	path = ctltctl
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/ctltctl.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/ctltctl.git
 	branch = trunk
 [submodule "dblib"]
 	path = dblib
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/dblib.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/dblib.git
 	branch = trunk
 [submodule "demos"]
 	path = demos
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/demos.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/demos.git
 	branch = trunk
 [submodule "dep-map"]
 	path = dep-map
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/dep-map.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/dep-map.git
 	branch = trunk
 [submodule "descente-infinie"]
 	path = descente-infinie
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/descente-infinie.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/descente-infinie.git
 	branch = trunk
 [submodule "dictionaries"]
 	path = dictionaries
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/dictionaries.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/dictionaries.git
 	branch = trunk
 [submodule "distributed-reference-counting"]
 	path = distributed-reference-counting
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/distributed-reference-counting.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/distributed-reference-counting.git
 	branch = trunk
 [submodule "domain-theory"]
 	path = domain-theory
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/domain-theory.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/domain-theory.git
 	branch = trunk
 [submodule "ergo"]
 	path = ergo
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/ergo.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/ergo.git
 	branch = trunk
 [submodule "euclidean-geometry"]
 	path = euclidean-geometry
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/euclidean-geometry.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/euclidean-geometry.git
 	branch = trunk
 [submodule "euler-formula"]
 	path = euler-formula
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/euler-formula.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/euler-formula.git
 	branch = trunk
 [submodule "exact-real-arithmetic"]
 	path = exact-real-arithmetic
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/exact-real-arithmetic.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/exact-real-arithmetic.git
 	branch = trunk
 [submodule "exceptions"]
 	path = exceptions
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/exceptions.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/exceptions.git
 	branch = trunk
 [submodule "fairisle"]
 	path = fairisle
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/fairisle.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/fairisle.git
 	branch = trunk
 [submodule "fermat4"]
 	path = fermat4
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/fermat4.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/fermat4.git
 	branch = trunk
 [submodule "finger-tree"]
 	path = finger-tree
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/finger-tree.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/finger-tree.git
 	branch = trunk
 [submodule "firing-squad"]
 	path = firing-squad
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/firing-squad.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/firing-squad.git
 	branch = trunk
 [submodule "float"]
 	path = float
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/float.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/float.git
 	branch = trunk
 [submodule "founify"]
 	path = founify
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/founify.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/founify.git
 	branch = trunk
 [submodule "free-groups"]
 	path = free-groups
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/free-groups.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/free-groups.git
 	branch = trunk
 [submodule "fsets"]
 	path = fsets
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/fsets.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/fsets.git
 	branch = trunk
 [submodule "fssec-model"]
 	path = fssec-model
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/fssec-model.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/fssec-model.git
 	branch = trunk
 [submodule "functions-in-zfc"]
 	path = functions-in-zfc
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/functions-in-zfc.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/functions-in-zfc.git
 	branch = trunk
 [submodule "fundamental-arithmetics"]
 	path = fundamental-arithmetics
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/fundamental-arithmetics.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/fundamental-arithmetics.git
 	branch = trunk
 [submodule "gc"]
 	path = gc
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/gc.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/gc.git
 	branch = trunk
 [submodule "generic-environments"]
 	path = generic-environments
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/generic-environments.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/generic-environments.git
 	branch = trunk
 [submodule "goedel"]
 	path = goedel
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/goedel.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/goedel.git
 	branch = trunk
 [submodule "graph-basics"]
 	path = graph-basics
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/graph-basics.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/graph-basics.git
 	branch = trunk
 [submodule "graphs"]
 	path = graphs
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/graphs.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/graphs.git
 	branch = trunk
 [submodule "groups"]
 	path = groups
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/groups.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/groups.git
 	branch = trunk
 [submodule "group-theory"]
 	path = group-theory
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/group-theory.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/group-theory.git
 	branch = trunk
 [submodule "hardware"]
 	path = hardware
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/hardware.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/hardware.git
 	branch = trunk
 [submodule "hedges"]
 	path = hedges
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/hedges.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/hedges.git
 	branch = trunk
 [submodule "high-school-geometry"]
 	path = high-school-geometry
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/high-school-geometry.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/high-school-geometry.git
 	branch = trunk
 [submodule "higman-cf"]
 	path = higman-cf
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/higman-cf.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/higman-cf.git
 	branch = trunk
 [submodule "higman-nw"]
 	path = higman-nw
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/higman-nw.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/higman-nw.git
 	branch = trunk
 [submodule "higman-s"]
 	path = higman-s
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/higman-s.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/higman-s.git
 	branch = trunk
 [submodule "historical-examples"]
 	path = historical-examples
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/historical-examples.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/historical-examples.git
 	branch = trunk
 [submodule "hoare-tut"]
 	path = hoare-tut
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/hoare-tut.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/hoare-tut.git
 	branch = trunk
 [submodule "huffman"]
 	path = huffman
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/huffman.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/huffman.git
 	branch = trunk
 [submodule "icharate"]
 	path = icharate
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/icharate.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/icharate.git
 	branch = trunk
 [submodule "idxassoc"]
 	path = idxassoc
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/idxassoc.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/idxassoc.git
 	branch = trunk
 [submodule "ieee754"]
 	path = ieee754
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/ieee754.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/ieee754.git
 	branch = trunk
 [submodule "int-map"]
 	path = int-map
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/int-map.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/int-map.git
 	branch = trunk
 [submodule "ipc"]
 	path = ipc
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/ipc.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/ipc.git
 	branch = trunk
 [submodule "izf"]
 	path = izf
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/izf.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/izf.git
 	branch = trunk
 [submodule "jordan-curve-theorem"]
 	path = jordan-curve-theorem
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/jordan-curve-theorem.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/jordan-curve-theorem.git
 	branch = trunk
 [submodule "jprover"]
 	path = jprover
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/jprover.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/jprover.git
 	branch = trunk
 [submodule "karatsuba"]
 	path = karatsuba
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/karatsuba.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/karatsuba.git
 	branch = trunk
 [submodule "kildall"]
 	path = kildall
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/kildall.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/kildall.git
 	branch = trunk
 [submodule "lambda"]
 	path = lambda
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/lambda.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/lambda.git
 	branch = trunk
 [submodule "lambek"]
 	path = lambek
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/lambek.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/lambek.git
 	branch = trunk
 [submodule "lazy-pcf"]
 	path = lazy-pcf
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/lazy-pcf.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/lazy-pcf.git
 	branch = trunk
 [submodule "lc"]
 	path = lc
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/lc.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/lc.git
 	branch = trunk
 [submodule "legacy-field"]
 	path = legacy-field
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/legacy-field.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/legacy-field.git
 	branch = trunk
 [submodule "legacy-ring"]
 	path = legacy-ring
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/legacy-ring.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/legacy-ring.git
 	branch = trunk
 [submodule "lemma-overloading"]
 	path = lemma-overloading
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/lemma-overloading.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/lemma-overloading.git
 	branch = trunk
 [submodule "lesniewski-mereology"]
 	path = lesniewski-mereology
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/lesniewski-mereology.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/lesniewski-mereology.git
 	branch = trunk
 [submodule "lin-alg"]
 	path = lin-alg
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/lin-alg.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/lin-alg.git
 	branch = trunk
 [submodule "ltl"]
 	path = ltl
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/ltl.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/ltl.git
 	branch = trunk
 [submodule "maple-mode"]
 	path = maple-mode
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/maple-mode.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/maple-mode.git
 	branch = trunk
 [submodule "markov"]
 	path = markov
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/markov.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/markov.git
 	branch = trunk
 [submodule "math-classes"]
 	path = math-classes
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/math-classes.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/math-classes.git
 	branch = trunk
 [submodule "maths"]
 	path = maths
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/maths.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/maths.git
 	branch = trunk
 [submodule "matrices"]
 	path = matrices
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/matrices.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/matrices.git
 	branch = trunk
 [submodule "micromega"]
 	path = micromega
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/micromega.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/micromega.git
 	branch = trunk
 [submodule "minic"]
 	path = minic
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/minic.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/minic.git
 	branch = trunk
 [submodule "mini-compiler"]
 	path = mini-compiler
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/mini-compiler.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/mini-compiler.git
 	branch = trunk
 [submodule "miniml"]
 	path = miniml
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/miniml.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/miniml.git
 	branch = trunk
 [submodule "mod-red"]
 	path = mod-red
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/mod-red.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/mod-red.git
 	branch = trunk
 [submodule "multiplier"]
 	path = multiplier
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/multiplier.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/multiplier.git
 	branch = trunk
 [submodule "mutual-exclusion"]
 	path = mutual-exclusion
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/mutual-exclusion.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/mutual-exclusion.git
 	branch = trunk
 [submodule "nfix"]
 	path = nfix
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/nfix.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/nfix.git
 	branch = trunk
 [submodule "orb-stab"]
 	path = orb-stab
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/orb-stab.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/orb-stab.git
 	branch = trunk
 [submodule "otway-rees"]
 	path = otway-rees
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/otway-rees.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/otway-rees.git
 	branch = trunk
 [submodule "paco"]
 	path = paco
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/paco.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/paco.git
 	branch = trunk
 [submodule "paradoxes"]
 	path = paradoxes
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/paradoxes.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/paradoxes.git
 	branch = trunk
 [submodule "param-pi"]
 	path = param-pi
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/param-pi.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/param-pi.git
 	branch = trunk
 [submodule "pautomata"]
 	path = pautomata
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/pautomata.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/pautomata.git
 	branch = trunk
 [submodule "persistent-union-find"]
 	path = persistent-union-find
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/persistent-union-find.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/persistent-union-find.git
 	branch = trunk
 [submodule "pi-calc"]
 	path = pi-calc
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/pi-calc.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/pi-calc.git
 	branch = trunk
 [submodule "pocklington"]
 	path = pocklington
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/pocklington.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/pocklington.git
 	branch = trunk
 [submodule "presburger"]
 	path = presburger
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/presburger.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/presburger.git
 	branch = trunk
 [submodule "prfx"]
 	path = prfx
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/prfx.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/prfx.git
 	branch = trunk
 [submodule "projective-geometry"]
 	path = projective-geometry
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/projective-geometry.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/projective-geometry.git
 	branch = trunk
 [submodule "ptsatr"]
 	path = ptsatr
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/ptsatr.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/ptsatr.git
 	branch = trunk
 [submodule "ptsf"]
 	path = ptsf
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/ptsf.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/ptsf.git
 	branch = trunk
 [submodule "pts"]
 	path = pts
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/pts.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/pts.git
 	branch = trunk
 [submodule "qarith"]
 	path = qarith
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/qarith.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/qarith.git
 	branch = trunk
 [submodule "qarith-stern-brocot"]
 	path = qarith-stern-brocot
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/qarith-stern-brocot.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/qarith-stern-brocot.git
 	branch = trunk
 [submodule "quicksort-complexity"]
 	path = quicksort-complexity
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/quicksort-complexity.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/quicksort-complexity.git
 	branch = trunk
 [submodule "railroad-crossing"]
 	path = railroad-crossing
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/railroad-crossing.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/railroad-crossing.git
 	branch = trunk
 [submodule "ramsey"]
 	path = ramsey
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/ramsey.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/ramsey.git
 	branch = trunk
 [submodule "random"]
 	path = random
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/random.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/random.git
 	branch = trunk
 [submodule "rational"]
 	path = rational
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/rational.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/rational.git
 	branch = trunk
 [submodule "recursive-definition"]
 	path = recursive-definition
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/recursive-definition.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/recursive-definition.git
 	branch = trunk
 [submodule "reflexive-first-order"]
 	path = reflexive-first-order
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/reflexive-first-order.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/reflexive-first-order.git
 	branch = trunk
 [submodule "regexp"]
 	path = regexp
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/regexp.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/regexp.git
 	branch = trunk
 [submodule "relation-algebra"]
 	path = relation-algebra
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/relation-algebra.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/relation-algebra.git
 	branch = trunk
 [submodule "relation-extraction"]
 	path = relation-extraction
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/relation-extraction.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/relation-extraction.git
 	branch = trunk
 [submodule "rem"]
 	path = rem
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/rem.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/rem.git
 	branch = trunk
 [submodule "rsa"]
 	path = rsa
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/rsa.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/rsa.git
 	branch = trunk
 [submodule "ruler-compass-geometry"]
 	path = ruler-compass-geometry
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/ruler-compass-geometry.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/ruler-compass-geometry.git
 	branch = trunk
 [submodule "schroeder"]
 	path = schroeder
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/schroeder.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/schroeder.git
 	branch = trunk
 [submodule "search-trees"]
 	path = search-trees
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/search-trees.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/search-trees.git
 	branch = trunk
 [submodule "semantics"]
 	path = semantics
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/semantics.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/semantics.git
 	branch = trunk
 [submodule "shuffle"]
 	path = shuffle
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/shuffle.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/shuffle.git
 	branch = trunk
 [submodule "smc"]
 	path = smc
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/smc.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/smc.git
 	branch = trunk
 [submodule "square-matrices"]
 	path = square-matrices
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/square-matrices.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/square-matrices.git
 	branch = trunk
 [submodule "ssreflect"]
 	path = ssreflect
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/ssreflect.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/ssreflect.git
 	branch = trunk
 [submodule "stalmarck"]
 	path = stalmarck
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/stalmarck.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/stalmarck.git
 	branch = trunk
 [submodule "streams"]
 	path = streams
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/streams.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/streams.git
 	branch = trunk
 [submodule "string"]
 	path = string
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/string.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/string.git
 	branch = trunk
 [submodule "subst"]
 	path = subst
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/subst.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/subst.git
 	branch = trunk
 [submodule "sudoku"]
 	path = sudoku
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/sudoku.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/sudoku.git
 	branch = trunk
 [submodule "sum-of-two-square"]
 	path = sum-of-two-square
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/sum-of-two-square.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/sum-of-two-square.git
 	branch = trunk
 [submodule "tait"]
 	path = tait
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/tait.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/tait.git
 	branch = trunk
 [submodule "tarski-geometry"]
 	path = tarski-geometry
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/tarski-geometry.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/tarski-geometry.git
 	branch = trunk
 [submodule "three-gap"]
 	path = three-gap
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/three-gap.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/three-gap.git
 	branch = trunk
 [submodule "topology"]
 	path = topology
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/topology.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/topology.git
 	branch = trunk
 [submodule "tortoise-hare-algorithm"]
 	path = tortoise-hare-algorithm
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/tortoise-hare-algorithm.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/tortoise-hare-algorithm.git
 	branch = trunk
 [submodule "tree-automata"]
 	path = tree-automata
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/tree-automata.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/tree-automata.git
 	branch = trunk
 [submodule "tree-diameter"]
 	path = tree-diameter
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/tree-diameter.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/tree-diameter.git
 	branch = trunk
 [submodule "weak-up-to"]
 	path = weak-up-to
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/weak-up-to.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/weak-up-to.git
 	branch = trunk
 [submodule "zchinese"]
 	path = zchinese
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/zchinese.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/zchinese.git
 	branch = trunk
 [submodule "zfc"]
 	path = zfc
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/zfc.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/zfc.git
 	branch = trunk
 [submodule "zf"]
 	path = zf
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/zf.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/zf.git
 	branch = trunk
 [submodule "zorns-lemma"]
 	path = zorns-lemma
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/zorns-lemma.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/zorns-lemma.git
 	branch = trunk
 [submodule "zsearch-trees"]
 	path = zsearch-trees
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/zsearch-trees.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/zsearch-trees.git
 	branch = trunk
 [submodule "propcalc"]
 	path = propcalc
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/propcalc.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/propcalc.git
 	branch = trunk
 [submodule "traversable-fincontainer"]
 	path = traversable-fincontainer
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/traversable-fincontainer.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/traversable-fincontainer.git
 	branch = trunk
 [submodule "intuitionistic-nuprl"]
 	path = intuitionistic-nuprl
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/intuitionistic-nuprl.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/intuitionistic-nuprl.git
 	branch = trunk
 [submodule "mmultisets"]
 	path = mmultisets
-	url = kosik@scm.gforge.inria.fr:/git/coq-contribs/mmultisets.git
+	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/mmultisets.git
 	branch = master
