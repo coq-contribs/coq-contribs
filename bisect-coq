@@ -144,3 +144,4 @@ git bisect bad $BAD_HASH
 # The new launch will act as "command" in the "git bisect run <command>".
 
 git bisect run "$self" --bisect-run
+git bisect reset
