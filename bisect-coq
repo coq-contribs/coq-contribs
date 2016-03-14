@@ -1,0 +1,146 @@
+#! /bin/bash
+
+b="\033[1m"  # ANSI-code for bold
+u="\033[4m"  # ANSI-code for underlined
+n="\033[0m"  # ANSI-code for attributes off
+t="       "  # TAB
+
+program_name=$0
+program_name=${program_name##*/}
+
+# Print some information how this program is supposed to be used.
+print_usage ()
+{
+
+	echo
+	echo -e ${b}SYNOPSIS
+	echo
+	echo -e "$t$b$program_name$n  ${u}COQ_SRC_DIR$n  ${u}COQ_CONTRIB_SRC_DIR$n  ${u}GOOD_HASH$n  ${u}BAD_HASH$n"
+	echo
+	echo -e "${b}DESCRIPTION$n"
+	echo
+	echo -e "${t}Determine (via ${b}git bisect$n) the first Coq commit that break a given coq-contrib"
+	echo
+	echo -e "$t${u}COQ_SRC_DIR$n ... directory holding Coq source code"
+	echo
+	echo -e "$t${u}COQ_CONTRIB_SRC_DIR$n ... directory holding the source-code of a broken coq-contrib"
+	echo
+	echo -e "$t${u}GOOD_HASH$n ... this determines the version of Coq with which coq-contrib still compiles fine."
+	echo
+	echo -e "$t${u}BAD_HASH$n ... this determines the version of Coq with which coq-contrib already fails to compile."
+	echo
+	echo -e "${b}EXAMPLE$n"
+	echo
+	echo -e "$t$program_name ~/git/coq/trunk ~/git/coq-contribs/containers 10e3c8e 3366f05"
+	echo
+}
+
+# This procedure represents the "command" as in "git bisect run <command>"
+bisect_run ()
+{
+	number_of_processors=$(cat /proc/cpuinfo | grep '^processor' | wc -l)
+
+	# compile Coq
+
+	cd "$COQ_SRC_DIR"
+	git clean -dfx
+	./configure -local || exit 125
+	make -j$number_of_processors || exit 125
+
+	# compile coq-contrib
+
+	cd "$COQ_CONTRIB_SRC_DIR"
+	git clean -dfx
+	make -j$number_of_processors
+	exit $?
+}
+
+# Process command-line arguments.
+
+case $# in
+	4)
+		# This branch is take when this script is launched by users.
+
+		export COQ_SRC_DIR="$1"
+		export COQ_CONTRIB_SRC_DIR="$2"
+		GOOD_HASH="$3"
+		BAD_HASH="$4"
+
+		# Check if $COQ_SRC_DIR really may designate a directory holding Coq source code.
+
+		if [ ! -d "$COQ_SRC_DIR" ]; then
+			echo -e "${b}Error$n: \"$COQ_SRC_DIR\" is not a directory"
+			exit 1
+		fi
+
+		if head -n 1 "$COQ_SRC_DIR"/CREDITS 2> /dev/null | grep 'Coq proof assistant' > /dev/null ; then
+			echo -n  # NOP
+		else
+			echo -e "${b}Error$n: \"$COQ_SRC_DIR\" might not contain Coq source code."
+			exit 1
+		fi
+
+		# Check if $COQ_CONTRIB_SRC_DIR really may really designate a directory holding coq-contrib code.
+
+		if [ ! -d "$COQ_CONTRIB_SRC_DIR" ]; then
+			echo -e "${b}Error$n: \"$COQ_CONTRIB_SRC_DIR\" is not a directory"
+			exit 1
+		fi
+
+		if [ ! -f "$COQ_CONTRIB_SRC_DIR"/description ]; then
+			echo -e "${b}Error$n: \"$COQ_CONTRIB_SRC_DIR\" might not contain coq-contrib source code."
+			exit 1
+		fi
+
+		# Check if $GOOD_HASH may be a valid git-hash.
+
+		if echo $GOOD_HASH | grep '^[0-9a-f]\+$' > /dev/null; then
+			echo -n # NOP
+		else
+			echo -e "${b}Error$n: \"$GOOD_HASH\" is not a git-hash."
+			exit 1
+		fi
+
+		# Check if $BAD_HASH may be a valid git-hash.
+
+		if echo $BAD_HASH | grep '^[0-9a-f]\+$' > /dev/null; then
+			echo -n # NOP
+		else
+			echo -e "${b}Error$n: \"$BAD_HASH\" is not a git-hash."
+			exit 1
+		fi
+		;;
+
+	1)
+		# This branch is taken when this script was launched by itself for the second time
+		# (it defines the "command" in the "git bisect run <command>").
+		if [ "$1" = "--bisect-run" ]; then
+			bisect_run
+			exit $?
+		else
+			print_usage
+			exit 1
+		fi
+		;;
+
+	*)
+		print_usage
+		exit 1
+		;;
+esac
+
+# Command-line parameters were checked and they probably make sense. So we continue.
+
+export COQBIN="$COQ_SRC_DIR"/bin/
+ 
+self=$(readlink -f "$0")
+cd "$COQ_SRC_DIR"
+git bisect reset
+git bisect start
+git bisect good $GOOD_HASH
+git bisect bad $BAD_HASH
+
+# Below we launch again this same script with different parameters.
+# The new launch will act as "command" in the "git bisect run <command>".
+
+git bisect run "$self" --bisect-run
