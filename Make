@@ -1,6 +1,4 @@
 -R . Bertrand
-# WHY = "/users/demons/filliatr/bin/linux/why"
-# WHYLIB = "/users/demons/filliatr/local/coq/V7/contrib/why"
 why/WhyArrays.v
 Bertrand.v
 Binomial.v
@@ -24,6 +22,4 @@ Product.v
 Raux.v
 Summation.v
 sTactic.v
-# -custom "$(WHY) Knuth.mlw" "Knuth.mlw" Knuth_why.v
--custom "cat ex1.ml partition.ml ex2.ml > run_partition.ml" "Extraction.vo" run_partition.ml
-
+-extra run_partition.ml "Extraction.vo" "cat ex1.ml partition.ml ex2.ml > run_partition.ml"
