@@ -1,4 +1,5 @@
 -R . Bertrand
+
 why/WhyArrays.v
 Bertrand.v
 Binomial.v
@@ -22,4 +23,5 @@ Product.v
 Raux.v
 Summation.v
 sTactic.v
+
 -extra run_partition.ml "Extraction.vo" "cat ex1.ml partition.ml ex2.ml > run_partition.ml"
