@@ -59,7 +59,7 @@ bisect_run ()
 
 case $# in
 	4)
-		# This branch is take when this script is launched by users.
+		# This branch is taken when this script is launched by users.
 
 		export COQ_SRC_DIR="$1"
 		export COQ_CONTRIB_SRC_DIR="$2"
