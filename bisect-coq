@@ -136,9 +136,9 @@ export COQBIN="$COQ_SRC_DIR"/bin/
 self=$(readlink -f "$0")
 cd "$COQ_SRC_DIR"
 git bisect reset
-git bisect start
-git bisect good $GOOD_HASH
-git bisect bad $BAD_HASH
+git bisect start || exit 1
+git bisect good $GOOD_HASH || exit 1
+git bisect bad $BAD_HASH || exit 1
 
 # Below we launch again this same script with different parameters.
 # The new launch will act as "command" in the "git bisect run <command>".
