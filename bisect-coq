@@ -29,11 +29,9 @@ print_usage ()
 	echo
 	echo -e "$t${u}BAD_HASH$n ... this determines the version of Coq with which coq-contrib already fails to compile."
 	echo
-	echo -e "${b}EXAMPLES$n"
+	echo -e "${b}EXAMPLE$n"
 	echo
-	echo -e "$t$program_name ~/git/coq ~/git/coq-contribs/containers 10e3c8e 3366f05"
-	echo
-	echo -e "$t$program_name ~/git/coq ~/git/coq-contribs/aac-tactics 6caf8b8 b4b9834"
+	echo -e "$t$program_name ~/git/coq/trunk ~/git/coq-contribs/containers 10e3c8e 3366f05"
 	echo
 }
 
@@ -64,9 +62,7 @@ case $# in
 		# This branch is taken when this script is launched by users.
 
 		export COQ_SRC_DIR="$1"
-		COQ_SRC_DIR=$(readlink -f "$COQ_SRC_DIR")
 		export COQ_CONTRIB_SRC_DIR="$2"
-		COQ_CONTRIB_SRC_DIR=$(readlink -f "$COQ_CONTRIB_SRC_DIR")
 		GOOD_HASH="$3"
 		BAD_HASH="$4"
 
