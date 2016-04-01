@@ -1,0 +1,88 @@
+#! /bin/bash
+
+b="\033[1m"  # ANSI-code for bold
+u="\033[4m"  # ANSI-code for underlined
+n="\033[0m"  # ANSI-code for attributes off
+t="       "  # TAB
+
+program_name=$0
+program_name=${program_name##*/}
+
+# Print some information how this program is supposed to be used.
+print_usage ()
+{
+
+        echo
+        echo -e ${b}SYNOPSIS
+        echo
+        echo -e "$t$b$program_name$n  ${u}COQ_SRC_DIR$n"
+        echo
+        echo -e "${b}DESCRIPTION$n"
+        echo
+        echo -e "${t}Go to all submodules and build them."
+        echo
+}
+
+case $# in
+	1)
+		if [ "$1" = "--help" -o "$1" = "-h" ]; then
+			print_usage
+			exit
+		fi
+		export COQ_SRC_DIR="$1"
+
+		# We check if $COQ_SRC_DIR is set reasonably.
+
+		# (1) is it a directory?
+
+                if [ ! -d "$COQ_SRC_DIR" ]; then
+                        echo -e "${b}Error$n: \"$COQ_SRC_DIR\" is not a directory"
+                        exit 1
+                fi
+
+		# (2) does it contain Coq source code?
+
+                if head -n 1 "$COQ_SRC_DIR"/CREDITS 2> /dev/null | grep 'Coq proof assistant' > /dev/null ; then
+                        echo -n  # NOP
+                else
+                        echo -e "${b}Error$n: \"$COQ_SRC_DIR\" is a directory that probably does not contain Coq source code."
+                        exit 1
+                fi
+
+		# (3) are compiled binaries available?
+
+		export COQBIN=$COQ_SRC_DIR/bin/
+
+		if [ ! -x ${COQBIN}coqc ]; then
+			echo -e "${b}Error$n: compiled binaries in $COQBIN are not available."
+			exit 1
+		fi
+		;;
+	*)
+		print_usage
+		exit
+		;;
+esac
+
+# Submodules that are expected to be compilable:
+#
+# NOTE: as we fix individual coq-contribs, those "grep -v" commands will gradually disappear"
+
+coq_contribs=$(git submodule foreach --quiet 'pwd' |
+               grep -v '/ssreflect$' |
+               grep -v '/mmultisets$'|
+               grep -v '/lemma-overloading$' |
+               grep -v '/legacy-field$')
+
+# Build all coq-contribs (we know they are supposed to be buildable)
+
+for coq_contrib in $coq_contribs; do
+        cd $coq_contrib
+        git submodule foreach --recursive git clean -dfx
+        git clean -dfx
+        for s in $(git submodule foreach --recursive --quiet pwd | tac); do
+                cd $s
+                make -j4 || exit 1
+        done
+        make -j4 || (echo; echo -n "${b}Error$n: build failed in: "; pwd; exit 1)
+done

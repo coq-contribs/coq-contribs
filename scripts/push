@@ -1,0 +1,40 @@
+#! /bin/bash
+
+b="\033[1m"  # ANSI-code for bold
+u="\033[4m"  # ANSI-code for underlined
+n="\033[0m"  # ANSI-code for attributes off
+t="       "  # TAB
+
+program_name=$0
+program_name=${program_name##*/}
+
+# Print some information how this program is supposed to be used.
+print_usage ()
+{
+
+        echo
+        echo -e ${b}SYNOPSIS
+        echo
+        echo -e "$t$b$program_name$n  ${u}BRANCH$n"
+        echo
+        echo -e "${b}DESCRIPTION$n"
+        echo
+        echo -e "${t}Go to all submodules and push a specified ${u}BRANCH$n to ${b}origin$n."
+        echo
+}
+
+case $# in
+	1)
+		if [ "$1" = "--help" -o "$1" = "-h" ]; then
+			print_usage
+			exit
+		fi
+		export BRANCH="$1"
+		;;
+	*)
+		print_usage
+		exit
+		;;
+esac
+
+git submodule foreach "echo; echo; pwd; git push origin $BRANCH"
