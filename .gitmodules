@@ -578,10 +578,6 @@
 	path = square-matrices
 	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/square-matrices.git
 	branch = trunk
-[submodule "ssreflect"]
-	path = ssreflect
-	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/ssreflect.git
-	branch = trunk
 [submodule "stalmarck"]
 	path = stalmarck
 	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/stalmarck.git
