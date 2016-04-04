@@ -662,10 +662,6 @@
 	path = traversable-fincontainer
 	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/traversable-fincontainer.git
 	branch = trunk
-[submodule "intuitionistic-nuprl"]
-	path = intuitionistic-nuprl
-	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/intuitionistic-nuprl.git
-	branch = trunk
 [submodule "mmultisets"]
 	path = mmultisets
 	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/mmultisets.git
