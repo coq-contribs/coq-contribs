@@ -71,7 +71,6 @@ esac
 coq_contribs=$(git submodule foreach --quiet 'pwd' |
                grep -v '/ssreflect$' |
                grep -v '/mmultisets$'|
-               grep -v '/lemma-overloading$' |
                grep -v '/legacy-field$')
 
 # Build all coq-contribs (we know they are supposed to be buildable)
