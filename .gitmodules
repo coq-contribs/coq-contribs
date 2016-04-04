@@ -666,3 +666,7 @@
 	path = mmultisets
 	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/mmultisets.git
 	branch = master
+[submodule "intuitionistic-nuprl"]
+	path = intuitionistic-nuprl
+	url = https://gforge.inria.fr/anonscm/git/coq-contribs/intuitionistic-nuprl.git
+	branch = trunk
