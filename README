@@ -1,22 +1,80 @@
-# Coq-contribs
-
 This is a git repository centralizing the previous Coq contribution system by
 means of git submodules. The old system consisted of an SVN repository
 containing all contribs in the same place, while now they are stored in their
 own git repository.
 
-To install:
 
-* Clone this repository.
-* Initialize the submodules.
-```
-git submodule init
-```
-* Update all contribs in one command.
-```
-git submodule update --remote
-```
-* To add a new contribution
-```
-git submodule add scm.gforge.inria.fr:/git/coq-contribs/name-of-the-contrib.git
-```
+- Cloning
+
+-- anonymously
+
+   $ git clone https://scm.gforge.inria.fr/anonscm/git/coq-contribs/coq-contribs.git
+   $ cd coq-contribs
+   $ git submodule sync --recursive
+   $ git submodule update --init --recursive
+
+-- non-anonymously
+
+   $ git clone git+ssh://$USER_NAME@scm.gforge.inria.fr/gitroot/coq-contribs/coq-contribs.git
+   $ cd coq-contribs
+   $ sed s'|https://scm.gforge.inria.fr/anonscm/git/coq-contribs/|git+ssh://$USER_NAME@scm.gforge.inria.fr/gitroot/coq-contribs/|g' -i .gitmodules
+   $ git submodule sync --recursive
+   $ git submodule update --init --recursive
+
+   where $USER_NAME is your user name on "scm.gforge.inria.fr"
+
+
+- Compiling a chosen coq-contrib
+
+  # Set this variable to the directory that contains compiled Coq binaries (coqtop, coqc, coq_makefile, ...),
+  # or leave this variable unset if you want to compile coq-contribs with the Coq that is in your $PATH.
+  #
+  # IMPORTANT: If this variable is set, its value must end with '/' character.
+
+  $ export COQBIN=~/git/coq/bin/
+
+  # Enter the directory of the coq-contrib you want to compile.
+  $ cd abp
+
+  $ make
+
+ 
+- If a chosen coq-contrib itself has submodules, we must make sure that they are all compiled before we try to compile the chosen coq-contrib itself.
+
+  $ export COQBIN=~/git/coq/bin/
+
+  $ cd ergo
+  
+  # Let us compile all submodules of the chosen coq-contrib (in the proper order)
+
+  pushd .
+  for s in $(git submodule foreach --recursive --quiet pwd | tac); do
+    cd $s
+    make
+  done
+  popd
+
+  # Now we can compile the chosen coq-contrib
+  make
+
+
+- Using Jenkins to compile chosen Coq branch and all the coq-contribs with it
+
+    On our Jenkins server:
+
+      https://ci.inria.fr/coq/
+
+    in the "coq-contribs" view:
+
+      https://ci.inria.fr/coq/view/coq-contribs/
+
+    there is a "make-all" job:
+
+      https://ci.inria.fr/coq/view/coq-contribs/job/make-all/
+
+    You can click on the "Build with Parameters" link:
+
+      https://ci.inria.fr/coq/view/coq-contribs/job/make-all/build?delay=0sec
+
+    Jenkins will then clone the designated branch of from the designated Coq repository,
+    and then build all coq-contribs (cloned from the designated repository and the designated branch).
