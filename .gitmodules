@@ -1,7 +1,7 @@
 [submodule "aac-tactics"]
 	path = aac-tactics
-	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/aac-tactics.git
-	branch = trunk
+	url = https://github.com/coq/aac-tactics.git
+	branch = master
 [submodule "abp"]
 	path = abp
 	url = https://scm.gforge.inria.fr/anonscm/git/coq-contribs/abp.git
