@@ -33,6 +33,7 @@ coq_contribs=$(git submodule foreach --quiet 'pwd' |
                grep -v '/intuitionistic-nuprl')
 
 # ... and build the rest of them
+export USE_GIT_SUBMODULES=yes
 for coq_contrib in $coq_contribs; do
         cd $coq_contrib
         git submodule foreach --recursive git clean -dfx
