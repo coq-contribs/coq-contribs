@@ -1,6 +1,6 @@
 [submodule "aac-tactics"]
 	path = aac-tactics
-	url = https://github.com/coq/aac-tactics.git
+	url = https://github.com/coq-contribs/aac-tactics.git
 	branch = master
 [submodule "abp"]
 	path = abp
@@ -385,6 +385,10 @@
 [submodule "markov"]
 	path = markov
 	url = https://github.com/coq-contribs/markov.git
+	branch = trunk
+[submodule "math-classes"]
+	path = math-classes
+	url = https://github.com/matej-kosik/math-classes.git
 	branch = trunk
 [submodule "maths"]
 	path = maths
