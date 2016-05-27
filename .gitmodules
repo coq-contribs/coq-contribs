@@ -666,3 +666,6 @@
 	path = intuitionistic-nuprl
 	url = https://github.com/coq-contribs/intuitionistic-nuprl.git
 	branch = trunk
+[submodule "corn"]
+	path = corn
+	url = https://github.com/matej-kosik/corn.git
