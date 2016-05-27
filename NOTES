@@ -40,11 +40,6 @@ Common properties of all coq-contribs:
 
 - A coq-contrib can depend only on the Coq standard library or another coq-contrib
 
-- Dependencies among coq-contribs are tracked both:
-
-  - via git-submodule mechanism
-    (so that we do not *need* OPAM to compile any coq-contrib --- this allows us to avoid OPAM restrictions *when* they are not acceptable (e.g. we are free to compile all coq-contribs in parallel))
-
 - All coq-contribs have "description" file which has the following structure
 
   - Name
@@ -63,3 +58,7 @@ Common properties of all coq-contribs:
 - Each coq-contrib has a toplevel Makefile whose default rule builds that coq-contrib and the "install" target installs it to the "user-contrib" directory
 
 - LICENCE file must exist
+
+- After coq-contrib is cloned, it must be possible to compile it with the following command:
+
+    make
