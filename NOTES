@@ -1,16 +1,14 @@
 Common properties of all coq-contribs:
 
-- The URL of the git repository of each coq-contrib is:
-
-    https://github.com/coq-contribs/$NAME.git
-
 - Each of those repositories is registered as a submodule of:
 
     https://github.com/coq-contribs/coq-contribs.git
 
-- Compilability of each of the coq-contribs is tracked by this job:
+- Compilability of each of the coq-contribs is tracked by these jobs:
 
     https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs
+    https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-trunk
+    https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-v8.5
 
 - Installability of each of the coq-contribs (via OPAM) is tracked by this job:
 
