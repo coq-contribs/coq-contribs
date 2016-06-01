@@ -386,10 +386,6 @@
 	path = markov
 	url = https://github.com/coq-contribs/markov.git
 	branch = trunk
-[submodule "math-classes"]
-	path = math-classes
-	url = https://github.com/matej-kosik/math-classes.git
-	branch = trunk
 [submodule "maths"]
 	path = maths
 	url = https://github.com/coq-contribs/maths.git
@@ -666,6 +662,3 @@
 	path = intuitionistic-nuprl
 	url = https://github.com/coq-contribs/intuitionistic-nuprl.git
 	branch = trunk
-[submodule "corn"]
-	path = corn
-	url = https://github.com/matej-kosik/corn.git
