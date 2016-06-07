@@ -1,3 +1,12 @@
+ - Clarify the purpose of coq-contribs.
+   - It should be clear that if something is being actively worked on,
+     it is not something anybody would want to include into coq-contribs.
+     - Coq-contribs are diverse developments which are interesting but, sadly, no longer maintained by their original authors.
+     - Coq-contribs is a place to preserve them to keep track of interesting things that were done in the past.
+   - They also have less poetic purpose --- we can use them for testing/benchmarking current commits.
+     E.g. today I see that commit e9c57a3 changed the behavior of coq_makefile in such a way that several
+     coq-contribs no longer compile. Very possibly non-coq-contribs will not compile also
+     and we see that something is not right.
  - Figure out why the Jenkins job `intuitionistic-nuprl` does fails on `trunk` when in fact the compilation [fails](https://ci.inria.fr/coq/job/bench-intuitionistic-nuprl/34/console).
  - Fix [`intuitionistic-nuprl` on `trunk`](https://ci.inria.fr/coq/job/bench-intuitionistic-nuprl/34/console).
  - Add the following new coq-contribs:
