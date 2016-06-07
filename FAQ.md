@@ -11,7 +11,7 @@ git submodule update --init --recursive
 ```bash
 clone https://$GITHUB_USERNAME:$GITHUB_PASSWORD@github.com/coq-contribs/coq-contribs.git
 cd coq-contribs
-git submodule foreach --quiet 'echo $name; git remote remove origin; git remote add origin https://$GITHUB_USERNAME:$GITHUB_PASSWORD@github.com/coq-contribs/$name.git'
+git submodule foreach 'git remote remove origin; git remote add origin https://$GITHUB_USERNAME:$GITHUB_PASSWORD@github.com/coq-contribs/$name.git'
 git submodule update --init --recursive
 git co .gitmodules
 ```
