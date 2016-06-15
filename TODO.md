@@ -1,3 +1,4 @@
+ - add the proof of [Puiseaux theorem](https://scm.gforge.inria.fr/anonscm/git/puiseuxth/puiseuxth.git)
  - `intuitionistic-nuprl` needs a proper `Makefile` and `Make`
  - Clarify the purpose of coq-contribs.
    - It should be clear that if something is being actively worked on,
