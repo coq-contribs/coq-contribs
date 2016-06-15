@@ -1,3 +1,4 @@
+ - `intuitionistic-nuprl` needs a proper `Makefile` and `Make`
  - Figure out why the Jenkins job `intuitionistic-nuprl` does fails on `trunk` when in fact the compilation [fails](https://ci.inria.fr/coq/job/bench-intuitionistic-nuprl/34/console).
  - Fix [`intuitionistic-nuprl` on `trunk`](https://ci.inria.fr/coq/job/bench-intuitionistic-nuprl/34/console).
  - Add the following new coq-contribs:
