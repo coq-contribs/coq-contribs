@@ -76,7 +76,6 @@
  - Convert `Make` files into `_CoqProject` files (proof-general and coqide both take it into consideration)
  - Change the names of repositories (and OPAM packages) that they correspond to directory name under which they are installed in the `user-contribs` directory.
  - All coq-contribs should have a `README.md` file.
- - Check why we currently see `make: Circular Make <- Makefile.coq dependency dropped` when compiling coq-contribs
  - Check why we currently see `warning: option -slash has no effect and is deprecated`
  - Check all warnings that are currently generated when compiling coq-contribs
    - Convert all warnings to errors.
