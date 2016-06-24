@@ -16,6 +16,29 @@ git submodule update --init --recursive
 git co .gitmodules
 ```
 
+Another way (based on ssh access)
+
+```bash
+git clone git@github.com:coq-contribs/coq-contribs.git
+cd coq-contribs
+git submodule update --init --recursive
+git submodule foreach 'git remote set-url origin git@github.com:coq-contribs/$name.git'
+
+```
+
+Btw, note that the git configuration of contrib xyz is in .git/modules/xyz/config 
+
+# In the contribs, how do I switch from "detached HEAD" to a given branch  ?
+
+For instance for master, we first ensure that a local master branch exists, switch to it,
+and update it w.r.t. origin/master.
+
+```bash
+git submodule foreach 'git branch master origin/master || true'
+git submodule foreach 'git checkout master'
+git submodule foreach 'git pull'
+```
+
 # How to compile a given coq-contrib?
 
 Assuming that all dependencies of a given coq-contrib were already compiled and installed:
