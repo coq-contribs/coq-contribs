@@ -1,3 +1,4 @@
+ - intuitionistic-nuprl is also being maintained [elsewhere](https://github.com/vrahli/NuprlInCoq). We should check it out; compare to our version and decide whether it make sense for us to maintain our version (separately).
  - add the proof of [Puiseaux theorem](https://scm.gforge.inria.fr/anonscm/git/puiseuxth/puiseuxth.git)
  - `intuitionistic-nuprl` needs a proper `Makefile` and `Make`
  - Clarify the purpose of coq-contribs.
