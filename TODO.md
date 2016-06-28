@@ -86,3 +86,4 @@
      - who started the job
      - which Coq branch was used
      It would make sense to include this kind of information into the job's name.
+   - figure out how could we allow anyone to run Jenkins job without security risks
