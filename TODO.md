@@ -81,3 +81,8 @@
  - Check all warnings that are currently generated when compiling coq-contribs
    - Convert all warnings to errors.
  - Why we have `sum-of-two-square`? Why not `sum-of-two-squares`?
+ - Jenkins
+   - at the moment, URLs of the results of jobs have little clues about:
+     - who started the job
+     - which Coq branch was used
+     It would make sense to include this kind of information into the job's name.
