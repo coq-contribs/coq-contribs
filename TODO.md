@@ -87,4 +87,5 @@
      - which Coq branch was used
      It would make sense to include this kind of information into the job's name.
    - figure out how could we allow anyone to run Jenkins job without security risks
+   - more descriptive names for the jobs we run should be generated at run-time (instead of numbers).
  - Figure out what can we do with `lemma-overloading`. It now depends on `math-comp` which is not part of coq-contribs.
