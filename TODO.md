@@ -89,4 +89,10 @@
      - [coq-contribs-v8.5](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-v8.5/)
    
      we might as well generate those jobs with from those dependencies.
+   - Once we fix [this](https://coq.inria.fr/bugs/show_bug.cgi?id=4894), we will want to remove the corresponding workaround from the `/home/jenkins/bin/opam-install-package` file on pyrolyse node. Now, we use `-j1` instead of `-j32` for certain packages:
+     - legacy-ring
+     - legacy-field
+     - string
+     
+     for which `-j32` would cause a spurious compilation error (due to [the bug](https://coq.inria.fr/bugs/show_bug.cgi?id=4894)).
  - Figure out what can we do with `lemma-overloading`. It now depends on `math-comp` which is not part of coq-contribs.
