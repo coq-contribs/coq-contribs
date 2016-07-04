@@ -12,7 +12,6 @@
      E.g. today I see that commit e9c57a3 changed the behavior of coq_makefile in such a way that several
      coq-contribs no longer compile. Very possibly non-coq-contribs will not compile also
      and we see that something is not right.
- - Figure out why the Jenkins job `intuitionistic-nuprl` does fails on `trunk` when in fact the compilation [fails](https://ci.inria.fr/coq/job/bench-intuitionistic-nuprl/34/console).
  - Fix [`intuitionistic-nuprl` on `trunk`](https://ci.inria.fr/coq/job/bench-intuitionistic-nuprl/34/console).
  - Add the following new coq-contribs:
    - mmultisets
@@ -22,12 +21,6 @@
  - Go through existing coq-contribs:
    - identify those ones which have no licence
    - ask the author(s) whether this intentional or perhaps just an omission
- - We already symbolically track dependencies of individual coq-contribs. We might reuse that information and instead of hardcoding the "dependencies" of individual coq-contribs in the following Jenkins jobs:
-   - [coq-contribs](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs/)
-   - [coq-contribs-trunk](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-trunk/)
-   - [coq-contribs-v8.5](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-v8.5/)
-   
-   we might as well generate those jobs with from those dependencies.
  - There is an overlap between "description" and "opam" files. Can't we somehow refactor this information?
  - Remove the `branch = ...` lines from `.gitmodules`
  - The information in the `description` files should be properly structured and we should be able to mechanically "validate" it.
@@ -71,8 +64,6 @@
  - figure out why `-j32` does not work with `ergo`
  - For each coq-contrib check if there exists an upstream version.
    - `relation-algebra` ([www](http://perso.ens-lyon.fr/damien.pous/ra/), [git](https://github.com/damien-pous/relation-algebra))
- - our Jenkins jobs should also test uninstallability of individual packages
-   (we do not do this because there is some strange bug in OPAM which makes it behave in a wrong way with `--root` parameter in case we are uninstalling a package)
  - we should write a "lint" script that will probably check the expected properties of coq-contribs as we have informally defined them [here](https://github.com/coq-contribs/coq-contribs/blob/master/FAQ.md#what-are-the-common-properties-of-all-coq-contribs)
  - Go over all OPAM packages. Those that are marked "proprietary" should not be released before we settle the licence issues.
  - Individual coq-contribs should have a nice, browsable and cross-referenced source-code presentation.
@@ -84,11 +75,18 @@
    - Convert all warnings to errors.
  - Why we have `sum-of-two-square`? Why not `sum-of-two-squares`?
  - Jenkins
+   - our Jenkins jobs should also test uninstallability of individual packages
+     (we do not do this because there is some strange bug in OPAM which makes it behave in a wrong way with `--root` parameter in case we are uninstalling a package)
    - at the moment, URLs of the results of jobs have little clues about:
      - who started the job
      - which Coq branch was used
      It would make sense to include this kind of information into the job's name.
    - figure out how could we allow anyone to run Jenkins job without security risks
    - more descriptive names for the jobs we run should be generated at run-time (instead of numbers).
+   - We already symbolically track dependencies of individual coq-contribs. We might reuse that information and instead of hardcoding the "dependencies" of individual coq-contribs in the following Jenkins jobs:
+     - [coq-contribs](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs/)
+     - [coq-contribs-trunk](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-trunk/)
+     - [coq-contribs-v8.5](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-v8.5/)
+   
+     we might as well generate those jobs with from those dependencies.
  - Figure out what can we do with `lemma-overloading`. It now depends on `math-comp` which is not part of coq-contribs.
- - `jprover` is currently broken
