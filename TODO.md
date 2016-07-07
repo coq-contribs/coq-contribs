@@ -75,6 +75,7 @@
    - Convert all warnings to errors.
  - Why we have `sum-of-two-square`? Why not `sum-of-two-squares`?
  - Jenkins
+   - our Jenkins job that test installability of OPAM packages should not stop at the first failure but instead they should continue and test the rest of the packages.
    - our Jenkins jobs should also test uninstallability of individual packages
      (we do not do this because there is some strange bug in OPAM which makes it behave in a wrong way with `--root` parameter in case we are uninstalling a package)
    - at the moment, URLs of the results of jobs have little clues about:
@@ -96,3 +97,8 @@
      
      for which `-j32` would cause a spurious compilation error (due to [the bug](https://coq.inria.fr/bugs/show_bug.cgi?id=4894)).
  - Figure out what can we do with `lemma-overloading`. It now depends on `math-comp` which is not part of coq-contribs.
+ - describe all the steps that need to be performed when we add a new coq-contrib
+   - concerning the git repository
+   - concerning our jobs on Jenkins
+ - describe all the steps that need to be performed when a new Coq branch is created (e.g. v8.7)
+ - describe all the steps that need to be performed when a new version of Coq is released
