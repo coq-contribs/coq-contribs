@@ -97,3 +97,6 @@
      
      for which `-j32` would cause a spurious compilation error (due to [the bug](https://coq.inria.fr/bugs/show_bug.cgi?id=4894)).
  - Figure out what can we do with `lemma-overloading`. It now depends on `math-comp` which is not part of coq-contribs.
+ - describe all the steps that need to be performed when we add a new coq-contrib
+   - concerning the git repository
+   - concerning our jobs on Jenkins
