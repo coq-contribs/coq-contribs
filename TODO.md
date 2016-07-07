@@ -14,7 +14,7 @@
      and we see that something is not right.
  - Fix [`intuitionistic-nuprl` on `trunk`](https://ci.inria.fr/coq/job/bench-intuitionistic-nuprl/34/console).
  - Add the following new coq-contribs:
-   - mmultisets
+   - mmultisets (currently, it depends on something which was not yet published and so the version [we have](https://github.com/coq-contribs/mmultisets) is not compilable)
    - [mirror-core](https://github.com/coq-contribs/coq-contribs/issues/1)
    - [HoTT](https://github.com/coq-contribs/coq-contribs/issues/2)
  - [publish existing coq-contribs via OPAM](https://github.com/coq/opam-coq-archive/pull/72)
