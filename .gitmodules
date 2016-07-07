@@ -654,10 +654,6 @@
 	path = traversable-fincontainer
 	url = https://github.com/coq-contribs/traversable-fincontainer.git
 	branch = trunk
-[submodule "mmultisets"]
-	path = mmultisets
-	url = https://github.com/coq-contribs/mmultisets.git
-	branch = master
 [submodule "intuitionistic-nuprl"]
 	path = intuitionistic-nuprl
 	url = https://github.com/coq-contribs/intuitionistic-nuprl.git
