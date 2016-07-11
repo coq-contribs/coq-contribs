@@ -1,8 +1,9 @@
+ - OPAM
+   - figure out why installation of `opam install coq-corn.8.6.dev` and `opam install coq-corn.dev` currently never terminate.
  - intuitionistic-nuprl is also being maintained [elsewhere](https://github.com/vrahli/NuprlInCoq). We should check it out; compare to our version and decide whether it make sense for us to maintain our version (separately).
  - add the proof of [Puiseaux theorem](https://scm.gforge.inria.fr/anonscm/git/puiseuxth/puiseuxth.git)
  - `intuitionistic-nuprl`
    - needs a proper `Makefile` and `Make`
-   - OPAM packages for individual Coq versions (8.5.0, 8.5.1, ..., 8.5.dev, dev)
  - Clarify the purpose of coq-contribs.
    - It should be clear that if something is being actively worked on,
      it is not something anybody would want to include into coq-contribs.
