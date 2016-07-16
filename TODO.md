@@ -103,3 +103,4 @@
    - concerning our jobs on Jenkins
  - describe all the steps that need to be performed when a new Coq branch is created (e.g. v8.7)
  - describe all the steps that need to be performed when a new version of Coq is released
+ - rename OPAM package `coq-coq-in-coq` to `coq-in-coq`
