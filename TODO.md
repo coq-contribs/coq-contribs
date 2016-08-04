@@ -77,6 +77,7 @@
    - Convert all warnings to errors.
  - Why we have `sum-of-two-square`? Why not `sum-of-two-squares`?
  - Jenkins
+   - record in some useful way information about build-times of individual coq-contribs (and the Coq itself) on individual branches (v8.5, v8.6, ..., trunk) as Coq evolves
    - our Jenkins job that test installability of OPAM packages should not stop at the first failure but instead they should continue and test the rest of the packages.
    - our Jenkins jobs should also test uninstallability of individual packages
      (we do not do this because there is some strange bug in OPAM which makes it behave in a wrong way with `--root` parameter in case we are uninstalling a package)
