@@ -64,9 +64,11 @@ If you do not perform the second step, people who clone the [coq-contribs](https
 
 Each coq-contrib:
  - is registered as a submodule of the [coq-contribs](https://github.com/coq-contribs/coq-contribs/tree/master) GIT repository.
- - has the following two branches:
+ - has the following branches:
    - `master`: this branch of a coq-contrib must be compilable with the current Coq trunk (tracked [here](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-trunk))
    - `v8.5`: this branch of a coq-contrib must be compilable with Coq 8.5 (tracked [here](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-v8.5/))
+   - `v8.6`: this branch of a coq-contrib must be compilable with Coq 8.5 (tracked [here](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-v8.6/))
+ - merging any of the branches to `master` shouldn't lead to any conflicts
  - has the following tags:
    - `8.5.0`: this version is known to work with Coq 8.5.0
    - `8.5.1`: this version is known to work with Coq 8.5.1
