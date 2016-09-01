@@ -1,663 +1,498 @@
 [submodule "aac-tactics"]
 	path = aac-tactics
 	url = https://github.com/coq-contribs/aac-tactics.git
-	branch = master
 [submodule "abp"]
 	path = abp
 	url = https://github.com/coq-contribs/abp.git
-	branch = trunk
 [submodule "additions"]
 	path = additions
 	url = https://github.com/coq-contribs/additions.git
-	branch = trunk
 [submodule "ails"]
 	path = ails
 	url = https://github.com/coq-contribs/ails.git
-	branch = trunk
 [submodule "algebra"]
 	path = algebra
 	url = https://github.com/coq-contribs/algebra.git
-	branch = trunk
 [submodule "amm11262"]
 	path = amm11262
 	url = https://github.com/coq-contribs/amm11262.git
-	branch = trunk
 [submodule "angles"]
 	path = angles
 	url = https://github.com/coq-contribs/angles.git
-	branch = trunk
 [submodule "area-method"]
 	path = area-method
 	url = https://github.com/coq-contribs/area-method.git
-	branch = trunk
 [submodule "atbr"]
 	path = atbr
 	url = https://github.com/coq-contribs/atbr.git
-	branch = trunk
 [submodule "automata"]
 	path = automata
 	url = https://github.com/coq-contribs/automata.git
-	branch = trunk
 [submodule "axiomatic-abp"]
 	path = axiomatic-abp
 	url = https://github.com/coq-contribs/axiomatic-abp.git
-	branch = trunk
 [submodule "bdds"]
 	path = bdds
 	url = https://github.com/coq-contribs/bdds.git
-	branch = trunk
 [submodule "bertrand"]
 	path = bertrand
 	url = https://github.com/coq-contribs/bertrand.git
-	branch = trunk
 [submodule "buchberger"]
 	path = buchberger
 	url = https://github.com/coq-contribs/buchberger.git
-	branch = trunk
 [submodule "canon-bdds"]
 	path = canon-bdds
 	url = https://github.com/coq-contribs/canon-bdds.git
-	branch = trunk
 [submodule "cantor"]
 	path = cantor
 	url = https://github.com/coq-contribs/cantor.git
-	branch = trunk
 [submodule "cats-in-zfc"]
 	path = cats-in-zfc
 	url = https://github.com/coq-contribs/cats-in-zfc.git
-	branch = trunk
 [submodule "ccs"]
 	path = ccs
 	url = https://github.com/coq-contribs/ccs.git
-	branch = trunk
 [submodule "cfgv"]
 	path = cfgv
 	url = https://github.com/coq-contribs/cfgv.git
-	branch = trunk
 [submodule "checker"]
 	path = checker
 	url = https://github.com/coq-contribs/checker.git
-	branch = trunk
 [submodule "chinese"]
 	path = chinese
 	url = https://github.com/coq-contribs/chinese.git
-	branch = trunk
 [submodule "circuits"]
 	path = circuits
 	url = https://github.com/coq-contribs/circuits.git
-	branch = trunk
 [submodule "classical-realizability"]
 	path = classical-realizability
 	url = https://github.com/coq-contribs/classical-realizability.git
-	branch = trunk
 [submodule "coalgebras"]
 	path = coalgebras
 	url = https://github.com/coq-contribs/coalgebras.git
-	branch = trunk
 [submodule "coinductive-examples"]
 	path = coinductive-examples
 	url = https://github.com/coq-contribs/coinductive-examples.git
-	branch = trunk
 [submodule "coinductive-reals"]
 	path = coinductive-reals
 	url = https://github.com/coq-contribs/coinductive-reals.git
-	branch = trunk
 [submodule "compcert"]
 	path = compcert
 	url = https://github.com/coq-contribs/compcert.git
-	branch = trunk
 [submodule "concat"]
 	path = concat
 	url = https://github.com/coq-contribs/concat.git
-	branch = trunk
 [submodule "constructive-geometry"]
 	path = constructive-geometry
 	url = https://github.com/coq-contribs/constructive-geometry.git
-	branch = trunk
 [submodule "containers"]
 	path = containers
 	url = https://github.com/coq-contribs/containers.git
-	branch = trunk
 [submodule "continuations"]
 	path = continuations
 	url = https://github.com/coq-contribs/continuations.git
-	branch = trunk
 [submodule "coq-in-coq"]
 	path = coq-in-coq
 	url = https://github.com/coq-contribs/coq-in-coq.git
-	branch = trunk
 [submodule "coqoban"]
 	path = coqoban
 	url = https://github.com/coq-contribs/coqoban.git
-	branch = trunk
 [submodule "counting"]
 	path = counting
 	url = https://github.com/coq-contribs/counting.git
-	branch = trunk
 [submodule "cours-de-coq"]
 	path = cours-de-coq
 	url = https://github.com/coq-contribs/cours-de-coq.git
-	branch = trunk
 [submodule "ctltctl"]
 	path = ctltctl
 	url = https://github.com/coq-contribs/ctltctl.git
-	branch = trunk
 [submodule "dblib"]
 	path = dblib
 	url = https://github.com/coq-contribs/dblib.git
-	branch = trunk
 [submodule "demos"]
 	path = demos
 	url = https://github.com/coq-contribs/demos.git
-	branch = trunk
 [submodule "dep-map"]
 	path = dep-map
 	url = https://github.com/coq-contribs/dep-map.git
-	branch = trunk
 [submodule "descente-infinie"]
 	path = descente-infinie
 	url = https://github.com/coq-contribs/descente-infinie.git
-	branch = trunk
 [submodule "dictionaries"]
 	path = dictionaries
 	url = https://github.com/coq-contribs/dictionaries.git
-	branch = trunk
 [submodule "distributed-reference-counting"]
 	path = distributed-reference-counting
 	url = https://github.com/coq-contribs/distributed-reference-counting.git
-	branch = trunk
 [submodule "domain-theory"]
 	path = domain-theory
 	url = https://github.com/coq-contribs/domain-theory.git
-	branch = trunk
 [submodule "ergo"]
 	path = ergo
 	url = https://github.com/coq-contribs/ergo.git
-	branch = trunk
 [submodule "euclidean-geometry"]
 	path = euclidean-geometry
 	url = https://github.com/coq-contribs/euclidean-geometry.git
-	branch = trunk
 [submodule "euler-formula"]
 	path = euler-formula
 	url = https://github.com/coq-contribs/euler-formula.git
-	branch = trunk
 [submodule "exact-real-arithmetic"]
 	path = exact-real-arithmetic
 	url = https://github.com/coq-contribs/exact-real-arithmetic.git
-	branch = trunk
 [submodule "exceptions"]
 	path = exceptions
 	url = https://github.com/coq-contribs/exceptions.git
-	branch = trunk
 [submodule "fairisle"]
 	path = fairisle
 	url = https://github.com/coq-contribs/fairisle.git
-	branch = trunk
 [submodule "fermat4"]
 	path = fermat4
 	url = https://github.com/coq-contribs/fermat4.git
-	branch = trunk
 [submodule "finger-tree"]
 	path = finger-tree
 	url = https://github.com/coq-contribs/finger-tree.git
-	branch = trunk
 [submodule "firing-squad"]
 	path = firing-squad
 	url = https://github.com/coq-contribs/firing-squad.git
-	branch = trunk
 [submodule "float"]
 	path = float
 	url = https://github.com/coq-contribs/float.git
-	branch = trunk
 [submodule "founify"]
 	path = founify
 	url = https://github.com/coq-contribs/founify.git
-	branch = trunk
 [submodule "free-groups"]
 	path = free-groups
 	url = https://github.com/coq-contribs/free-groups.git
-	branch = trunk
 [submodule "fsets"]
 	path = fsets
 	url = https://github.com/coq-contribs/fsets.git
-	branch = trunk
 [submodule "fssec-model"]
 	path = fssec-model
 	url = https://github.com/coq-contribs/fssec-model.git
-	branch = trunk
 [submodule "functions-in-zfc"]
 	path = functions-in-zfc
 	url = https://github.com/coq-contribs/functions-in-zfc.git
-	branch = trunk
 [submodule "fundamental-arithmetics"]
 	path = fundamental-arithmetics
 	url = https://github.com/coq-contribs/fundamental-arithmetics.git
-	branch = trunk
 [submodule "gc"]
 	path = gc
 	url = https://github.com/coq-contribs/gc.git
-	branch = trunk
 [submodule "generic-environments"]
 	path = generic-environments
 	url = https://github.com/coq-contribs/generic-environments.git
-	branch = trunk
 [submodule "goedel"]
 	path = goedel
 	url = https://github.com/coq-contribs/goedel.git
-	branch = trunk
 [submodule "graph-basics"]
 	path = graph-basics
 	url = https://github.com/coq-contribs/graph-basics.git
-	branch = trunk
 [submodule "graphs"]
 	path = graphs
 	url = https://github.com/coq-contribs/graphs.git
-	branch = trunk
 [submodule "groups"]
 	path = groups
 	url = https://github.com/coq-contribs/groups.git
-	branch = trunk
 [submodule "group-theory"]
 	path = group-theory
 	url = https://github.com/coq-contribs/group-theory.git
-	branch = trunk
 [submodule "hardware"]
 	path = hardware
 	url = https://github.com/coq-contribs/hardware.git
-	branch = trunk
 [submodule "hedges"]
 	path = hedges
 	url = https://github.com/coq-contribs/hedges.git
-	branch = trunk
 [submodule "high-school-geometry"]
 	path = high-school-geometry
 	url = https://github.com/coq-contribs/high-school-geometry.git
-	branch = trunk
 [submodule "higman-cf"]
 	path = higman-cf
 	url = https://github.com/coq-contribs/higman-cf.git
-	branch = trunk
 [submodule "higman-nw"]
 	path = higman-nw
 	url = https://github.com/coq-contribs/higman-nw.git
-	branch = trunk
 [submodule "higman-s"]
 	path = higman-s
 	url = https://github.com/coq-contribs/higman-s.git
-	branch = trunk
 [submodule "historical-examples"]
 	path = historical-examples
 	url = https://github.com/coq-contribs/historical-examples.git
-	branch = trunk
 [submodule "hoare-tut"]
 	path = hoare-tut
 	url = https://github.com/coq-contribs/hoare-tut.git
-	branch = trunk
 [submodule "huffman"]
 	path = huffman
 	url = https://github.com/coq-contribs/huffman.git
-	branch = trunk
 [submodule "icharate"]
 	path = icharate
 	url = https://github.com/coq-contribs/icharate.git
-	branch = trunk
 [submodule "idxassoc"]
 	path = idxassoc
 	url = https://github.com/coq-contribs/idxassoc.git
-	branch = trunk
 [submodule "ieee754"]
 	path = ieee754
 	url = https://github.com/coq-contribs/ieee754.git
-	branch = trunk
 [submodule "int-map"]
 	path = int-map
 	url = https://github.com/coq-contribs/int-map.git
-	branch = trunk
 [submodule "ipc"]
 	path = ipc
 	url = https://github.com/coq-contribs/ipc.git
-	branch = trunk
 [submodule "izf"]
 	path = izf
 	url = https://github.com/coq-contribs/izf.git
-	branch = trunk
 [submodule "jordan-curve-theorem"]
 	path = jordan-curve-theorem
 	url = https://github.com/coq-contribs/jordan-curve-theorem.git
-	branch = trunk
 [submodule "jprover"]
 	path = jprover
 	url = https://github.com/coq-contribs/jprover.git
-	branch = trunk
 [submodule "karatsuba"]
 	path = karatsuba
 	url = https://github.com/coq-contribs/karatsuba.git
-	branch = trunk
 [submodule "kildall"]
 	path = kildall
 	url = https://github.com/coq-contribs/kildall.git
-	branch = trunk
 [submodule "lambda"]
 	path = lambda
 	url = https://github.com/coq-contribs/lambda.git
-	branch = trunk
 [submodule "lambek"]
 	path = lambek
 	url = https://github.com/coq-contribs/lambek.git
-	branch = trunk
 [submodule "lazy-pcf"]
 	path = lazy-pcf
 	url = https://github.com/coq-contribs/lazy-pcf.git
-	branch = trunk
 [submodule "lc"]
 	path = lc
 	url = https://github.com/coq-contribs/lc.git
-	branch = trunk
 [submodule "legacy-field"]
 	path = legacy-field
 	url = https://github.com/coq-contribs/legacy-field.git
-	branch = trunk
 [submodule "legacy-ring"]
 	path = legacy-ring
 	url = https://github.com/coq-contribs/legacy-ring.git
-	branch = trunk
 [submodule "lemma-overloading"]
 	path = lemma-overloading
 	url = https://github.com/coq-contribs/lemma-overloading.git
-	branch = trunk
 [submodule "lesniewski-mereology"]
 	path = lesniewski-mereology
 	url = https://github.com/coq-contribs/lesniewski-mereology.git
-	branch = trunk
 [submodule "lin-alg"]
 	path = lin-alg
 	url = https://github.com/coq-contribs/lin-alg.git
-	branch = trunk
 [submodule "ltl"]
 	path = ltl
 	url = https://github.com/coq-contribs/ltl.git
-	branch = trunk
 [submodule "maple-mode"]
 	path = maple-mode
 	url = https://github.com/coq-contribs/maple-mode.git
-	branch = trunk
 [submodule "markov"]
 	path = markov
 	url = https://github.com/coq-contribs/markov.git
-	branch = trunk
 [submodule "maths"]
 	path = maths
 	url = https://github.com/coq-contribs/maths.git
-	branch = trunk
 [submodule "matrices"]
 	path = matrices
 	url = https://github.com/coq-contribs/matrices.git
-	branch = trunk
 [submodule "micromega"]
 	path = micromega
 	url = https://github.com/coq-contribs/micromega.git
-	branch = trunk
 [submodule "minic"]
 	path = minic
 	url = https://github.com/coq-contribs/minic.git
-	branch = trunk
 [submodule "mini-compiler"]
 	path = mini-compiler
 	url = https://github.com/coq-contribs/mini-compiler.git
-	branch = trunk
 [submodule "miniml"]
 	path = miniml
 	url = https://github.com/coq-contribs/miniml.git
-	branch = trunk
 [submodule "mod-red"]
 	path = mod-red
 	url = https://github.com/coq-contribs/mod-red.git
-	branch = trunk
 [submodule "multiplier"]
 	path = multiplier
 	url = https://github.com/coq-contribs/multiplier.git
-	branch = trunk
 [submodule "mutual-exclusion"]
 	path = mutual-exclusion
 	url = https://github.com/coq-contribs/mutual-exclusion.git
-	branch = trunk
 [submodule "nfix"]
 	path = nfix
 	url = https://github.com/coq-contribs/nfix.git
-	branch = trunk
 [submodule "orb-stab"]
 	path = orb-stab
 	url = https://github.com/coq-contribs/orb-stab.git
-	branch = trunk
 [submodule "otway-rees"]
 	path = otway-rees
 	url = https://github.com/coq-contribs/otway-rees.git
-	branch = trunk
 [submodule "paco"]
 	path = paco
 	url = https://github.com/coq-contribs/paco.git
-	branch = trunk
 [submodule "paradoxes"]
 	path = paradoxes
 	url = https://github.com/coq-contribs/paradoxes.git
-	branch = trunk
 [submodule "param-pi"]
 	path = param-pi
 	url = https://github.com/coq-contribs/param-pi.git
-	branch = trunk
 [submodule "pautomata"]
 	path = pautomata
 	url = https://github.com/coq-contribs/pautomata.git
-	branch = trunk
 [submodule "persistent-union-find"]
 	path = persistent-union-find
 	url = https://github.com/coq-contribs/persistent-union-find.git
-	branch = trunk
 [submodule "pi-calc"]
 	path = pi-calc
 	url = https://github.com/coq-contribs/pi-calc.git
-	branch = trunk
 [submodule "pocklington"]
 	path = pocklington
 	url = https://github.com/coq-contribs/pocklington.git
-	branch = trunk
 [submodule "presburger"]
 	path = presburger
 	url = https://github.com/coq-contribs/presburger.git
-	branch = trunk
 [submodule "prfx"]
 	path = prfx
 	url = https://github.com/coq-contribs/prfx.git
-	branch = trunk
 [submodule "projective-geometry"]
 	path = projective-geometry
 	url = https://github.com/coq-contribs/projective-geometry.git
-	branch = trunk
 [submodule "ptsatr"]
 	path = ptsatr
 	url = https://github.com/coq-contribs/ptsatr.git
-	branch = trunk
 [submodule "ptsf"]
 	path = ptsf
 	url = https://github.com/coq-contribs/ptsf.git
-	branch = trunk
 [submodule "pts"]
 	path = pts
 	url = https://github.com/coq-contribs/pts.git
-	branch = trunk
 [submodule "qarith"]
 	path = qarith
 	url = https://github.com/coq-contribs/qarith.git
-	branch = trunk
 [submodule "qarith-stern-brocot"]
 	path = qarith-stern-brocot
 	url = https://github.com/coq-contribs/qarith-stern-brocot.git
-	branch = trunk
 [submodule "quicksort-complexity"]
 	path = quicksort-complexity
 	url = https://github.com/coq-contribs/quicksort-complexity.git
-	branch = trunk
 [submodule "railroad-crossing"]
 	path = railroad-crossing
 	url = https://github.com/coq-contribs/railroad-crossing.git
-	branch = trunk
 [submodule "ramsey"]
 	path = ramsey
 	url = https://github.com/coq-contribs/ramsey.git
-	branch = trunk
 [submodule "random"]
 	path = random
 	url = https://github.com/coq-contribs/random.git
-	branch = trunk
 [submodule "rational"]
 	path = rational
 	url = https://github.com/coq-contribs/rational.git
-	branch = trunk
 [submodule "recursive-definition"]
 	path = recursive-definition
 	url = https://github.com/coq-contribs/recursive-definition.git
-	branch = trunk
 [submodule "reflexive-first-order"]
 	path = reflexive-first-order
 	url = https://github.com/coq-contribs/reflexive-first-order.git
-	branch = trunk
 [submodule "regexp"]
 	path = regexp
 	url = https://github.com/coq-contribs/regexp.git
-	branch = trunk
 [submodule "relation-algebra"]
 	path = relation-algebra
 	url = https://github.com/coq-contribs/relation-algebra.git
-	branch = trunk
 [submodule "relation-extraction"]
 	path = relation-extraction
 	url = https://github.com/coq-contribs/relation-extraction.git
-	branch = trunk
 [submodule "rem"]
 	path = rem
 	url = https://github.com/coq-contribs/rem.git
-	branch = trunk
 [submodule "rsa"]
 	path = rsa
 	url = https://github.com/coq-contribs/rsa.git
-	branch = trunk
 [submodule "ruler-compass-geometry"]
 	path = ruler-compass-geometry
 	url = https://github.com/coq-contribs/ruler-compass-geometry.git
-	branch = trunk
 [submodule "schroeder"]
 	path = schroeder
 	url = https://github.com/coq-contribs/schroeder.git
-	branch = trunk
 [submodule "search-trees"]
 	path = search-trees
 	url = https://github.com/coq-contribs/search-trees.git
-	branch = trunk
 [submodule "semantics"]
 	path = semantics
 	url = https://github.com/coq-contribs/semantics.git
-	branch = trunk
 [submodule "shuffle"]
 	path = shuffle
 	url = https://github.com/coq-contribs/shuffle.git
-	branch = trunk
 [submodule "smc"]
 	path = smc
 	url = https://github.com/coq-contribs/smc.git
-	branch = trunk
 [submodule "square-matrices"]
 	path = square-matrices
 	url = https://github.com/coq-contribs/square-matrices.git
-	branch = trunk
 [submodule "stalmarck"]
 	path = stalmarck
 	url = https://github.com/coq-contribs/stalmarck.git
-	branch = trunk
 [submodule "streams"]
 	path = streams
 	url = https://github.com/coq-contribs/streams.git
-	branch = trunk
 [submodule "string"]
 	path = string
 	url = https://github.com/coq-contribs/string.git
-	branch = trunk
 [submodule "subst"]
 	path = subst
 	url = https://github.com/coq-contribs/subst.git
-	branch = trunk
 [submodule "sudoku"]
 	path = sudoku
 	url = https://github.com/coq-contribs/sudoku.git
-	branch = trunk
 [submodule "sum-of-two-square"]
 	path = sum-of-two-square
 	url = https://github.com/coq-contribs/sum-of-two-square.git
-	branch = trunk
 [submodule "tait"]
 	path = tait
 	url = https://github.com/coq-contribs/tait.git
-	branch = trunk
 [submodule "tarski-geometry"]
 	path = tarski-geometry
 	url = https://github.com/coq-contribs/tarski-geometry.git
-	branch = trunk
 [submodule "three-gap"]
 	path = three-gap
 	url = https://github.com/coq-contribs/three-gap.git
-	branch = trunk
 [submodule "topology"]
 	path = topology
 	url = https://github.com/coq-contribs/topology.git
-	branch = trunk
 [submodule "tortoise-hare-algorithm"]
 	path = tortoise-hare-algorithm
 	url = https://github.com/coq-contribs/tortoise-hare-algorithm.git
-	branch = trunk
 [submodule "tree-automata"]
 	path = tree-automata
 	url = https://github.com/coq-contribs/tree-automata.git
-	branch = trunk
 [submodule "tree-diameter"]
 	path = tree-diameter
 	url = https://github.com/coq-contribs/tree-diameter.git
-	branch = trunk
 [submodule "weak-up-to"]
 	path = weak-up-to
 	url = https://github.com/coq-contribs/weak-up-to.git
-	branch = trunk
 [submodule "zchinese"]
 	path = zchinese
 	url = https://github.com/coq-contribs/zchinese.git
-	branch = trunk
 [submodule "zfc"]
 	path = zfc
 	url = https://github.com/coq-contribs/zfc.git
-	branch = trunk
 [submodule "zf"]
 	path = zf
 	url = https://github.com/coq-contribs/zf.git
-	branch = trunk
 [submodule "zorns-lemma"]
 	path = zorns-lemma
 	url = https://github.com/coq-contribs/zorns-lemma.git
-	branch = trunk
 [submodule "zsearch-trees"]
 	path = zsearch-trees
 	url = https://github.com/coq-contribs/zsearch-trees.git
-	branch = trunk
 [submodule "propcalc"]
 	path = propcalc
 	url = https://github.com/coq-contribs/propcalc.git
-	branch = trunk
 [submodule "traversable-fincontainer"]
 	path = traversable-fincontainer
 	url = https://github.com/coq-contribs/traversable-fincontainer.git
-	branch = trunk
 [submodule "intuitionistic-nuprl"]
 	path = intuitionistic-nuprl
 	url = https://github.com/coq-contribs/intuitionistic-nuprl.git
-	branch = trunk
 [submodule "math-classes"]
 	path = math-classes
 	url = https://github.com/coq-contribs/math-classes.git
