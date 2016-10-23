@@ -113,7 +113,7 @@ Axiom
     (0 <= j < array_length t)%Z ->
     i <> j -> access (store t i v) j = access t j.
 
-Hint Resolve new_def store_def_1 store_def_2: datatypes v62.
+Hint Resolve new_def store_def_1 store_def_2: datatypes.
 
 
 (* A tactic to simplify access in arrays *)
