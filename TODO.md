@@ -107,3 +107,5 @@
  - describe all the steps that need to be performed when a new version of Coq is released
  - rename OPAM package `coq-coq-in-coq` to `coq-in-coq`
 - figure out why `make uninstall` command in individual coq-contribs does not work.
+- check what do we say in README files (whether all the things we say are still valid; whether the provided information is complete)
+- consider, whether we still need the `description` files; did not the `opam` files serve the same purpose?
