@@ -15,11 +15,11 @@
      and we see that something is not right.
  - Fix [`intuitionistic-nuprl` on `trunk`](https://ci.inria.fr/coq/job/bench-intuitionistic-nuprl/34/console).
  - Add the following new coq-contribs:
-   - mmultisets (currently, it depends on something which was not yet published and so the version [we have](https://github.com/coq-contribs/mmultisets) is not compilable)
+   - mmultisets (currently, it depends on something which was not yet 
+   ed and so the version [we have](https://github.com/coq-contribs/mmultisets) is not compilable)
      - it depends on `MMaps` which was not yet released (Pierre Letouzey (?) might know something more about it)
    - [mirror-core](https://github.com/coq-contribs/coq-contribs/issues/1)
    - [HoTT](https://github.com/coq-contribs/coq-contribs/issues/2)
- - [publish existing coq-contribs via OPAM](https://github.com/coq/opam-coq-archive/pull/72)
  - Go through existing coq-contribs:
    - identify those ones which have no licence
    - ask the author(s) whether this intentional or perhaps just an omission
@@ -106,6 +106,7 @@
  - describe all the steps that need to be performed when a new Coq branch is created (e.g. v8.7)
  - describe all the steps that need to be performed when a new version of Coq is released
  - rename OPAM package `coq-coq-in-coq` to `coq-in-coq`
+
 - figure out why `make uninstall` command in individual coq-contribs does not work.
 - check what do we say in README files (whether all the things we say are still valid; whether the provided information is complete)
 - consider, whether we still need the `description` files; did not the `opam` files serve the same purpose?
