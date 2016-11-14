@@ -112,4 +112,5 @@
 - consider, whether we still need the `description` files; did not the `opam` files serve the same purpose?
 - explain how coq-contribs can be installed via OPAM.
   - would a sentence like the one we added [here](https://github.com/coq-contribs/lin-alg/blob/v8.5/README.md) suffice?
-  - add a link to those instructions to `README.md` files that belong to individual coq-contribs.  
+  - add a link to those instructions to `README.md` files that belong to individual coq-contribs.
+- figure out the most convenient way to launch `coq-contrib` job on Jenkins for a given pull-request
