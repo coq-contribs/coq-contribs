@@ -499,3 +499,6 @@
 [submodule "corn"]
 	path = corn
 	url = https://github.com/coq-contribs/corn.git
+[submodule "math-comp"]
+	path = math-comp
+	url = https://github.com/matej-kosik/math-comp.git
