@@ -115,3 +115,4 @@
   - add a link to those instructions to `README.md` files that belong to individual coq-contribs.
 - figure out the most convenient way to launch `coq-contrib` job on Jenkins for a given (Coq) pull-request
 - figure out the most convenient way to lauch `coq-contrib` job on Jenkins for a given (coq-contrib) pull-request
+- what do we want to do with the [old git repositories](https://gforge.inria.fr/projects/coq-contribs/)? Does it makes sense to keep them? Now they are behind their github counterparts. Do we want to turn them into mirrors?
