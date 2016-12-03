@@ -117,3 +117,4 @@
 - figure out the most convenient way to lauch `coq-contrib` job on Jenkins for a given (coq-contrib) pull-request
 - what do we want to do with the [old git repositories](https://gforge.inria.fr/projects/coq-contribs/)? Does it makes sense to keep them? Now they are behind their github counterparts. Do we want to turn them into mirrors?
 - when people try to Google out coq-contribs, they find [this](http://www.lix.polytechnique.fr/coq/pylons/contribs/index). We may want to put there redirection to some more proper location.
+- go through OPAM packages that correspond to individual coq-contribs (for individual Coq version) and run `opam lint` with them. Fix all warnings and errors.
