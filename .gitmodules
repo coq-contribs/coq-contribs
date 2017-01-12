@@ -76,9 +76,6 @@
 [submodule "coinductive-reals"]
 	path = coinductive-reals
 	url = https://github.com/coq-contribs/coinductive-reals.git
-[submodule "compcert"]
-	path = compcert
-	url = https://github.com/coq-contribs/compcert.git
 [submodule "concat"]
 	path = concat
 	url = https://github.com/coq-contribs/concat.git
