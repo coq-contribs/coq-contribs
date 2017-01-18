@@ -74,9 +74,9 @@ Each coq-contrib:
    - `8.5.1`: this version is known to work with Coq 8.5.1
    - `v8.6.0` : this version is known to work with Coq 8.6
  - has a corresponding OPAM package that can be installed with:
-   - `coq.dev` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install.trunk/))
-   - `coq.8.5.dev` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install.v8.5/))
-   - `coq.8.6.dev` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install.v8.6/))
+   - `coq.dev` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install-trunk/))
+   - `coq.8.5.dev` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install-v8.5/))
+   - `coq.8.6.dev` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install-v8.6/))
    
    The names of the OPAM packages corresponding to individual coq-contribs is `coq-$COQ_CONTRIB_NAME`.
  - can depend only on:
