@@ -65,9 +65,9 @@ If you do not perform the second step, people who clone the [coq-contribs](https
 Each coq-contrib:
  - is registered as a submodule of the [coq-contribs](https://github.com/coq-contribs/coq-contribs/tree/master) GIT repository.
  - the branches have the following meaning:
-   - `master`: this branch must exist and must be compilable with the current Coq trunk (tracked [here](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-trunk))
-   - `v8.5`: if it exists, it is supposed to be compilable with the `HEAD` of `v8.5` branch of Coq (tracked [here](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-v8.5/))
-   - `v8.6`: if it exists, it is supposed to be compilable with the `HEAD` of `v8.6` branch of Coq (tracked [here](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-v8.6/))
+   - `master`: this branch must exist and must be compilable with the `HEAD` of the `trunk` branch of Coq (this is tracked [here](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-trunk))
+   - `v8.5`: if it exists, it is supposed to be compilable with the `HEAD` of `v8.5` branch of Coq (this is tracked [here](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-v8.5/))
+   - `v8.6`: if it exists, it is supposed to be compilable with the `HEAD` of `v8.6` branch of Coq (this is tracked [here](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-v8.6/))
  - merging any of the branches to `master` shouldn't lead to any conflicts
  - has the following tags:
    - `8.5.0`: if it exists, it is supposed to be installable with Coq 8.5.0
