@@ -92,4 +92,4 @@ Each coq-contrib:
 
 To add your work to coq-contribs:
  1. check if it has all the [above](#what-are-the-common-properties-of-all-coq-contribs) properties
- 2. and then opan a new issue for this repository.
+ 2. and then open a new issue for this repository.
