@@ -64,24 +64,24 @@ If you do not perform the second step, people who clone the [coq-contribs](https
 
 Each coq-contrib:
  - is registered as a submodule of the [coq-contribs](https://github.com/coq-contribs/coq-contribs/tree/master) GIT repository.
- - has the following branches:
+ - the branches have the following meaning:
    - `master`: this branch of a coq-contrib must be compilable with the current Coq trunk (tracked [here](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-trunk))
-   - `v8.5`: this branch of a coq-contrib must be compilable with Coq 8.5 (tracked [here](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-v8.5/))
-   - `v8.6`: this branch of a coq-contrib must be compilable with Coq 8.5 (tracked [here](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-v8.6/))
+   - `v8.5`: if it exists, it is supposed to be compilable with Coq 8.5 (tracked [here](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-v8.5/))
+   - `v8.6`: if it exists, it is supposed to be compilable with Coq 8.5 (tracked [here](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-v8.6/))
  - merging any of the branches to `master` shouldn't lead to any conflicts
  - has the following tags:
-   - `8.5.0`: this version is known to work with Coq 8.5.0
-   - `8.5.1`: this version is known to work with Coq 8.5.1
-   - `v8.6.0` : this version is known to work with Coq 8.6
+   - `8.5.0`: if it exists, it is supposed to be installable with Coq 8.5.0
+   - `8.5.1`: if it exists, it is supposed to be installable with Coq 8.5.1
+   - `8.6.0`: if it exists, it is supposed to be installable with Coq 8.6
  - has a corresponding OPAM package that can be installed with:
    - `coq.dev` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install-trunk/))
-   - `coq.8.5.dev` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install-v8.5/))
-   - `coq.8.6.dev` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install-v8.6/))
+   - `coq.8.5.dev` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install-v8.5/)), if `v8.5` branch exists
+   - `coq.8.6.dev` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install-v8.6/)), if `v8.6` branch exists
    
    The names of the OPAM packages corresponding to individual coq-contribs is `coq-$COQ_CONTRIB_NAME`.
  - can depend only on:
    - on Coq (`v8.5` or `v8.6` or `trunk`)
-   - other coq-contribs
+   - any number of other coq-contribs
  - must contain `description` file.
  - has a toplevel `Makefile`
  - can be build by typing `make`
