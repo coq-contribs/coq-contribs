@@ -70,7 +70,7 @@ Each coq-contrib:
    - `v8.6`: if it exists, it is supposed to be compilable with the `HEAD` of `v8.6` branch of Coq (this is tracked [here](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-v8.6/))
  - merging any of the branches to `master` shouldn't lead to any conflicts
  - merging `v8.5` branch (if it exists) to `v8.6` branch (if it exists) should not lead to any conflicts.
- - has the following tags:
+ - has tags:
    - `8.5.0`: if it exists, it is supposed to be installable with Coq 8.5.0
    - `8.5.1`: if it exists, it is supposed to be installable with Coq 8.5.1
    - `8.6.0`: if it exists, it is supposed to be installable with Coq 8.6
