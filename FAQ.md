@@ -81,8 +81,8 @@ Each coq-contrib:
    
    The names of the OPAM packages corresponding to individual coq-contribs is `coq-$COQ_CONTRIB_NAME`.
  - can depend only on:
-   - on Coq (`v8.5` or `v8.6` or `trunk`)
-   - any number of other coq-contribs
+   - on Coq
+   - and any number of other coq-contribs
  - must contain `description` file.
  - has a toplevel `Makefile`
  - can be build by typing `make`
