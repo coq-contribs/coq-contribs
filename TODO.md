@@ -35,7 +35,9 @@
    - ask somebody in charge of CompCert about which is the correct "upstream" version
      and whether it would make sense to "reintegrate" it in a same way as we "reintegrated"
      the upstream "math-classes" and "corn"
- - `high-school-geometry`: there already seems to be an [OPAM package](https://github.com/matej-kosik/opam-coq-archive/tree/master/released/packages/coq-high-school-geometry/coq-high-school-geometry.1.0.0) for Coq 8.5. We shouldn't publish a [duplicate](https://github.com/matej-kosik/opam-coq-archive/tree/master/released/packages/coq-high-school-geometry/coq-high-school-geometry.8.5.0).
+ - `high-school-geometry`:
+   - there is an [upstream version](https://github.com/thery/HighSchoolGeometry) from which we diverged
+   - there already seems to be an [OPAM package](https://github.com/matej-kosik/opam-coq-archive/tree/master/released/packages/coq-high-school-geometry/coq-high-school-geometry.1.0.0) for Coq 8.5. We shouldn't publish a [duplicate](https://github.com/matej-kosik/opam-coq-archive/tree/master/released/packages/coq-high-school-geometry/coq-high-school-geometry.8.5.0).
  - merge (?) our copy of `compcert` with the [upstream](https://github.com/AbsInt/CompCert) (?) version
  - add [lemma-overloading](https://github.com/coq-contribs/lemma-overloading) among the tracked coq-contribs. Problems:
    - it depends on `math-comp`
