@@ -312,6 +312,7 @@ apply Rmult_lt_reg_l with (r := 3%R); auto with real.
 repeat apply Rplus_lt_0_compat; auto with real.
 rewrite Rmult_1_r.
 apply Rlt_trans with (3 * (Rpower 2 (1 + 3) * (/ 2 / 3)))%R.
+replace (1+3)%R with (1+1+1+1)%R by ring.
 repeat rewrite Rpower_plus; repeat rewrite Rpower_1; Fourier.fourier.
 apply Rmult_lt_compat_l.
 Fourier.fourier.
@@ -333,24 +334,25 @@ apply sqrt_positivity; auto with real.
 unfold Rpower in |- *; auto with real.
 repeat apply Rmult_le_pos; auto with real.
 rewrite <- ln_1; auto with real.
-apply Rlt_le; apply Rinv_0_lt_compat; apply Rmult_lt_0_compat; auto with real.
-Fourier.fourier.
+(* apply Rlt_le; apply Rinv_0_lt_compat; apply Rmult_lt_0_compat; auto with real.
+Fourier.fourier.*)
 apply sqrt_positivity; auto with real.
 unfold Rpower in |- *; auto with real.
 apply sqrt_le_1; auto with real.
 unfold Rpower in |- *; auto with real.
 rewrite <- ln_1; auto with real.
-apply Rlt_le; apply Rinv_0_lt_compat; apply Rmult_lt_0_compat; auto with real.
-Fourier.fourier.
+(* apply Rlt_le; apply Rinv_0_lt_compat; apply Rmult_lt_0_compat; auto with real.
+Fourier.fourier.*)
 field; auto with real.
 split; apply Compare.not_eq_sym; apply Rlt_not_eq; auto with real.
 apply exp_inv.
 rewrite exp_ln.
 change (Rpower 2 2 = (1 + 3)%R) in |- *.
+replace (2)%R with (1+1)%R at 2 by ring.
 repeat rewrite Rpower_plus; repeat rewrite Rpower_1; (ring||Fourier.fourier).
 Fourier.fourier.
-apply Compare.not_eq_sym; apply Rlt_not_eq; auto with real.
-apply Compare.not_eq_sym; apply Rlt_not_eq; auto with real.
+(* apply Compare.not_eq_sym; apply Rlt_not_eq; auto with real.
+apply Compare.not_eq_sym; apply Rlt_not_eq; auto with real. *)
 apply Rlt_le_trans with (2 := H1).
 unfold Rpower in |- *; auto with real.
 pattern (Rpower 2 (1 + (1 + (1 + (1 + 3))))) at 1 in |- *;
@@ -384,14 +386,16 @@ apply Rmult_lt_reg_l with (r := 3%R); auto with real.
 repeat apply Rplus_lt_0_compat; auto with real.
 repeat rewrite <- Rmult_assoc; rewrite Rinv_r; auto with arith.
 rewrite Rmult_1_l.
+replace (3)%R with (1+1+1)%R at 2 by ring.
 repeat rewrite Rpower_plus; repeat rewrite Rpower_1; try ring.
 Fourier.fourier.
 Fourier.fourier.
-apply Compare.not_eq_sym; apply Rlt_not_eq; Fourier.fourier.
+(* apply Compare.not_eq_sym; apply Rlt_not_eq; Fourier.fourier. *)
 field.
 apply exp_inv.
 rewrite exp_ln.
 change (Rpower 2 2 = (1 + 3)%R) in |- *.
+replace (2)%R with (1+1)%R at 2 by ring.
 repeat rewrite Rpower_plus; repeat rewrite Rpower_1; try ring.
 Fourier.fourier.
 Fourier.fourier.
