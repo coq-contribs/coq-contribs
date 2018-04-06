@@ -496,3 +496,6 @@
 [submodule "corn"]
 	path = corn
 	url = https://github.com/coq-contribs/corn.git
+[submodule "COQCONTRIBSMETA"]
+	path = COQCONTRIBSMETA
+	url = https://github.com/coq-contribs/COQCONTRIBSMETA.git
