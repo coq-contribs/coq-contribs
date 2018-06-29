@@ -34,9 +34,6 @@
 [submodule "bdds"]
 	path = bdds
 	url = https://github.com/coq-contribs/bdds.git
-[submodule "bertrand"]
-	path = bertrand
-	url = https://github.com/coq-contribs/bertrand.git
 [submodule "buchberger"]
 	path = buchberger
 	url = https://github.com/coq-contribs/buchberger.git
@@ -364,9 +361,6 @@
 [submodule "qarith"]
 	path = qarith
 	url = https://github.com/coq-contribs/qarith.git
-[submodule "qarith-stern-brocot"]
-	path = qarith-stern-brocot
-	url = https://github.com/coq-contribs/qarith-stern-brocot.git
 [submodule "quicksort-complexity"]
 	path = quicksort-complexity
 	url = https://github.com/coq-contribs/quicksort-complexity.git
@@ -424,9 +418,6 @@
 [submodule "square-matrices"]
 	path = square-matrices
 	url = https://github.com/coq-contribs/square-matrices.git
-[submodule "stalmarck"]
-	path = stalmarck
-	url = https://github.com/coq-contribs/stalmarck.git
 [submodule "streams"]
 	path = streams
 	url = https://github.com/coq-contribs/streams.git
