@@ -1,6 +1,3 @@
-[submodule "aac-tactics"]
-	path = aac-tactics
-	url = https://github.com/coq-contribs/aac-tactics.git
 [submodule "abp"]
 	path = abp
 	url = https://github.com/coq-contribs/abp.git
