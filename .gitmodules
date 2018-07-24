@@ -475,6 +475,3 @@
 [submodule "intuitionistic-nuprl"]
 	path = intuitionistic-nuprl
 	url = https://github.com/coq-contribs/intuitionistic-nuprl.git
-[submodule "corn"]
-	path = corn
-	url = https://github.com/coq-contribs/corn.git
