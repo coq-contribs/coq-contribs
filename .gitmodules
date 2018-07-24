@@ -262,9 +262,6 @@
 [submodule "legacy-ring"]
 	path = legacy-ring
 	url = https://github.com/coq-contribs/legacy-ring.git
-[submodule "lemma-overloading"]
-	path = lemma-overloading
-	url = https://github.com/coq-contribs/lemma-overloading.git
 [submodule "lesniewski-mereology"]
 	path = lesniewski-mereology
 	url = https://github.com/coq-contribs/lesniewski-mereology.git
