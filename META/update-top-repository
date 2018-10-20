@@ -1,0 +1,4 @@
+#!/bin/sh
+
+git commit -m "updating submodule HEADs" $1
+git push origin

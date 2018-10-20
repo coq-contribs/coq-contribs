@@ -1,0 +1,63 @@
+#!/bin/sh
+
+if [ $# != 4 ]; then printf "Usage: make-opam-packages opam-coq-archive-root major median minor"; fi
+opamarchivedir=$1
+contribroot=`pwd`
+major=$2
+median=$3
+minor=$4
+version=$major.$median.$minor
+mediannext=`expr $median + 1`
+metadir="$( cd "$( dirname "$0" )" && pwd)"
+extract=$metadir/extract-opam-description-fields 
+
+cd $contribroot
+
+list=`ls */description | cut -d/ -f 1 | grep -v mmultisets # not yet compiling`
+
+for i in $list; do
+  printf "Building $opamarchivedir/released/packages/coq-$i/coq-$i.$version\n"
+  # Extract data from description file
+  descrfile=$contribroot/$i/description
+  if [ -f $contribroot/$i/LICENSE ]; then
+    if `grep -iq "GNU LESSER GENERAL PUBLIC LICENSE" $contribroot/$i/LICENSE`; then
+      license=`egrep "Version [1-3]" $contribroot/$i/LICENSE | sed -e "s/.*Version \([1-3\.]*\).*/ \1/"`
+      license="LGPL$license"
+    else
+      license=""
+    fi
+  else
+    license=""
+  fi
+  installdir=""
+  # Heuristic to find installation directory
+  # If more than one -R, we shall use the official name of the contrib
+  if [ -f $contribroot/$i/Make ]; then
+      nr=`grep "^-R ." $contribroot/$i/Make | wc -l`
+      if [ $nr = 1 ]; then
+          installdir=`grep "^-R " $contribroot/$i/Make | sed -e "s/-R *[^ ]* *\(.*\)/\1/"`
+      fi
+  else
+      if [ -f $contribroot/$i/_CoqProject ]; then
+          nr=`grep "^-R ." $contribroot/$i/_CoqProject | wc -l`
+          if [ $nr = 1 ]; then
+              installdir=`grep "^-R " $contribroot/$i/_CoqProject | sed -e "s/-R *[^ ]* *\(.*\)/\1/"`
+          fi
+      fi
+  fi
+  cd $opamarchivedir/released/packages
+  cd coq-$i
+  mkdir -p coq-$i.$version
+  cd coq-$i.$version
+  # Build opam and descr files
+  if [ "$license" = "" ]; then
+      $extract $descrfile $i $major $median "$installdir"
+  else
+      $extract $descrfile $i $major $median "$installdir" "$license"
+  fi
+  # Create url file
+  url=https://github.com/coq-contribs/$i/archive/v$version.tar.gz
+  md5=`curl -s -L $url | md5`
+  printf "http: \"%s\"\nchecksum: \"%s\"\n" $url $md5 > url
+
+done
