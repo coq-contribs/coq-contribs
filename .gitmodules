@@ -241,9 +241,6 @@
 [submodule "jordan-curve-theorem"]
 	path = jordan-curve-theorem
 	url = https://github.com/coq-contribs/jordan-curve-theorem.git
-[submodule "jprover"]
-	path = jprover
-	url = https://github.com/coq-contribs/jprover.git
 [submodule "karatsuba"]
 	path = karatsuba
 	url = https://github.com/coq-contribs/karatsuba.git
@@ -262,12 +259,6 @@
 [submodule "lc"]
 	path = lc
 	url = https://github.com/coq-contribs/lc.git
-[submodule "legacy-field"]
-	path = legacy-field
-	url = https://github.com/coq-contribs/legacy-field.git
-[submodule "legacy-ring"]
-	path = legacy-ring
-	url = https://github.com/coq-contribs/legacy-ring.git
 [submodule "lemma-overloading"]
 	path = lemma-overloading
 	url = https://github.com/coq-contribs/lemma-overloading.git
@@ -292,9 +283,6 @@
 [submodule "matrices"]
 	path = matrices
 	url = https://github.com/coq-contribs/matrices.git
-[submodule "micromega"]
-	path = micromega
-	url = https://github.com/coq-contribs/micromega.git
 [submodule "minic"]
 	path = minic
 	url = https://github.com/coq-contribs/minic.git
@@ -379,9 +367,6 @@
 [submodule "random"]
 	path = random
 	url = https://github.com/coq-contribs/random.git
-[submodule "rational"]
-	path = rational
-	url = https://github.com/coq-contribs/rational.git
 [submodule "recursive-definition"]
 	path = recursive-definition
 	url = https://github.com/coq-contribs/recursive-definition.git
@@ -430,9 +415,6 @@
 [submodule "streams"]
 	path = streams
 	url = https://github.com/coq-contribs/streams.git
-[submodule "string"]
-	path = string
-	url = https://github.com/coq-contribs/string.git
 [submodule "subst"]
 	path = subst
 	url = https://github.com/coq-contribs/subst.git
