@@ -409,9 +409,6 @@
 [submodule "square-matrices"]
 	path = square-matrices
 	url = https://github.com/coq-contribs/square-matrices.git
-[submodule "stalmarck"]
-	path = stalmarck
-	url = https://github.com/coq-contribs/stalmarck.git
 [submodule "streams"]
 	path = streams
 	url = https://github.com/coq-contribs/streams.git
