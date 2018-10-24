@@ -9,7 +9,7 @@ git submodule update --init --recursive
 # How to clone coq-contribs non-anonymously?
 
 ```bash
-clone https://$GITHUB_USERNAME:$GITHUB_PASSWORD@github.com/coq-contribs/coq-contribs.git
+git clone https://$GITHUB_USERNAME:$GITHUB_PASSWORD@github.com/coq-contribs/coq-contribs.git
 cd coq-contribs
 git submodule foreach 'git remote remove origin; git remote add origin https://$GITHUB_USERNAME:$GITHUB_PASSWORD@github.com/coq-contribs/$name.git'
 git submodule update --init --recursive
@@ -26,7 +26,7 @@ git submodule foreach 'git remote set-url origin git@github.com:coq-contribs/$na
 
 ```
 
-Btw, note that the git configuration of contrib xyz is in .git/modules/xyz/config 
+By the way, note that the git configuration of contrib xyz is in .git/modules/xyz/config 
 
 # In the contribs, how do I switch from "detached HEAD" to a given branch  ?
 
@@ -47,6 +47,8 @@ cd $COQ_CONTRIB_YOU_WANT_TO_COMPILE
 make
 ```
 
+If coq executables are not in path, you may also set `COQBIN`.
+
 # How to install a given coq-contrib?
 
 ```bash
@@ -65,12 +67,13 @@ If you do not perform the second step, people who clone the [coq-contribs](https
 
 Each coq-contrib:
  - is registered as a submodule of the [coq-contribs](https://github.com/coq-contribs/coq-contribs/tree/master) GIT repository.
- - has the following two branches:
-   - `master`: this branch of a coq-contrib must be compilable with the current Coq trunk (tracked [here](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-trunk))
-   - `v8.5`: this branch of a coq-contrib must be compilable with Coq 8.5 (tracked [here](https://ci.inria.fr/coq/view/coq-contribs/job/coq-contribs-v8.5/))
+ - has the following kind of branches:
+   - `master`: the most up-to-date version of the coq-contrib
+   - `v8.5`, `v8.6`, ...: this branch of a coq-contrib must be compilable with Coq 8.5, 8.6, ...
  - has the following tags:
    - `8.5.0`: this version is known to work with Coq 8.5.0
    - `8.5.1`: this version is known to work with Coq 8.5.1
+   - etc.
  - has a corresponding OPAM package that can be installed with:
    - `coq.dev` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install.dev/))
    - `coq.8.5.dev` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install.8.5.dev/))
@@ -78,10 +81,10 @@ Each coq-contrib:
    - `coq.8.5.0` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install.8.5.0/))
    
    The names of the OPAM packages corresponding to individual coq-contribs is `coq-$COQ_CONTRIB_NAME`.
- - can depend only on:
-   - on Coq (`v8.5` or `trunk`)
+ - can currently depend on:
+   - Coq (`v8.5.dev`, `V8.5.0`, `V8.6.0`, `master`, ...)
    - other coq-contribs
- - must contain `description` file.
+ - must contain a `description` file.
  - has a toplevel `Makefile`
  - can be build by typing `make`
  - can be installed by typing `make install`
@@ -91,4 +94,4 @@ Each coq-contrib:
 
 To add your work to coq-contribs:
  1. check if it has all the [above](#what-are-the-common-properties-of-all-coq-contribs) properties
- 2. and then opan a new issue for this repository.
+ 2. and then open a new issue for this repository.
