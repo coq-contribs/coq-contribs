@@ -1,0 +1,33 @@
+#!/bin/sh
+
+if [ $# != 1 -a $# != 2 ]; then printf "Usage: make-package-release major.median.minor [package]\n"; exit 1; fi
+contribroot=`pwd`
+version=$1
+case $version in
+    [89].[0123456789].[0123456789] | [89].[0123456789][0123456789].[0123456789])
+        ;;
+    *)
+        printf "Ill-formed version number %s\n" $version
+        exit 1
+esac
+versiontag=v$version
+
+if [ $# = 1 ]; then
+  list=`cd $contribroot; ls */description | cut -d/ -f 1`
+else
+  list=$2
+fi
+
+for i in $list; do
+
+    cd $contribroot/$i
+    shatag=`git rev-parse --verify -q $versiontag`
+    a=$?
+    if [ $a = 0 ]; then
+        printf "Pushing tag $versiontag for $contribroot/$i\n"
+        git push origin $versiontag
+    else
+        printf "No tag $versiontag for $contribroot/$i\n"
+    fi
+
+done

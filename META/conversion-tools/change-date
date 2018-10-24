@@ -1,0 +1,24 @@
+remplacement 'Date: \([0-9]*\) January \([1-2][0-9][0-9][0-9]\)' 'Date: \2-01-\1' */description
+remplacement 'Date: \([0-9]*\) February \([1-2][0-9][0-9][0-9]\)' 'Date: \2-02-\1' */description
+remplacement 'Date: \([0-9]*\) March \([1-2][0-9][0-9][0-9]\)' 'Date: \2-03-\1' */description
+remplacement 'Date: \([0-9]*\) April \([1-2][0-9][0-9][0-9]\)' 'Date: \2-04-\1' */description
+remplacement 'Date: \([0-9]*\) May \([1-2][0-9][0-9][0-9]\)' 'Date: \2-05-\1' */description
+remplacement 'Date: \([0-9]*\) June \([1-2][0-9][0-9][0-9]\)' 'Date: \2-06-\1' */description
+remplacement 'Date: \([0-9]*\) July \([1-2][0-9][0-9][0-9]\)' 'Date: \2-07-\1' */description
+remplacement 'Date: \([0-9]*\) August \([1-2][0-9][0-9][0-9]\)' 'Date: \2-08-\1' */description
+remplacement 'Date: \([0-9]*\) September \([1-2][0-9][0-9][0-9]\)' 'Date: \2-09-\1' */description
+remplacement 'Date: \([0-9]*\) October \([1-2][0-9][0-9][0-9]\)' 'Date: \2-10-\1' */description
+remplacement 'Date: \([0-9]*\) November \([1-2][0-9][0-9][0-9]\)' 'Date: \2-11-\1' */description
+remplacement 'Date: \([0-9]*\) December \([1-2][0-9][0-9][0-9]\)' 'Date: \2-12-\1' */description
+remplacement 'Date: January \([1-2][0-9][0-9][0-9]\)' 'Date: \1-01' */description
+remplacement 'Date: February \([1-2][0-9][0-9][0-9]\)' 'Date: \1-02' */description
+remplacement 'Date: March \([1-2][0-9][0-9][0-9]\)' 'Date: \1-03' */description
+remplacement 'Date: April \([1-2][0-9][0-9][0-9]\)' 'Date: \1-04' */description
+remplacement 'Date: May \([1-2][0-9][0-9][0-9]\)' 'Date: \1-05' */description
+remplacement 'Date: June \([1-2][0-9][0-9][0-9]\)' 'Date: \1-06' */description
+remplacement 'Date: July \([1-2][0-9][0-9][0-9]\)' 'Date: \1-07' */description
+remplacement 'Date: August \([1-2][0-9][0-9][0-9]\)' 'Date: \1-08' */description
+remplacement 'Date: September \([1-2][0-9][0-9][0-9]\)' 'Date: \1-09' */description
+remplacement 'Date: October \([1-2][0-9][0-9][0-9]\)' 'Date: \1-10' */description
+remplacement 'Date: November \([1-2][0-9][0-9][0-9]\)' 'Date: \1-11' */description
+remplacement 'Date: December \([1-2][0-9][0-9][0-9]\)' 'Date: \1-12' */description

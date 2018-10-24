@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+echo "Traitement (conversion latin1 vers utf8) des fichiers suivants :"
+find . -name description | while read f
+do
+   utf=$(file --mime-encoding "$f" | grep utf)
+   iso=$(file --mime-encoding "$f" | grep iso-8859)
+
+   if test -n "$utf"
+   then
+      echo "$f : déjà en utf-8"
+   fi
+
+   if test -n "$iso"
+   then
+      echo "$f : conversion latin1 vers utf8"
+      if test -f "$f.latin1"
+      then
+         cp "$f.latin1" "$f.latin1.bak"
+      fi
+      mv "$f" "$f.latin1"
+      iconv -f latin1 -t utf8 "$f.latin1" > "$f"      
+   fi
+done
+echo "Fin du traitement."

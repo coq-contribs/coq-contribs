@@ -1,0 +1,19 @@
+#! /bin/sh
+
+a=$1
+b=$2
+shift
+shift
+echo Remplacement de \"$a\" en \"$b\"
+for i in $*; do
+  LC_ALL=C sed "s!$a!$b!g" $i > $i.tmp$$
+  if diff $i.tmp$$ $i > /dev/null
+    then
+      printf "."
+      rm $i.tmp$$
+    else
+      echo; echo Le fichier $i a été modifié
+      mv $i.tmp$$ $i
+  fi
+  done
+echo

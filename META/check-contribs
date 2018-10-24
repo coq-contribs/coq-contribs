@@ -1,0 +1,81 @@
+#!/bin/sh
+
+if [ $# != 2 -a $# != 3 ]; then printf "Usage: check-contribs coqdir major.median.minor [package]\n"; exit 1; fi
+contribroot=`pwd`
+coqdir=$1
+version=$2
+case $version in
+    [89].[0123456789].[0123456789] | [89].[0123456789][0123456789].[0123456789])
+        major=`echo $version | cut -d. -f 1`
+        median=`echo $version | cut -d. -f 2`
+        ;;
+    *)
+        printf "Ill-formed version number %s\n" $version
+        exit 1
+esac
+versiontag=v$version
+Versiontag=V$version
+versionbranch=v$major.$median
+
+#Initialize Coq at the right version
+coqshatag=`cd $coqdir; git log -n 1 --format=oneline $Versiontag`
+coqshabranch=`cd $coqdir; git log -n 1 --format=oneline`
+if [ "$coqshatag" != "$coqshabranch" ]; then
+   printf "Coq archive not on tag $Versiontag (is on $coqshabranch)\n"
+   exit 1
+else
+   printf "Checking with Coq archive on tag $Versiontag\n"
+fi
+
+if [ $# = 2 ]; then
+  list=`cd $contribroot; ls */description | cut -d/ -f 1`
+  # Ensure dependencies
+  list="algebra lin-alg containers counting int-map nfix ptsatr pocklington qarith-stern-brocot zorns-lemma $list"
+else
+  list=$3
+fi
+
+export COQBIN=$coqdir/bin/
+
+for i in $list; do
+
+  # Compile
+  printf "Compiling $contribroot/$i... "
+  cd $contribroot/$i
+
+  contribbranch=`git status | grep "On branch" | sed -e "s/On branch \(.*\)/\1/"`
+  if [ "$contribbranch" != "$versionbranch" ]; then
+      printf "not on branch $versionbranch, skipping\n"
+  else
+    if [ -e log ]; then /bin/rm log; fi
+    make -j4 >& log
+    a=$?
+    if [ $a = 0 ]; then
+       printf "successful"
+       shatag=`git rev-parse --verify -q $versiontag`
+       a=$?
+       shabranch=`git rev-parse --verify -q $versionbranch`
+       if [ $a = 0 ]; then
+           if [ "$shatag" = "$shabranch" ]; then
+               printf " (already tagged)\n"
+           else
+               printf " (already tagged differently)\n"
+           fi
+       else
+           git tag $versiontag
+           printf " (tagged)\n"
+       fi
+       if [ -e "FAILURE-$contribbranch-WITH-COQ-$Versiontag" ]; then
+           /bin/rm FAILURE-$contribbranch-WITH-COQ-$Versiontag
+       fi
+       touch SUCCESS-$contribbranch-WITH-COQ-$Versiontag
+    else
+       if [ -e "SUCCESS-$contribbranch-WITH-COQ-$Versiontag" ]; then
+           /bin/rm SUCCESS-$contribbranch-WITH-COQ-$Versiontag
+       fi
+       printf "failure\n"
+       touch FAILURE-$contribbranch-WITH-COQ-$Versiontag
+    fi
+  fi
+
+done

@@ -1,0 +1,3 @@
+*.cm{a,o,i,x}
+*.o
+extract-opam-description-fields
