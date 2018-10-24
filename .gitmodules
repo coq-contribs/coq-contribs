@@ -466,9 +466,6 @@
 [submodule "traversable-fincontainer"]
 	path = traversable-fincontainer
 	url = https://github.com/coq-contribs/traversable-fincontainer.git
-[submodule "intuitionistic-nuprl"]
-	path = intuitionistic-nuprl
-	url = https://github.com/coq-contribs/intuitionistic-nuprl.git
 [submodule "math-classes"]
 	path = math-classes
 	url = https://github.com/coq-contribs/math-classes.git
