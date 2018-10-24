@@ -1,24 +1,41 @@
 #!/bin/sh
 
-if [ $# != 4 ]; then printf "Usage: make-opam-packages opam-coq-archive-root major median minor"; fi
+if [ $# != 2 -a $# != 3 ]; then printf "Usage: make-opam-packages opam-coq-archive-root major.median.minor [package]\n"; exit 1; fi
 opamarchivedir=$1
 contribroot=`pwd`
-major=$2
-median=$3
-minor=$4
-version=$major.$median.$minor
+version=$2
+case $version in
+    [89].[0123456789].[0123456789] | [89].[0123456789][0123456789].[0123456789])
+        major=`echo $version | cut -d. -f 1`
+        median=`echo $version | cut -d. -f 2`
+        minor=`echo $version | cut -d. -f 3`
+        ;;
+    *)
+        printf "Ill-formed version number %s\n" $version
+        exit 1
+esac
+versiontag=v$version
 mediannext=`expr $median + 1`
 metadir="$( cd "$( dirname "$0" )" && pwd)"
 extract=$metadir/extract-opam-description-fields 
 
 cd $contribroot
 
-list=`ls */description | cut -d/ -f 1 | grep -v mmultisets # not yet compiling`
+if [ $# = 2 ]; then
+  list=`cd $contribroot; ls */description | cut -d/ -f 1`
+else
+  list=$3
+fi
 
 for i in $list; do
   printf "Building $opamarchivedir/released/packages/coq-$i/coq-$i.$version\n"
   # Extract data from description file
   descrfile=$contribroot/$i/description
+  status=`grep "^Status: " $descrfile | sed -e "s/Status: *\(.*\) */\1/"`
+  if [ "$status" = "Unmaintained" ]; then
+      printf "Unmaintained, skipping\n"
+      break
+  fi
   if [ -f $contribroot/$i/LICENSE ]; then
     if `grep -iq "GNU LESSER GENERAL PUBLIC LICENSE" $contribroot/$i/LICENSE`; then
       license=`egrep "Version [1-3]" $contribroot/$i/LICENSE | sed -e "s/.*Version \([1-3\.]*\).*/ \1/"`
@@ -49,15 +66,22 @@ for i in $list; do
   cd coq-$i
   mkdir -p coq-$i.$version
   cd coq-$i.$version
-  # Build opam and descr files
-  if [ "$license" = "" ]; then
-      $extract $descrfile $i $major $median "$installdir"
-  else
-      $extract $descrfile $i $major $median "$installdir" "$license"
-  fi
+  # Find repository
+  repository=`cd $contribroot/$i; git remote -v | grep origin | grep fetch | sed -e s"@.*https://github.com/\(.*\)/$i.git.*@\1@"`
   # Create url file
-  url=https://github.com/coq-contribs/$i/archive/v$version.tar.gz
+  badmd5=`echo "404: Not Found" | md5`
+  url=https://github.com/$repository/$i/archive/$versiontag.tar.gz
   md5=`curl -s -L $url | md5`
-  printf "http: \"%s\"\nchecksum: \"%s\"\n" $url $md5 > url
+  if [ $md5 = $badmd5 ]; then
+      echo WARNING: RELEASE NOT FOUND
+  else
+      # Build opam descr and url files
+      if [ "$license" = "" ]; then
+          $extract $descrfile $repository/$i $major $median "$installdir"
+      else
+          $extract $descrfile $repository/$i $major $median "$installdir" "$license"
+      fi
+      printf "http: \"%s\"\nchecksum: \"%s\"\n" $url $md5 > url
+  fi
 
 done
