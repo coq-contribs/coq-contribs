@@ -34,9 +34,6 @@
 [submodule "bdds"]
 	path = bdds
 	url = https://github.com/coq-contribs/bdds.git
-[submodule "bertrand"]
-	path = bertrand
-	url = https://github.com/coq-contribs/bertrand.git
 [submodule "buchberger"]
 	path = buchberger
 	url = https://github.com/coq-contribs/buchberger.git
@@ -352,9 +349,6 @@
 [submodule "qarith"]
 	path = qarith
 	url = https://github.com/coq-contribs/qarith.git
-[submodule "qarith-stern-brocot"]
-	path = qarith-stern-brocot
-	url = https://github.com/coq-contribs/qarith-stern-brocot.git
 [submodule "quicksort-complexity"]
 	path = quicksort-complexity
 	url = https://github.com/coq-contribs/quicksort-complexity.git
@@ -472,6 +466,15 @@
 [submodule "corn"]
 	path = corn
 	url = https://github.com/coq-contribs/corn.git
+[submodule "stalmarck"]
+	path = stalmarck
+	url = https://github.com/coq-community/stalmarck
+[submodule "bertrand"]
+	path = bertrand
+	url = https://github.com/coq-community/bertrand
+[submodule "qarith-stern-brocot"]
+	path = qarith-stern-brocot
+	url = https://github.com/coq-community/qarith-stern-brocot/
 [submodule "legacy-ring"]
 	path = legacy-ring
 	url = https://github.com/coq-contribs/legacy-ring.git
