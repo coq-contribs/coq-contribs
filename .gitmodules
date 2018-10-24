@@ -1,6 +1,3 @@
-[submodule "aac-tactics"]
-	path = aac-tactics
-	url = https://github.com/coq-contribs/aac-tactics.git
 [submodule "abp"]
 	path = abp
 	url = https://github.com/coq-contribs/abp.git
@@ -256,9 +253,6 @@
 [submodule "lc"]
 	path = lc
 	url = https://github.com/coq-contribs/lc.git
-[submodule "lemma-overloading"]
-	path = lemma-overloading
-	url = https://github.com/coq-contribs/lemma-overloading.git
 [submodule "lesniewski-mereology"]
 	path = lesniewski-mereology
 	url = https://github.com/coq-contribs/lesniewski-mereology.git
@@ -370,9 +364,6 @@
 [submodule "regexp"]
 	path = regexp
 	url = https://github.com/coq-contribs/regexp.git
-[submodule "relation-algebra"]
-	path = relation-algebra
-	url = https://github.com/coq-contribs/relation-algebra.git
 [submodule "relation-extraction"]
 	path = relation-extraction
 	url = https://github.com/coq-contribs/relation-extraction.git
@@ -460,12 +451,6 @@
 [submodule "traversable-fincontainer"]
 	path = traversable-fincontainer
 	url = https://github.com/coq-contribs/traversable-fincontainer.git
-[submodule "math-classes"]
-	path = math-classes
-	url = https://github.com/coq-contribs/math-classes.git
-[submodule "corn"]
-	path = corn
-	url = https://github.com/coq-contribs/corn.git
 [submodule "stalmarck"]
 	path = stalmarck
 	url = https://github.com/coq-community/stalmarck
