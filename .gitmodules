@@ -50,10 +50,6 @@
 	path = coqoban
 	url = scm.gforge.inria.fr:/git/coq-contribs/coqoban.git
 	branch = v8.1
-[submodule "corn"]
-	path = corn
-	url = scm.gforge.inria.fr:/git/coq-contribs/corn.git
-	branch = v8.1
 [submodule "euler-formula"]
 	path = euler-formula
 	url = scm.gforge.inria.fr:/git/coq-contribs/euler-formula.git
