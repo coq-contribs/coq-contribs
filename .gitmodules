@@ -26,10 +26,6 @@
 	path = area-method
 	url = scm.gforge.inria.fr:/git/coq-contribs/area-method.git
 	branch = v8.2
-[submodule "atbr"]
-	path = atbr
-	url = scm.gforge.inria.fr:/git/coq-contribs/atbr.git
-	branch = v8.2
 [submodule "automata"]
 	path = automata
 	url = scm.gforge.inria.fr:/git/coq-contribs/automata.git
@@ -113,10 +109,6 @@
 [submodule "coqoban"]
 	path = coqoban
 	url = scm.gforge.inria.fr:/git/coq-contribs/coqoban.git
-	branch = v8.2
-[submodule "corn"]
-	path = corn
-	url = scm.gforge.inria.fr:/git/coq-contribs/corn.git
 	branch = v8.2
 [submodule "cours-de-coq"]
 	path = cours-de-coq
