@@ -19,9 +19,6 @@
 [submodule "area-method"]
 	path = area-method
 	url = https://github.com/coq-contribs/area-method.git
-[submodule "atbr"]
-	path = atbr
-	url = https://github.com/coq-contribs/atbr.git
 [submodule "automata"]
 	path = automata
 	url = https://github.com/coq-contribs/automata.git
