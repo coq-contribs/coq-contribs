@@ -1,7 +1,3 @@
-[submodule "aac-tactics"]
-	path = aac-tactics
-	url = scm.gforge.inria.fr:/git/coq-contribs/aac-tactics.git
-	branch = v8.4
 [submodule "abp"]
 	path = abp
 	url = scm.gforge.inria.fr:/git/coq-contribs/abp.git
@@ -29,10 +25,6 @@
 [submodule "area-method"]
 	path = area-method
 	url = scm.gforge.inria.fr:/git/coq-contribs/area-method.git
-	branch = v8.4
-[submodule "atbr"]
-	path = atbr
-	url = scm.gforge.inria.fr:/git/coq-contribs/atbr.git
 	branch = v8.4
 [submodule "automata"]
 	path = automata
@@ -129,10 +121,6 @@
 [submodule "coqoban"]
 	path = coqoban
 	url = scm.gforge.inria.fr:/git/coq-contribs/coqoban.git
-	branch = v8.4
-[submodule "corn"]
-	path = corn
-	url = scm.gforge.inria.fr:/git/coq-contribs/corn.git
 	branch = v8.4
 [submodule "counting"]
 	path = counting
@@ -373,10 +361,6 @@
 [submodule "markov"]
 	path = markov
 	url = scm.gforge.inria.fr:/git/coq-contribs/markov.git
-	branch = v8.4
-[submodule "math-classes"]
-	path = math-classes
-	url = scm.gforge.inria.fr:/git/coq-contribs/math-classes.git
 	branch = v8.4
 [submodule "maths"]
 	path = maths
