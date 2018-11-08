@@ -1,6 +1,3 @@
-[submodule "aac-tactics"]
-	path = aac-tactics
-	url = https://github.com/coq-contribs/aac-tactics.git
 [submodule "abp"]
 	path = abp
 	url = https://github.com/coq-contribs/abp.git
@@ -22,9 +19,6 @@
 [submodule "area-method"]
 	path = area-method
 	url = https://github.com/coq-contribs/area-method.git
-[submodule "atbr"]
-	path = atbr
-	url = https://github.com/coq-contribs/atbr.git
 [submodule "automata"]
 	path = automata
 	url = https://github.com/coq-contribs/automata.git
@@ -268,9 +262,6 @@
 [submodule "legacy-ring"]
 	path = legacy-ring
 	url = https://github.com/coq-contribs/legacy-ring.git
-[submodule "lemma-overloading"]
-	path = lemma-overloading
-	url = https://github.com/coq-contribs/lemma-overloading.git
 [submodule "lesniewski-mereology"]
 	path = lesniewski-mereology
 	url = https://github.com/coq-contribs/lesniewski-mereology.git
@@ -490,9 +481,3 @@
 [submodule "intuitionistic-nuprl"]
 	path = intuitionistic-nuprl
 	url = https://github.com/coq-contribs/intuitionistic-nuprl.git
-[submodule "math-classes"]
-	path = math-classes
-	url = https://github.com/coq-contribs/math-classes.git
-[submodule "corn"]
-	path = corn
-	url = https://github.com/coq-contribs/corn.git
