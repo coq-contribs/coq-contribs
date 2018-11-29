@@ -211,9 +211,6 @@
 [submodule "hoare-tut"]
 	path = hoare-tut
 	url = https://github.com/coq-contribs/hoare-tut.git
-[submodule "huffman"]
-	path = huffman
-	url = https://github.com/coq-contribs/huffman.git
 [submodule "icharate"]
 	path = icharate
 	url = https://github.com/coq-contribs/icharate.git
