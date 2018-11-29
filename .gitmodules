@@ -94,10 +94,6 @@
 	path = hoare-tut
 	url = scm.gforge.inria.fr:/git/coq-contribs/hoare-tut.git
 	branch = v8.1
-[submodule "huffman"]
-	path = huffman
-	url = scm.gforge.inria.fr:/git/coq-contribs/huffman.git
-	branch = v8.1
 [submodule "icharate"]
 	path = icharate
 	url = scm.gforge.inria.fr:/git/coq-contribs/icharate.git
