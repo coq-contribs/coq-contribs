@@ -318,10 +318,6 @@
 	path = matrices
 	url = scm.gforge.inria.fr:/git/coq-contribs/matrices.git
 	branch = v8.2
-[submodule "micromega"]
-	path = micromega
-	url = scm.gforge.inria.fr:/git/coq-contribs/micromega.git
-	branch = v8.2
 [submodule "minic"]
 	path = minic
 	url = scm.gforge.inria.fr:/git/coq-contribs/minic.git
