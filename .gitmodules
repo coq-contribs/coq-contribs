@@ -280,9 +280,6 @@
 [submodule "matrices"]
 	path = matrices
 	url = https://github.com/coq-contribs/matrices.git
-[submodule "micromega"]
-	path = micromega
-	url = https://github.com/coq-contribs/micromega.git
 [submodule "minic"]
 	path = minic
 	url = https://github.com/coq-contribs/minic.git
