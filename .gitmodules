@@ -494,10 +494,6 @@
 	path = regexp
 	url = scm.gforge.inria.fr:/git/coq-contribs/regexp.git
 	branch = v8.4
-[submodule "relation-algebra"]
-	path = relation-algebra
-	url = scm.gforge.inria.fr:/git/coq-contribs/relation-algebra.git
-	branch = v8.4
 [submodule "relation-extraction"]
 	path = relation-extraction
 	url = scm.gforge.inria.fr:/git/coq-contribs/relation-extraction.git
