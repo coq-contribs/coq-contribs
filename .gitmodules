@@ -379,9 +379,6 @@
 [submodule "regexp"]
 	path = regexp
 	url = https://github.com/coq-contribs/regexp.git
-[submodule "relation-algebra"]
-	path = relation-algebra
-	url = https://github.com/coq-contribs/relation-algebra.git
 [submodule "relation-extraction"]
 	path = relation-extraction
 	url = https://github.com/coq-contribs/relation-extraction.git
