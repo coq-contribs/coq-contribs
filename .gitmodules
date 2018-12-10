@@ -310,9 +310,6 @@
 [submodule "otway-rees"]
 	path = otway-rees
 	url = https://github.com/coq-contribs/otway-rees.git
-[submodule "paco"]
-	path = paco
-	url = https://github.com/coq-contribs/paco.git
 [submodule "paradoxes"]
 	path = paradoxes
 	url = https://github.com/coq-contribs/paradoxes.git
