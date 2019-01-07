@@ -9,13 +9,13 @@ Possible procedure to check the compilation, produce tar.gz and produce opam pac
 2. Make the contribution compatible with Coq 8.7.0
 
    - git submodule foreach checkout v8.7
-   - META/check-contribs 8.7.0
+   - META/check-contribs coqdir 8.7.0
 
      - If this succeeds, this automatically put a local tag v8.7.0
      - This can be reapplied as many time as necessary
      - This can be applied to one contribs only by doing
 
-       META/check-contribs 8.7.0 name
+       META/check-contribs coqdir 8.7.0 name
 
 ## Building tar files from contributions
 
@@ -37,8 +37,10 @@ corresponding tag.gz available online.
    coq-contribs directory), assuming that the archive files have been
    made:
 
-   META/make-opam-packages opam-coq-archive-dir major median minor
+   META/make-opam-packages opam-coq-archive-dir major.median.minor
 
    (example: "META/make-opam-packages ~/opam-coq-archive 8.7.1")
+
+   To do it for one package: "META/make-opam-packages opam-coq-archive-dir major.median.minor name"
 
 3. Push the files created in opam-coq-archive-root upstream
