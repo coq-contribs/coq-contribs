@@ -451,15 +451,3 @@
 [submodule "qarith-stern-brocot"]
 	path = qarith-stern-brocot
 	url = https://github.com/coq-community/qarith-stern-brocot/
-[submodule "legacy-ring"]
-	path = legacy-ring
-	url = https://github.com/coq-contribs/legacy-ring.git
-[submodule "rational"]
-	path = rational
-	url = https://github.com/coq-contribs/rational.git
-[submodule "jprover"]
-	path = jprover
-	url = https://github.com/coq-contribs/jprover.git
-[submodule "legacy-field"]
-	path = legacy-field
-	url = https://github.com/coq-contribs/legacy-field.git
