@@ -54,10 +54,6 @@
 	path = euler-formula
 	url = scm.gforge.inria.fr:/git/coq-contribs/euler-formula.git
 	branch = v8.1
-[submodule "exact-real-arithmetic"]
-	path = exact-real-arithmetic
-	url = scm.gforge.inria.fr:/git/coq-contribs/exact-real-arithmetic.git
-	branch = v8.1
 [submodule "fairisle"]
 	path = fairisle
 	url = scm.gforge.inria.fr:/git/coq-contribs/fairisle.git
@@ -89,10 +85,6 @@
 [submodule "hedges"]
 	path = hedges
 	url = scm.gforge.inria.fr:/git/coq-contribs/hedges.git
-	branch = v8.1
-[submodule "hoare-tut"]
-	path = hoare-tut
-	url = scm.gforge.inria.fr:/git/coq-contribs/hoare-tut.git
 	branch = v8.1
 [submodule "icharate"]
 	path = icharate
