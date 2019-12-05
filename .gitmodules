@@ -127,9 +127,6 @@
 [submodule "euler-formula"]
 	path = euler-formula
 	url = https://github.com/coq-contribs/euler-formula.git
-[submodule "exact-real-arithmetic"]
-	path = exact-real-arithmetic
-	url = https://github.com/coq-contribs/exact-real-arithmetic.git
 [submodule "exceptions"]
 	path = exceptions
 	url = https://github.com/coq-contribs/exceptions.git
@@ -208,9 +205,6 @@
 [submodule "historical-examples"]
 	path = historical-examples
 	url = https://github.com/coq-contribs/historical-examples.git
-[submodule "hoare-tut"]
-	path = hoare-tut
-	url = https://github.com/coq-contribs/hoare-tut.git
 [submodule "icharate"]
 	path = icharate
 	url = https://github.com/coq-contribs/icharate.git
@@ -430,9 +424,6 @@
 [submodule "three-gap"]
 	path = three-gap
 	url = https://github.com/coq-contribs/three-gap.git
-[submodule "topology"]
-	path = topology
-	url = https://github.com/coq-contribs/topology.git
 [submodule "tortoise-hare-algorithm"]
 	path = tortoise-hare-algorithm
 	url = https://github.com/coq-contribs/tortoise-hare-algorithm.git
@@ -454,9 +445,6 @@
 [submodule "zf"]
 	path = zf
 	url = https://github.com/coq-contribs/zf.git
-[submodule "zorns-lemma"]
-	path = zorns-lemma
-	url = https://github.com/coq-contribs/zorns-lemma.git
 [submodule "zsearch-trees"]
 	path = zsearch-trees
 	url = https://github.com/coq-contribs/zsearch-trees.git
