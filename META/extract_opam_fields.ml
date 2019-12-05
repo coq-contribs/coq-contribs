@@ -64,7 +64,7 @@ let adjust_name fields installdir =
 let drop_period s =
   if s.[String.length s - 1] = '.' then String.sub s 0 (String.length s - 1) else s
 
-let description_to_opam_files opam descr githubname ocaml d maj med package_url sha1 =
+let description_to_opam_files opam githubname ocaml d maj med package_url sha1 =
   let keywords = List.map (fun s -> quote ("keyword: " ^ s)) d.keywords in
   let categories = List.map (fun s -> quote ("category: " ^ s)) d.categories in
   let date = List.map (fun s -> quote ("date: " ^ s)) d.date in
@@ -80,8 +80,8 @@ let description_to_opam_files opam descr githubname ocaml d maj med package_url 
   Printf.fprintf opam "  \"coq\" {>= \"%d.%d\" & < \"%d.%d~\"}\n" maj med maj (med+1);
   List.iter (fun s -> Printf.fprintf opam "  \"coq-%s\" {>= \"%d.%d\" & < \"%d.%d~\"}\n" (lower s) maj med maj (med+1)) d.require;
   Printf.fprintf opam "]\n";
-  Printf.fprintf opam "tags: [ %s ]\n" (String.concat " " (keywords@categories@date));
-  Printf.fprintf opam "authors: [ %s ]\n" (String.concat " " (List.map make_author d.authors));
+  Printf.fprintf opam "tags: [\n  %s\n]\n" (String.concat "\n  " (keywords@categories@date));
+  Printf.fprintf opam "authors: [\n  %s\n]\n" (String.concat "\n  " (List.map make_author d.authors));
   Printf.fprintf opam "bug-reports: \"https://github.com/%s/issues\"\n" githubname;
   Printf.fprintf opam "dev-repo: \"git+https://github.com/%s.git\"\n" githubname;
   Printf.fprintf opam "synopsis: \"%s\"\n" (drop_period d.title);
@@ -95,7 +95,6 @@ let _ =
   else if Array.length Sys.argv = 8 || Array.length Sys.argv = 9 then
     let chan = open_in Sys.argv.(1) in
     let opam = open_out "opam" in
-    let descr = open_out "descr" in
     let githubname = Sys.argv.(2) in
     let major = int_of_string (Sys.argv.(3)) in
     let median = int_of_string (Sys.argv.(4)) in
@@ -104,12 +103,11 @@ let _ =
     let fields = read_description chan in
     let fields = adjust_name fields Sys.argv.(7) in
     let fields = if Array.length Sys.argv = 9 then adjust_license fields Sys.argv.(8) else fields in
-    description_to_opam_files opam descr githubname None fields major median package_url sha1;
+    description_to_opam_files opam githubname None fields major median package_url sha1;
     close_in chan;
-    close_out opam;
-    close_out descr
+    close_out opam
   else begin
-    Printf.eprintf "Usage: %s [description-file github-contrib-name major-number minor-number installdir [license]]\n" Sys.argv.(0);
+    Printf.eprintf "Usage: %s [description-file github-contrib-name major-number minor-number package-url sha installdir [license]]\n" Sys.argv.(0);
     Printf.eprintf "\n";
     Printf.eprintf "If arguments are given, generates opam and descr files in current directory from description file\n";
   end

@@ -68,7 +68,7 @@ for i in $list; do
   cd coq-$i.$version
   # Find repository
   repository=`cd $contribroot/$i; git remote -v | grep origin | grep fetch | sed -e s"@.*https://github.com/\(.*\)/$i.git.*@\1@"`
-  # Create url file
+  # Create package signature
   badmd5=`echo "404: Not Found" | md5`
   url=https://github.com/$repository/$i/archive/$versiontag.tar.gz
   md5=`curl -s -L $url | md5`
@@ -77,11 +77,10 @@ for i in $list; do
   else
       # Build opam descr and url files
       if [ "$license" = "" ]; then
-          $extract $descrfile $repository/$i $major $median "$installdir"
+          $extract $descrfile $repository/$i $major $median $url $md5 "$installdir"
       else
-          $extract $descrfile $repository/$i $major $median "$installdir" "$license"
+          $extract $descrfile $repository/$i $major $median $url $md5 "$installdir" "$license"
       fi
-      printf "http: \"%s\"\nchecksum: \"%s\"\n" $url $md5 > url
   fi
 
 done
