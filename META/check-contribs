@@ -27,10 +27,12 @@ else
    printf "Checking with Coq archive on tag $Versiontag\n"
 fi
 
+dependencies="algebra lin-alg containers counting int-map nfix ptsatr pocklington qarith-stern-brocot zorns-lemma"
+
 if [ $# = 2 ]; then
   list=`cd $contribroot; ls */description | cut -d/ -f 1`
   # Ensure dependencies
-  list="algebra lin-alg containers counting int-map nfix ptsatr pocklington qarith-stern-brocot zorns-lemma $list"
+  list="$dependencies $list"
 else
   list=$3
 fi
@@ -52,6 +54,25 @@ for i in $list; do
     a=$?
     if [ $a = 0 ]; then
        printf "successful"
+       grep -q "^Warning:" log
+       a=$?
+       if [ $a = 0 ]; then
+           printf ", warnings detected, trying to fix some... "
+           $contribroot/META/address-warnings >& log.warnings
+           a=$?
+           if [ $a = 2 ]; then
+               printf "warning-fixing tool successful"
+           elif [ $a = 1 ]; then
+               printf "warning-fixing tool failed"
+           else
+               printf "warning-fixing tool doesn't know how to fix remaining warnings"
+           fi
+       fi
+       # Install if used in another contribution
+       if [[ "$dependencies" =~ (^|[[:space:]])"$i"($|[[:space:]]) ]]; then
+           make install >& log.install
+       fi
+       # Tag if not done
        shatag=`git rev-parse --verify -q $versiontag`
        a=$?
        shabranch=`git rev-parse --verify -q $versionbranch`
