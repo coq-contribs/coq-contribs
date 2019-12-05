@@ -170,10 +170,6 @@
 	path = euler-formula
 	url = scm.gforge.inria.fr:/git/coq-contribs/euler-formula.git
 	branch = v8.4
-[submodule "exact-real-arithmetic"]
-	path = exact-real-arithmetic
-	url = scm.gforge.inria.fr:/git/coq-contribs/exact-real-arithmetic.git
-	branch = v8.4
 [submodule "exceptions"]
 	path = exceptions
 	url = scm.gforge.inria.fr:/git/coq-contribs/exceptions.git
@@ -277,10 +273,6 @@
 [submodule "historical-examples"]
 	path = historical-examples
 	url = scm.gforge.inria.fr:/git/coq-contribs/historical-examples.git
-	branch = v8.4
-[submodule "hoare-tut"]
-	path = hoare-tut
-	url = scm.gforge.inria.fr:/git/coq-contribs/hoare-tut.git
 	branch = v8.4
 [submodule "icharate"]
 	path = icharate
@@ -570,10 +562,6 @@
 	path = three-gap
 	url = scm.gforge.inria.fr:/git/coq-contribs/three-gap.git
 	branch = v8.4
-[submodule "topology"]
-	path = topology
-	url = scm.gforge.inria.fr:/git/coq-contribs/topology.git
-	branch = v8.4
 [submodule "tortoise-hare-algorithm"]
 	path = tortoise-hare-algorithm
 	url = scm.gforge.inria.fr:/git/coq-contribs/tortoise-hare-algorithm.git
@@ -601,10 +589,6 @@
 [submodule "zf"]
 	path = zf
 	url = scm.gforge.inria.fr:/git/coq-contribs/zf.git
-	branch = v8.4
-[submodule "zorns-lemma"]
-	path = zorns-lemma
-	url = scm.gforge.inria.fr:/git/coq-contribs/zorns-lemma.git
 	branch = v8.4
 [submodule "zsearch-trees"]
 	path = zsearch-trees
