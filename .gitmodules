@@ -94,9 +94,6 @@
 [submodule "ctltctl"]
 	path = ctltctl
 	url = https://github.com/coq-contribs/ctltctl.git
-[submodule "dblib"]
-	path = dblib
-	url = https://github.com/coq-contribs/dblib.git
 [submodule "demos"]
 	path = demos
 	url = https://github.com/coq-contribs/demos.git
