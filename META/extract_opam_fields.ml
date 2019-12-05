@@ -64,43 +64,47 @@ let adjust_name fields installdir =
 let drop_period s =
   if s.[String.length s - 1] = '.' then String.sub s 0 (String.length s - 1) else s
 
-let description_to_opam_files opam descr githubname d maj med =
+let description_to_opam_files opam descr githubname ocaml d maj med package_url sha1 =
   let keywords = List.map (fun s -> quote ("keyword: " ^ s)) d.keywords in
   let categories = List.map (fun s -> quote ("category: " ^ s)) d.categories in
   let date = List.map (fun s -> quote ("date: " ^ s)) d.date in
-  Printf.fprintf opam "opam-version: \"1.2\"\n";
+  Printf.fprintf opam "opam-version: \"2.0\"\n";
   Printf.fprintf opam "maintainer: \"Hugo.Herbelin@inria.fr\"\n";
-  Printf.fprintf opam "homepage: \"https://github.com/%s\"\n" githubname;
+  Printf.fprintf opam "homepage: \"https://github.com/%s\"\n" (if d.url <> "" then d.url else githubname);
   Printf.fprintf opam "license: \"%s\"\n" (if d.license = "" then "Unknown" else d.license);
   Printf.fprintf opam "build: [make \"-j%%{jobs}%%\"]\n";
   Printf.fprintf opam "install: [make \"install\"]\n";
   Printf.fprintf opam "remove: [\"rm\" \"-R\" \"%%{lib}%%/coq/user-contrib/%s\"]\n" d.name;
   Printf.fprintf opam "depends: [\n";
+  Printf.fprintf opam "  \"ocaml\"%s\n" (match ocaml with Some n -> "{>= \"" ^ n ^ "\"}" | None -> "");
   Printf.fprintf opam "  \"coq\" {>= \"%d.%d\" & < \"%d.%d~\"}\n" maj med maj (med+1);
   List.iter (fun s -> Printf.fprintf opam "  \"coq-%s\" {>= \"%d.%d\" & < \"%d.%d~\"}\n" (lower s) maj med maj (med+1)) d.require;
   Printf.fprintf opam "]\n";
   Printf.fprintf opam "tags: [ %s ]\n" (String.concat " " (keywords@categories@date));
   Printf.fprintf opam "authors: [ %s ]\n" (String.concat " " (List.map make_author d.authors));
   Printf.fprintf opam "bug-reports: \"https://github.com/%s/issues\"\n" githubname;
-  Printf.fprintf opam "dev-repo: \"https://github.com/%s.git\"\n" githubname;
-  Printf.fprintf descr "%s.\n" (drop_period d.title);
-  if d.url <> "" then Printf.fprintf descr "\n%s\n" d.url;
-  if d.description <> "" then Printf.fprintf descr "\n%s\n" d.description
+  Printf.fprintf opam "dev-repo: \"git+https://github.com/%s.git\"\n" githubname;
+  Printf.fprintf opam "synopsis: \"%s\"\n" (drop_period d.title);
+  if d.description <> "" then Printf.fprintf opam "description: \"\"\"\n%s\"\"\"\n" d.description;
+  Printf.fprintf opam "flags: light-uninstall\n";
+  Printf.fprintf opam "url {\n  src: \"%s\"\n  checksum: \"md5=%s\"\n}\n" package_url sha1
   
 let _ =
   if Array.length Sys.argv = 1 then
     description_to_opam_fields stdout stderr (read_description stdin)
-  else if Array.length Sys.argv = 6 || Array.length Sys.argv = 7 then
+  else if Array.length Sys.argv = 8 || Array.length Sys.argv = 9 then
     let chan = open_in Sys.argv.(1) in
     let opam = open_out "opam" in
     let descr = open_out "descr" in
     let githubname = Sys.argv.(2) in
     let major = int_of_string (Sys.argv.(3)) in
     let median = int_of_string (Sys.argv.(4)) in
+    let package_url = Sys.argv.(5) in
+    let sha1 = Sys.argv.(6) in
     let fields = read_description chan in
-    let fields = adjust_name fields Sys.argv.(5) in
-    let fields = if Array.length Sys.argv = 7 then adjust_license fields Sys.argv.(6) else fields in
-    description_to_opam_files opam descr githubname fields major median;
+    let fields = adjust_name fields Sys.argv.(7) in
+    let fields = if Array.length Sys.argv = 9 then adjust_license fields Sys.argv.(8) else fields in
+    description_to_opam_files opam descr githubname None fields major median package_url sha1;
     close_in chan;
     close_out opam;
     close_out descr
