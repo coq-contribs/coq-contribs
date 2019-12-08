@@ -20,6 +20,11 @@ fi
 
 for i in $list; do
 
+    if [ $i = "atbr" ]; then echo "$i maintained on Coq community by @palmskog"; continue; fi
+    if [ $i = "huffman" ]; then echo "$i maintained on Coq community by @palmskog"; continue; fi
+    if [ $i = "qarith-stern-brocot" ]; then echo "Warning: $i maintained on Coq community by @herbelin"; fi
+    if [ $i = "bertrand" ]; then echo "Warning: $i maintained on Coq community by @herbelin"; fi
+
     cd $contribroot/$i
     shatag=`git rev-parse --verify -q $versiontag`
     a=$?

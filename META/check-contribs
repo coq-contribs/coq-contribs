@@ -41,6 +41,11 @@ export COQBIN=$coqdir/bin/
 
 for i in $list; do
 
+  if [ $i = "atbr" ]; then echo "Warning: $i maintained on Coq community by @palmskog"; fi
+  if [ $i = "huffman" ]; then echo "Warning: $i maintained on Coq community by @palmskog"; fi
+  if [ $i = "qarith-stern-brocot" ]; then echo "Warning: $i maintained on Coq community by @herbelin"; fi
+  if [ $i = "bertrand" ]; then echo "Warning: $i maintained on Coq community by @herbelin"; fi
+
   # Compile
   printf "Compiling $contribroot/$i... "
   cd $contribroot/$i

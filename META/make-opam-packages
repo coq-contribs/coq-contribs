@@ -29,9 +29,10 @@ fi
 
 for i in $list; do
 
-  if [ $i = "atbr" ]; then echo "$i maintained on Coq community by @palmskog"; continue; fi
-  if [ $i = "huffman" ]; then echo "$i maintained on Coq community by @palmskog"; continue; fi
-  if [ $i = "arith-stern-brocot" ]; then echo "$i maintained on Coq community by @palmskog"; continue; fi
+  if [ $i = "atbr" ]; then echo "$i maintained on Coq community by @palmskog... aborting"; continue; fi
+  if [ $i = "huffman" ]; then echo "$i maintained on Coq community by @palmskog... aborting"; continue; fi
+  if [ $i = "qarith-stern-brocot" ]; then echo "Warning: $i maintained on Coq community by @herbelin"; fi
+  if [ $i = "bertrand" ]; then echo "Warning: $i maintained on Coq community by @herbelin"; fi
 
   printf "Building $opamarchivedir/released/packages/coq-$i/coq-$i.$version\n"
   # Extract data from description file
