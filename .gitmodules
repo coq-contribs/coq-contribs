@@ -79,9 +79,6 @@
 [submodule "coq-in-coq"]
 	path = coq-in-coq
 	url = https://github.com/coq-contribs/coq-in-coq.git
-[submodule "coqoban"]
-	path = coqoban
-	url = https://github.com/coq-contribs/coqoban.git
 [submodule "counting"]
 	path = counting
 	url = https://github.com/coq-contribs/counting.git
