@@ -74,10 +74,11 @@ for i in $list; do
     # Find repository
     repository=`cd $contribroot/$i; git remote -v | grep origin | grep fetch | sed -e s"@.*https://github.com/\(.*\)/$i.git.*@\1@"`
     # Create package signature
-    badmd5=`echo "404: Not Found" | md5`
     url=https://github.com/$repository/$i/archive/$versiontag.tar.gz
+    badmd5v1=`printf "404: Not Found" | md5`
+    badmd5v2=`printf "Not Found" | md5`
     md5=`curl -s -L $url | md5`
-    if [ $md5 = $badmd5 ]; then
+    if [ "$md5" = "$badmd5v1" -o "$md5" = "$badmd5v2" ]; then
       echo WARNING: RELEASE NOT FOUND
     else
       # Build opam descr and url files
