@@ -66,23 +66,25 @@ If you do not perform the second step, people who clone the [coq-contribs](https
 
 Each coq-contrib:
  - is registered as a submodule of the [coq-contribs](https://github.com/coq-contribs/coq-contribs/tree/master) GIT repository.
- - has the following kind of branches:
+ - the branches have the following meaning:
    - `master`: the most up-to-date version of the coq-contrib
    - `v8.5`, `v8.6`, ...: this branch of a coq-contrib must be compilable with Coq 8.5, 8.6, ...
- - has the following tags:
-   - `8.5.0`: this version is known to work with Coq 8.5.0
-   - `8.5.1`: this version is known to work with Coq 8.5.1
+ - merging any of the branches to `master` shouldn't lead to any conflicts
+ - merging `v8.5` branch (if it exists) to `v8.6` branch (if it exists) should not lead to any conflicts.
+ - has tags:
+   - `8.5.0`: if it exists, it is supposed to be installable with Coq 8.5.0
+   - `8.5.1`: if it exists, it is supposed to be installable with Coq 8.5.1
+   - `8.6.0`: if it exists, it is supposed to be installable with Coq 8.6
    - etc.
  - has a corresponding OPAM package that can be installed with:
-   - `coq.dev` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install.dev/))
-   - `coq.8.5.dev` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install.8.5.dev/))
-   - `coq.8.5.1` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install.8.5.1/))
-   - `coq.8.5.0` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install.8.5.0/))
+   - `coq.dev` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install-trunk/))
+   - `coq.8.5.dev` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install-v8.5/)), if `v8.5` branch exists
+   - `coq.8.6.dev` (tracked [here](https://ci.inria.fr/coq/view/opam/job/opam-install-v8.6/)), if `v8.6` branch exists
    
    The names of the OPAM packages corresponding to individual coq-contribs is `coq-$COQ_CONTRIB_NAME`.
- - can currently depend on:
-   - Coq (`v8.5.dev`, `V8.5.0`, `V8.6.0`, `master`, ...)
-   - other coq-contribs
+ - can depend only on:
+   - on Coq (`v8.5.dev`, `V8.5.0`, `V8.6.0`, `master`, ...)
+   - and any number of other coq-contribs
  - must contain a `description` file.
  - has a toplevel `Makefile`
  - can be build by typing `make`

@@ -364,9 +364,6 @@
 [submodule "search-trees"]
 	path = search-trees
 	url = https://github.com/coq-contribs/search-trees.git
-[submodule "semantics"]
-	path = semantics
-	url = https://github.com/coq-contribs/semantics.git
 [submodule "shuffle"]
 	path = shuffle
 	url = https://github.com/coq-contribs/shuffle.git
@@ -427,12 +424,3 @@
 [submodule "traversable-fincontainer"]
 	path = traversable-fincontainer
 	url = https://github.com/coq-contribs/traversable-fincontainer.git
-[submodule "stalmarck"]
-	path = stalmarck
-	url = https://github.com/coq-community/stalmarck
-[submodule "bertrand"]
-	path = bertrand
-	url = https://github.com/coq-community/bertrand
-[submodule "qarith-stern-brocot"]
-	path = qarith-stern-brocot
-	url = https://github.com/coq-community/qarith-stern-brocot/

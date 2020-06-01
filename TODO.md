@@ -15,11 +15,11 @@
      and we see that something is not right.
  - Fix [`intuitionistic-nuprl` on `trunk`](https://ci.inria.fr/coq/job/bench-intuitionistic-nuprl/34/console).
  - Add the following new coq-contribs:
-   - mmultisets (currently, it depends on something which was not yet published and so the version [we have](https://github.com/coq-contribs/mmultisets) is not compilable)
+   - mmultisets (currently, it depends on something which was not yet 
+   ed and so the version [we have](https://github.com/coq-contribs/mmultisets) is not compilable)
      - it depends on `MMaps` which was not yet released (Pierre Letouzey (?) might know something more about it)
    - [mirror-core](https://github.com/coq-contribs/coq-contribs/issues/1)
    - [HoTT](https://github.com/coq-contribs/coq-contribs/issues/2)
- - [publish existing coq-contribs via OPAM](https://github.com/coq/opam-coq-archive/pull/72)
  - Go through existing coq-contribs:
    - identify those ones which have no licence
    - ask the author(s) whether this intentional or perhaps just an omission
@@ -31,12 +31,9 @@
  - Go over licences declared by individual coq-contribs. Refactor licence names and provide links to the corresponding texts.
  - Convert `.svnignore` to `.gitignore`.
  - Add missing `.gitignore` files.
- - `compcert`: there seems to be an [upstream version](https://github.com/coq/opam-coq-archive/blob/master/released/packages/coq-compcert/coq-compcert.2.6.0/opam). If it is so, we should unlink [what we have](https://github.com/coq-contribs/compcert/tree/master) and instead fork the upstream version. Also, we shouldn't [try](https://github.com/matej-kosik/opam-coq-archive/tree/master/released/packages/coq-compcert/coq-compcert.8.5.0) to publish OPAM package in this case.
-   - ask somebody in charge of CompCert about which is the correct "upstream" version
-     and whether it would make sense to "reintegrate" it in a same way as we "reintegrated"
-     the upstream "math-classes" and "corn"
- - `high-school-geometry`: there already seems to be an [OPAM package](https://github.com/matej-kosik/opam-coq-archive/tree/master/released/packages/coq-high-school-geometry/coq-high-school-geometry.1.0.0) for Coq 8.5. We shouldn't publish a [duplicate](https://github.com/matej-kosik/opam-coq-archive/tree/master/released/packages/coq-high-school-geometry/coq-high-school-geometry.8.5.0).
- - merge (?) our copy of `compcert` with the [upstream](https://github.com/AbsInt/CompCert) (?) version
+ - `high-school-geometry`:
+   - there is an [upstream version](https://github.com/thery/HighSchoolGeometry) from which we diverged
+   - there already seems to be an [OPAM package](https://github.com/matej-kosik/opam-coq-archive/tree/master/released/packages/coq-high-school-geometry/coq-high-school-geometry.1.0.0) for Coq 8.5. We shouldn't publish a [duplicate](https://github.com/matej-kosik/opam-coq-archive/tree/master/released/packages/coq-high-school-geometry/coq-high-school-geometry.8.5.0).
  - add [lemma-overloading](https://github.com/coq-contribs/lemma-overloading) among the tracked coq-contribs. Problems:
    - it depends on `math-comp`
    - the `master` branch of `lemma-overloading` does not compile with Coq trunk.
@@ -106,3 +103,15 @@
  - describe all the steps that need to be performed when a new Coq branch is created (e.g. v8.7)
  - describe all the steps that need to be performed when a new version of Coq is released
  - rename OPAM package `coq-coq-in-coq` to `coq-in-coq`
+
+- figure out why `make uninstall` command in individual coq-contribs does not work.
+- check what do we say in README files (whether all the things we say are still valid; whether the provided information is complete)
+- consider, whether we still need the `description` files; did not the `opam` files serve the same purpose?
+- explain how coq-contribs can be installed via OPAM.
+  - would a sentence like the one we added [here](https://github.com/coq-contribs/lin-alg/blob/v8.5/README.md) suffice?
+  - add a link to those instructions to `README.md` files that belong to individual coq-contribs.
+- figure out the most convenient way to launch `coq-contrib` job on Jenkins for a given (Coq) pull-request
+- figure out the most convenient way to lauch `coq-contrib` job on Jenkins for a given (coq-contrib) pull-request
+- what do we want to do with the [old git repositories](https://gforge.inria.fr/projects/coq-contribs/)? Does it makes sense to keep them? Now they are behind their github counterparts. Do we want to turn them into mirrors?
+- when people try to Google out coq-contribs, they find [this](http://www.lix.polytechnique.fr/coq/pylons/contribs/index). We may want to put there redirection to some more proper location.
+- go through OPAM packages that correspond to individual coq-contribs (for individual Coq version) and run `opam lint` with them. Fix all warnings and errors.
