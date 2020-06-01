@@ -28,9 +28,6 @@
 [submodule "bdds"]
 	path = bdds
 	url = https://github.com/coq-contribs/bdds.git
-[submodule "buchberger"]
-	path = buchberger
-	url = https://github.com/coq-contribs/buchberger.git
 [submodule "canon-bdds"]
 	path = canon-bdds
 	url = https://github.com/coq-contribs/canon-bdds.git
