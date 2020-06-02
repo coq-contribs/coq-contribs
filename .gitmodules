@@ -328,9 +328,6 @@
 [submodule "ramsey"]
 	path = ramsey
 	url = https://github.com/coq-contribs/ramsey.git
-[submodule "random"]
-	path = random
-	url = https://github.com/coq-contribs/random.git
 [submodule "reflexive-first-order"]
 	path = reflexive-first-order
 	url = https://github.com/coq-contribs/reflexive-first-order.git
