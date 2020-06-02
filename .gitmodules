@@ -331,9 +331,6 @@
 [submodule "random"]
 	path = random
 	url = https://github.com/coq-contribs/random.git
-[submodule "recursive-definition"]
-	path = recursive-definition
-	url = https://github.com/coq-contribs/recursive-definition.git
 [submodule "reflexive-first-order"]
 	path = reflexive-first-order
 	url = https://github.com/coq-contribs/reflexive-first-order.git
