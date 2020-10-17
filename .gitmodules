@@ -178,9 +178,6 @@
 [submodule "hedges"]
 	path = hedges
 	url = https://github.com/coq-contribs/hedges.git
-[submodule "high-school-geometry"]
-	path = high-school-geometry
-	url = https://github.com/coq-contribs/high-school-geometry.git
 [submodule "higman-cf"]
 	path = higman-cf
 	url = https://github.com/coq-contribs/higman-cf.git
