@@ -157,9 +157,6 @@
 [submodule "generic-environments"]
 	path = generic-environments
 	url = https://github.com/coq-contribs/generic-environments.git
-[submodule "goedel"]
-	path = goedel
-	url = https://github.com/coq-contribs/goedel.git
 [submodule "graph-basics"]
 	path = graph-basics
 	url = https://github.com/coq-contribs/graph-basics.git
@@ -292,9 +289,6 @@
 [submodule "pi-calc"]
 	path = pi-calc
 	url = https://github.com/coq-contribs/pi-calc.git
-[submodule "pocklington"]
-	path = pocklington
-	url = https://github.com/coq-contribs/pocklington.git
 [submodule "presburger"]
 	path = presburger
 	url = https://github.com/coq-contribs/presburger.git
