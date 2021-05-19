@@ -1,9 +1,6 @@
 [submodule "abp"]
 	path = abp
 	url = https://github.com/coq-contribs/abp.git
-[submodule "additions"]
-	path = additions
-	url = https://github.com/coq-contribs/additions.git
 [submodule "ails"]
 	path = ails
 	url = https://github.com/coq-contribs/ails.git
@@ -31,9 +28,6 @@
 [submodule "canon-bdds"]
 	path = canon-bdds
 	url = https://github.com/coq-contribs/canon-bdds.git
-[submodule "cantor"]
-	path = cantor
-	url = https://github.com/coq-contribs/cantor.git
 [submodule "cats-in-zfc"]
 	path = cats-in-zfc
 	url = https://github.com/coq-contribs/cats-in-zfc.git
@@ -358,9 +352,6 @@
 [submodule "subst"]
 	path = subst
 	url = https://github.com/coq-contribs/subst.git
-[submodule "sudoku"]
-	path = sudoku
-	url = https://github.com/coq-contribs/sudoku.git
 [submodule "sum-of-two-square"]
 	path = sum-of-two-square
 	url = https://github.com/coq-contribs/sum-of-two-square.git
